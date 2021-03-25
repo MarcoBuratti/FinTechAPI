@@ -1,90 +1,92 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import sqlite3
+from manageDB import dbConnection
+from werkzeug.security import generate_password_hash, check_password_hash
+from wtforms import Form, StringField, TextAreaField, PasswordField, validators
 
 app = Flask(__name__)
+conn = dbConnection()
+cursor = conn.cursor()
 
-@app.route('/getBook/<int:id>', methods=['GET'])
-def getBook(id):
-    conn = dbConnection()
-    cursor = conn.cursor()
-    book = None
+
+@app.route('/getUser', methods=['GET'])
+def getBook():
     if request.method == 'GET':
-        cursor = conn.execute('SELECT * FROM book WHERE id=?', (id,))
-        rows = cursor.fetchall()
-        for r in rows:
-            book = r
-        if book is not None:
-            return jsonify(book), 200
+        try:
+            cursor = conn.execute('SELECT * FROM User')
+        except sqlite3.IntegrityError as e:
+            print(e)
+        users = [ dict(id=row[0], mail=row[1]) for row in cursor.fetchall() ]
+        if users is not None:
+            return jsonify(users), 200
         else:
-            return jsonify([{'book':'Not Found'}]), 200
+            return jsonify([{'error':'Nothing Found'}])
 
-@app.route('/putBook/<int:id>', methods=['PUT'])    
-def putBook(id):
-    conn = dbConnection()
-    cursor = conn.cursor()
-    if request.method == 'PUT':
-        author = request.form['author']
-        language = request.form['language']
-        title = request.form['title']
-        sqlQuery = """UPDATE book SET author=?, language=?, title=? WHERE id=?"""
-
-        update_book = {
-            'id': id,
-            'author': author,
-            'title': title,
-            'language': language
-        }                
-
-        cursor =  conn.execute(sqlQuery, (author, language, title, id))
-        conn.commit()
-        return jsonify(update_book), 200
-        
-@app.route('/delBook/<int:id>', methods=['DELETE'])    
-def deleteBook(id):
-    conn = dbConnection()
-    cursor = conn.cursor()
-    if request.method == 'DELETE':
-        sqlQuery = """DELETE FROM book WHERE id=?"""
-        cursor =  conn.execute(sqlQuery, (id,))
-        conn.commit()
-        return 'The book with the ID: {} has been deleted.'.format(id), 200
-
-
-@app.route('/books', methods=['GET', 'POST'])
-def index():
-    conn = dbConnection()
-    cursor = conn.cursor()
-
-    if request.method == 'GET':
-        cursor = conn.execute('SELECT * FROM book')
-        books = [
-            dict(id=row[0], author=row[1], language=row[2], title=row[3])
-            for row in cursor.fetchall()
-        ]
-        if books is not None:
-            return jsonify(books)
-        else:
-            'Nothing Found', 404
-    
+@app.route('/postUser', methods=['POST'])    
+def putBook():
     if request.method == 'POST':
-        new_author = request.form['author']
-        new_lang = request.form['language']
-        new_title = request.form['title']
-        sqlQuery = """INSERT INTO book (author, language, title)
-                        VALUES (?, ?, ?)"""
+        mail = request.form['mail']
+        password = request.form['password']
 
-        cursor =  conn.execute(sqlQuery, (new_author, new_lang, new_title))
-        conn.commit()
-        return f'Book with the ID: {cursor.lastrowid} created succesfully'
+        mail = '\''+ mail + '\'' + ', '
+        password =  mail + '\'' + generate_password_hash(password, method='SHA256') + '\''
+        cursor = conn.execute('select max(id), mail from User')
+        users = [ dict(id=row[0], mail=row[1]) for row in cursor.fetchall() ]
+        lastID = str(users[0]['id'] + 1)
+        query = 'INSERT INTO User (id, mail, password) VALUES ( ' + lastID + ', ' + str(password) + ')'
+        try:
+            cursor = conn.execute( str(query) )
+            conn.commit()
+        except sqlite3.IntegrityError as e:
+            print(e)
+        return jsonify([{'respone': "account created, user posted"}]), 200
+        
+@app.route('/delUser/<int:id>', methods=['DELETE'])    
+def deleteBook(id):
+    if request.method == 'DELETE':
+        try:
+            sqlQuery = """DELETE FROM User WHERE id=?"""
+            cursor =  conn.execute(sqlQuery, (id,))
+            conn.commit()
+            return 'The User with the ID: {} has been deleted.'.format(id), 200
+        except sqlite3.DatabaseError as e:
+            print(e)
+        
 
+@app.route('/')
+def index():
+    return render_template('home.html')
 
-def dbConnection():
-    conn = None
+# Register Form Class
+class RegisterForm(Form):
+    name = StringField('Name', [validators.Length(min=1, max=50)])
+    username = StringField('Username', [validators.Length(min=4, max=25)])
+    email = StringField('Email', [validators.Length(min=6, max=50)])
+    password = PasswordField('Password', [
+        validators.DataRequired(),
+        validators.EqualTo('confirm', message='Passwords do not match')
+    ])
+    confirm = PasswordField('Confirm Password')
+
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    form = RegisterForm(request.form)
+    if request.method == 'POST' and form.validate():
+        return render_template('register.html', form=form)
+    return render_template('register.html', form=form)
+    
+    
+
+@app.route('/setDB')
+def setDB():
     try:
-        conn = sqlite3.connect('books.sqlite')
-    except sqlite3.error as e:
+        cursor = conn.execute("""INSERT INTO User (id, mail, password) VALUES (0, 'admin@mail.com', 'FinTechAPI')""")
+        conn.commit()
+    except sqlite3.IntegrityError as e:
         print(e)
-    return conn
+    return jsonify([{'response':'Set the DB'}])
+
+
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
