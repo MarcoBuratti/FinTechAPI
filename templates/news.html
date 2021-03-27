@@ -1,14 +1,14 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-  <h1>Login</h1>
+  <h1>Last News</h1>
   {% from "includes/_formhelpers.html" import render_field %}
   <form action="" method="POST">
     <div class="form-group">
-      {{render_field(form.mail, class_="form-control")}}
+      {{render_field(form.company, class_="form-control")}}
     </div>
     <div class="form-group">
-      {{render_field(form.password, class_="form-control")}}
+      {{render_field(form.ticker, class_="form-control")}}
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>

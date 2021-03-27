@@ -1,0 +1,141 @@
+@import url(https://fonts.googleapis.com/css?family=Cardo:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,300italic,300,600italic,600,700,700italic);
+body {
+  background: #d5d5d5;
+}
+
+.masonry-wrapper {
+  margin: 0.9375rem 1.5625rem;
+}
+
+.gutter {
+  width: 0%;
+}
+@media (min-width: 640px) {
+  .gutter {
+    width: 1.5%;
+  }
+}
+@media (min-width: 1024px) {
+  .gutter {
+    width: 1%;
+  }
+}
+@media (min-width: 1200px) {
+  .gutter {
+    width: 1.5%;
+  }
+}
+@media (min-width: 1600px) {
+  .gutter {
+    width: 1.5%;
+  }
+}
+
+.card {
+  display: inline-block;
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .card {
+    width: 48.5%;
+  }
+}
+@media (min-width: 1024px) {
+  .card {
+    width: 32%;
+  }
+}
+@media (min-width: 1200px) {
+  .card {
+    width: 23.5%;
+  }
+}
+@media (min-width: 1600px) {
+  .card {
+    width: 18.5%;
+  }
+}
+.card * {
+  position: relative;
+}
+.card:hover {
+  cursor: pointer;
+}
+.card:hover .picture * {
+  filter: brightness(100%) saturate(100%) contrast(100%);
+  transition: filter 0.5s ease-in-out;
+}
+.card:hover .content {
+  border-left: solid 7px #688fdf;
+  transition: all 0.4s ease-in-out;
+}
+
+.card .picture {
+  z-index: 1;
+  border-top-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  overflow: hidden;
+}
+.card .picture * {
+  filter: brightness(85%) saturate(5%) contrast(105%);
+  display: block;
+  width: 100%;
+}
+
+.card .content {
+  display: block;
+  background-color: #f2f2f2;
+  padding: 0.9375rem;
+  border-left: solid 7px #dfc568;
+  box-shadow: 12px -1px 15px rgba(46, 46, 46, 0.1), 2px 3px 27px rgba(46, 46, 46, 0.15);
+  z-index: 2;
+  margin-top: -6.25rem;
+  margin-bottom: 1.25rem;
+  left: -0.625rem;
+}
+.card .content * {
+  color: black;
+}
+.card .content .border-wrapper {
+  margin: 0.625rem 0;
+  padding: 0.9375rem 0;
+  border: solid 1px #2e2e2e;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+.card .content h3 {
+  font-family: "Cardo", Georgia, Times, serif;
+  font-weight: bold;
+  font-size: 1.375rem;
+  letter-spacing: 0.065625rem;
+  margin-bottom: 0.625rem;
+}
+.card .content span {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.90625rem;
+}
+.card .content .desc {
+  line-height: 1.35;
+  letter-spacing: 0.1px;
+}
+.card .content .meta {
+  font-family: "Cardo", Georgia, Times, serif;
+  margin-top: 1.25rem;
+  font-size: 0.8125rem;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+.card .content .meta *:hover {
+  text-decoration: underline;
+}
+.card .content .meta .author {
+  float: left;
+  color: #919191;
+}
+.card .content .meta .date {
+  float: right;
+  font-style: italic;
+  color: #797979;
+}
