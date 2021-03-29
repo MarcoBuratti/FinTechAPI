@@ -1,46 +1,21 @@
-{% extends 'layout.html' %}
+{% extends 'index.html' %}
 
 {% block body %}
 
-<section id="bricks">
-<div class="row masonry">
-<div class="bricks-wrapper">
-    {% for n in news %}
-        <article class="brick entry format-standard">
-
-            <div class="entry-thumb">
-                   <img src="{{ n['urlToImage'] }}" alt="building">             
-            </div>
-        
-            <div class="entry-text">
-                <div class="entry-header">
-        
-                    <div class="entry-meta">
-                        <span class="cat-links">
-                            <a href="{{ n['url'] }}" target="_blank">Read more</a>               				
-                        </span>			
-                    </div>
-        
-                    <h1 class="entry-title">{{ n['title'] }}</h1>
-                    
-                </div>
-                <div class="entry-excerpt">
-                {{ n['description'] }}
-                </div>
-                <div class="entry-excerpt">
-                    Author: {{ n['author'] }}
-                </div>
-                <div class="entry-excerpt">
-                    Published at1: {{ n['publishedAt'] }}
-                    </div>
-            </div>
+<div class="container">
+    <h2>News</h2>
+    <div class="articles-container">
+        {% for n in news %}
+        <article class="card">
+            <img src="{{ n['urlToImage'] }}" alt="">
+            <div class="category category-ent">Financial</div>
+            <h3>
+                <a href="{{ n['url'] }}" target="_blank">{{ n['title'] }}</a>
+            </h3>
+            <p>{{ n['description'] }}</p>
         </article>
-
-    {% endfor %} 
+        {% endfor %}
+    </div>
 </div>
-</div>
-</section>
 
 {% endblock %}
-
-
