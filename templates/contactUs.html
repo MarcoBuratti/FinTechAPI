@@ -1,0 +1,65 @@
+{% extends 'index.html' %}
+
+{% block body %}
+
+<div class="articles">
+    <div class="my-row">
+        <div class="column">
+            <article class="about-us">
+                <section class="about-us", id="headquarters">
+                    <h3 class="about-us" , id="hq-title"><i class="fas fa-building"></i> Where we are</h3>
+                    <p class="about-us" , id="hq-address">
+                        You can find our head office at this address:<br>
+                        <i class="important">&copy;FinTech - Via Raffaele Lambruschini 4C, Building 26, 20156 Milano MI</i>
+                    </p>
+                    <div id="map"></div>
+                </section>
+            </article>
+        </div>
+
+        <div class="column">
+            <article class="contact-us">
+                <section class="about-us" , id="email-assistance">
+                    <h3 class="about-us" , id="about-us-email"><i class="fas fa-at"></i> Email Assistance</h3>
+                    <p class="about-us" , id="email-addresses">
+                        Write us at <a class="email-address" , href="mailto:assistance@fintech.com" ,
+                            target="_blank">assistance@fintech.com</a> in order to receive assistance.
+                    </p>
+                </section>
+                <section class="about-us" , id="phone-assistance">
+                    <h3 class="about-us" , id="about-us-phone"><i class="fas fa-phone"></i> Phone Numbers</h3>
+                    <p class="about-us" , id="phone-numbers">
+                        Call us at <a class="phone-number" , href="tel:+393391234567" , target="_blank">+39 339 12
+                            345 67</a> in order to receive assistance.
+                    </p>
+                </section>
+                <section class="contact-us">
+                    <h3 class="contact-us" , id="contact-us-title"><i class="fas fa-address-book"></i> Contact Us</h3>
+                    <form class="contact-us" , id="contact-us-form">
+                        <p class="contact-us" , id="name">
+                            Name*:<br>
+                        </p>
+                        <input class="contact-us" , id="name-input" , name="name" , type="text" ,
+                            placeholder="e.g. ''Mario Rossi''">
+                        <p class="contact-us" , id="email">
+                            Email*:<br>
+                        </p>
+                        <input class="contact-us" , id="email-input" , name="email" , type="email" ,
+                            placeholder="e.g. ''mario.rossi@gmail.com''">
+                        <p class="contact-us" , id="message">
+                            Message:<br>
+                        </p>
+                        <fieldset>
+                            <textarea class="contact-us" , id="message-textarea" , name="message" , cols="50" ,
+                                rows="10" , placeholder="Please type your message here."></textarea>
+                        </fieldset>
+                        <input class="contact-us" , id="submit-button" , value="Submit" , name="submit" ,
+                            type="submit">
+                    </form>
+                </section>
+            </article>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

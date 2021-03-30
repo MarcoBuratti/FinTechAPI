@@ -1,0 +1,196 @@
+.column {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.my-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.my-row {
+  width: 100%;
+}
+
+div.articles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+article.about-us{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+article.contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h3.about-us, h3#contact-us-title{
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+}
+
+p.about-us {
+  background-color: rgba(68, 65, 64, 0.8);
+  color: black;
+  width: 40vw;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  padding: 10px;
+  border-width: 5px;
+  border-color: grey;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.fas {
+  color: rgba(68, 65, 64, 0.8);
+}
+
+a.email-address, a.phone-number, i.important {
+  color: darkslategray;
+  font-style: italic;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+a.email-address:hover, a.phone-number:hover {
+  text-decoration: none;
+  color: white;
+}
+
+p.contact-us{
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  width: max-content;
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 1vh;
+}
+
+input.contact-us, textarea {
+  border-radius: 10px;
+  padding: 12px 15px;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: white;
+  color: slategrey;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-left: 0;
+}
+
+form.contact-us {
+  display: block;
+  text-align: center;  
+  background-color: rgba(68, 65, 64, 0.8);
+  color: black;
+  width: 40vw;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  padding: 10px;
+  border-width: 5px;
+  border-color: grey;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+
+textarea {
+  height: 10vh;
+  min-height: 100px;
+  resize: none;
+}
+
+
+input#submit-button {
+  background-color: rgba(68, 65, 64, 0.8);
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 5px;
+  border: 0px;
+  border-radius: 10px;
+  margin-top: 30px;
+  width: auto;
+}
+
+#map{
+  min-height: 25vw;
+  height: 55vh;
+  width: 40vw;
+  margin-top: 5vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+@media screen and (max-width: 800px) {
+
+.my-row {
+  width: 100%;
+}
+
+.column {
+  float: none;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10vh;
+}
+
+p.about-us {
+  width: 85vw;
+}
+
+article {
+  max-width: 100vw;
+}
+
+form.contact-us {
+  width: 85vw;
+}
+
+#map {
+  height: 85vw;
+  width: 85vw;
+}
+
+textarea {
+  resize: none;
+}
+
+}
+
+@media (max-width: 372px) {
+  #body {
+    padding-top: 30px;
+  }
+
+  .column {
+    float: none;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10vh;
+  }
+}

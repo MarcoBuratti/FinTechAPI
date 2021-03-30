@@ -1,21 +1,22 @@
 {% extends 'index.html' %}
 
 {% block body %}
-
-<div class="container">
-    <h2>News</h2>
-    <div class="articles-container">
-        {% for n in news %}
-        <article class="card">
-            <img src="{{ n['urlToImage'] }}" alt="">
-            <div class="category category-ent">Financial</div>
-            <h3>
-                <a href="{{ n['url'] }}" target="_blank">{{ n['title'] }}</a>
-            </h3>
-            <p>{{ n['description'] }}</p>
-        </article>
-        {% endfor %}
+<section id="home-articles" class="py-2">
+    <div class="container">
+        <h2>News</h2>
+        <div class="articles-container">
+            {% for n in news %}
+            <article class="card">
+                <img src="{{ n['urlToImage'] }}" alt="">
+                <div class="category category-ent">Financial</div>
+                <h3>
+                    <a href="{{ n['url'] }}" target="_blank">{{ n['title'] }}</a>
+                </h3>
+                <p>{{ n['description'] }}</p>
+            </article>
+            {% endfor %}
+        </div>
     </div>
-</div>
+</section>
 
 {% endblock %}

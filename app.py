@@ -36,7 +36,11 @@ def deleteUser(id):
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('home.html')
+
+@app.route('/contactUs')
+def contact():
+    return render_template('contactUs.html')
 
 class RegisterForm(Form):
     name = StringField('name', [validators.Length(min=1, max=50)])
