@@ -1,12 +1,16 @@
-{% extends 'layout.html' %}
+{% extends 'index.html' %}
 
 {% block body %}
-  <div class="jumbotron text-center">
-    <h1>Welcome To FlaskApp</h1>
-    <p class="lead">API FinTech Application</p>
-    {% if session.logged_in == NULL %}
-      <a href="/register" class="btn btn-primary btn-lg">Register</a>
-      <a href="/login" class="btn btn-success btn-lg">Login</a>
-    {% endif %}
+<header id="showcase">
+  <div class="container">
+    <div class="showcase-container">
+      <div class="showcase-content">
+        <div class="category category-sports">Sports</div>
+        <h1>Some Sports Article</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus rerum officia quibusdam mollitia deserunt animi soluta laudantium. Quam sapiente a dolorum magnam necessitatibus quis tempore facere totam. Dolor, sequi distinctio!</p>
+        <a href="article.html" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
   </div>
+</header>
 {% endblock %}

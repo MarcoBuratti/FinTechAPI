@@ -11,7 +11,6 @@ app.secret_key='secret123'
 conn = dbConnection()
 cursor = conn.cursor()
 
-
 @app.route('/getUser', methods=['GET'])
 def getUser():
     if request.method == 'GET':
@@ -38,6 +37,21 @@ def deleteUser(id):
 @app.route('/')
 def index():
     return render_template('home.html')
+    
+class CompanyForm(Form):
+    ticker = StringField('ticker', [validators.Length(min=1, max=50)])
+
+
+@app.route('/company', methods = ['GET','POST'])
+def getCompany():
+    form = CompanyForm(request.form)
+    if request.method == 'POST':
+        ticker = request.form['ticker']
+        
+    return render_template('company.html', form = form)
+@app.route('/contactUs')
+def contact():
+    return render_template('contactUs.html')
 
 class RegisterForm(Form):
     name = StringField('name', [validators.Length(min=1, max=50)])
@@ -52,7 +66,7 @@ def register():
         password = request.form['password']
         name = request.form['name']
         if len(mail) < 4:
-            return jsonify([{'response':'Email must be greater than three characters.'}])
+            flash('Email must be greater than three characters.', 'danger')
         elif len(name) < 2:
             return jsonify([{'response':'First name must be greater than one character.'}])
         elif len(password) < 6:
@@ -92,7 +106,6 @@ def login():
                 # Passed
                 session['logged_in'] = True
                 session['mail'] = mail
-                print(session)
 
                 flash('You are now logged in', 'success')
                 return render_template('home.html')
@@ -141,12 +154,12 @@ def news():
         response = requests.get(url)
         response = response.json()
         news = []
-        for i in range(5):
+        for i in range(len(response['articles'])):
             obj = {
             'title': response['articles'][i]['title'],
             'description':response['articles'][i]['description'],
             'author':response['articles'][i]['author'],
-            'publishedAt':response['articles'][i]['publishedAt'],
+            'publishedAt':response['articles'][i]['publishedAt'][:-10],
             'urlToImage':response['articles'][i]['urlToImage'],
             'url': response['articles'][i]['url']
             }
@@ -154,7 +167,6 @@ def news():
         return render_template('displayNews.html', news=news)
 
     return render_template('news.html', form=form)
-
 
 @app.route('/setDB')
 def setDB():
