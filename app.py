@@ -6,7 +6,6 @@ from wtforms import Form, StringField, TextAreaField, PasswordField, validators
 from functools import wraps
 import requests
 from utils.stock import *
-import yfinance as yf
 
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
