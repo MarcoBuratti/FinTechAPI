@@ -1,6 +1,5 @@
 from pandas_datareader import data as wb
 import pandas as pd
-from matplotlib import pyplot as plt
 import numpy as np
 import time
 from yahoofinancials import YahooFinancials
