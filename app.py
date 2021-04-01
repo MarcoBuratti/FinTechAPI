@@ -64,16 +64,23 @@ class RegisterForm(Form):
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
+    form = RegisterForm(request.form)
     if request.method == 'POST':
         mail = request.form['mail']
         password = request.form['password']
         name = request.form['name']
-        if len(mail) < 4:
-            flash('Email must be greater than three characters.', 'danger')
+        try:
+            cursor = conn.execute('SELECT id, mail FROM User WHERE mail=\'' + str(mail) + '\'')
+            result = [ dict(id=row[0], mail=row[1]) for row in cursor.fetchall() ]
+        except sqlite3.InterfaceError as e:
+            print(e)
+            
+        if len(mail) < 4 or  result != []:
+            flash('Email must be greater than three characters or the email addreas has been taken.', 'danger')
         elif len(name) < 2:
-            return jsonify([{'response':'First name must be greater than one character.'}])
+            flash('First name must be greater than one character.', 'danger')
         elif len(password) < 6:
-            return jsonify([{'response':'Password must be at least six characters.'}])
+            flash('Password must be at least six characters.', 'danger')
         else:
             name = '\''+ name + '\'' + ', '
             mail = name + '\''+ mail + '\'' + ', '
@@ -86,10 +93,10 @@ def register():
                 cursor = conn.execute( str(query) )
                 conn.commit()
             except sqlite3.IntegrityError as e:
-                return jsonify([{'error': str(e)}])
+                print(e) 
             flash('you are now register', 'success')
-            return render_template('home.html')
-    form = RegisterForm(request.form)
+            return render_template('login.html', form=form)
+
     return render_template('register.html', form=form)
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -138,7 +145,7 @@ def is_logged_in(f):
 def logout():
     session.clear()
     flash('You are now logged out', 'success')
-    return redirect(url_for('login'))
+    return redirect(url_for('index'))
 
 @app.route('/news', methods=['GET'])
 @is_logged_in
@@ -172,7 +179,6 @@ def news():
             news.append(o)
         
     return render_template('displayNews.html', news=news)
-
 
 @app.route('/setDB')
 def setDB():
