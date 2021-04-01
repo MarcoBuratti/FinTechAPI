@@ -11,9 +11,15 @@
       </form>
 
     <div class="container">
-      {% for t in ticker %}
-          <label for="fname"> {{ t }}</label><br>
-      {% endfor %}
+        <table class="table table-striped">
+            <th>Ticker</th><th>Full name</th>
+            {% for t in ticker %}
+            <tr>
+                <td>{{ t['ticker'] }}</td>
+                <td><a href="http://finance.yahoo.com/q?s={{ t['ticker'] }}">{{ t['name'] }}</a></td>
+            </tr>
+            {% endfor %}
+        </table>
     </div>
 
 {% endblock %}

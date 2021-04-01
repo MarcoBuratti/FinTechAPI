@@ -6,6 +6,7 @@ from wtforms import Form, StringField, TextAreaField, PasswordField, validators
 from functools import wraps
 import requests
 from utils.stock import *
+import yfinance as yf
 
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
@@ -247,7 +248,12 @@ def personalArea():
             except sqlite3.IntegrityError as e:
                 print(e)
 
-        return render_template('personalArea.html', ticker=tickerResult)
+        company_name = []
+        for t in tickerResult:
+            tickerName = yf.Ticker(t)
+            company_name.append(tickerName.info['longName'])
+        
+        return render_template('personalArea.html', ticker=tickerResult, name=company_name)
 
     mail = session['mail']
     try:
@@ -261,7 +267,17 @@ def personalArea():
     except sqlite3.IntegrityError as e:
         print(e)
 
-    return render_template('personalArea.html', ticker=tickerResult)
+    company_name = []
+    for t in tickerResult:
+        tickerName = yf.Ticker(t)
+        o = {
+            'name': tickerName.info['longName'],
+            'ticker': t
+        }
+        company_name.append(o)
+    
+    return render_template('personalArea.html', ticker=company_name)
+
 
 
 if __name__ == '__main__':  
