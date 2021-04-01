@@ -140,36 +140,39 @@ def logout():
     flash('You are now logged out', 'success')
     return redirect(url_for('login'))
 
-class NewsForm(Form):
-    company = StringField('company', [validators.Length(min=1, max=50)])
-    ticker = StringField('ticker', [validators.Length(min=6, max=50)])
-    confirm = PasswordField('Confirm Password')    
-
-@app.route('/news', methods=['GET', 'POST'])
+@app.route('/news', methods=['GET'])
 @is_logged_in
 def news():
-    form = NewsForm(request.form)
-    if request.method == 'POST':
-        company = request.form['company']
-        ticker = request.form['ticker']
-        
-        url = ('https://newsapi.org/v2/everything?q=' + str(company) + '&domains=bloomberg.com&apiKey=923719faca26405ab3062a0dcfd400ae')
-        response = requests.get(url)
-        response = response.json()
-        news = []
-        for i in range(len(response['articles'])):
-            obj = {
-            'title': response['articles'][i]['title'],
-            'description':response['articles'][i]['description'],
-            'author':response['articles'][i]['author'],
-            'publishedAt':response['articles'][i]['publishedAt'][:-10],
-            'urlToImage':response['articles'][i]['urlToImage'],
-            'url': response['articles'][i]['url']
-            }
-            news += [obj]
-        return render_template('displayNews.html', news=news)
+    mail = session['mail']
+    try:
+        cursor = conn.execute('SELECT id FROM User WHERE mail=\'' + str(mail) + '\'')
+        userID = str(cursor.fetchall()[0][0])
+    except sqlite3.InterfaceError as e:
+            print(e)
+    try:
+        cursor = conn.execute('SELECT ticker FROM UserPF WHERE id=\'' + userID + '\'')
+        tickerResult = [ row[0] for row in cursor.fetchall() ]
+    except sqlite3.IntegrityError as e:
+        print(e)
 
-    return render_template('news.html', form=form)
+    news = []
+    for t in tickerResult:
+        url = 'https://financialmodelingprep.com/api/v3/stock_news?tickers=' + t + '&limit=50&apikey=1c0254f41fa369f54c93e476c375529e' 
+        response = requests.get(url).json()
+        for i in range(2):
+            o = {
+            'title': response[i]['title'],
+            'description':response[i]['text'],
+            'author':response[i]['site'],
+            'publishedAt':response[i]['publishedDate'][:-10],
+            'urlToImage':response[i]['image'],
+            'url': response[i]['url'],
+            'symbol': response[i]['symbol']
+            }
+            news.append(o)
+        
+    return render_template('displayNews.html', news=news)
+
 
 @app.route('/setDB')
 def setDB():
@@ -284,7 +287,6 @@ def personalArea():
         company_name.append(o)
     
     return render_template('personalArea.html', ticker=company_name)
-
 
 
 if __name__ == '__main__':  

@@ -3,14 +3,14 @@
 {% block body %}
 <section id="home-articles" class="py-2">
     <div class="container">
-        <h2>News</h2>
+        <h2>Your Financial News</h2>
         <div class="articles-container">
             {% for n in news %}
             <article class="card">
                 <img src="{{ n['urlToImage'] }}" alt="">
                 <div class="category category-ent">Financial</div>
                 <h3>
-                    <a href="{{ n['url'] }}" target="_blank">{{ n['title'] }}</a>
+                    <a href="{{ n['url'] }}" target="_blank">{{ n['symbol'] }}: {{ n['title'] }}</a>
                 </h3>
                 <p>{{ n['description'] }}</p>
             </article>
