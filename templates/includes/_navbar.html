@@ -4,8 +4,11 @@
     <ul class="nav navbar-nav navbar-right">
       <li><a href="/">Home</a></li>
       {% if session.logged_in %}
+      <li><a href="/quant">Portfolio</a></li>
+      <li><a href="/news">Financials</a></li>
       <li><a href="/news">News</a></li>
       <li><a href="/logout">Logout</a></li>
+      <li><a href="/personal-area">Personal Area</a></li>
       {% else %}
       <li><a href="/register">Register</a></li>
       <li><a href="/login">Login</a></li>

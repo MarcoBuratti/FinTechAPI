@@ -13,7 +13,7 @@ userTable = """ CREATE TABLE User (
 )"""
 
 userPortfolioTable = """ CREATE TABLE UserPF (
-    id INT PRIMARY KEY,
+    id INT NOT NULL,
     ticker CHAR(500) NOT NULL
 )"""
 

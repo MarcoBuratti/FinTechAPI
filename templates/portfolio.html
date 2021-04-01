@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+
+{% block body %}
+    <section id="home-articles" class="py-2">
+        <div class="container">
+            <h2>Portfolio</h2>
+            {% for message in messages %}
+                <div class="articles-container">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+
+{%  endblock %}

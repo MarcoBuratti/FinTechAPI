@@ -5,11 +5,14 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from wtforms import Form, StringField, TextAreaField, PasswordField, validators
 from functools import wraps
 import requests
+from utils.stock import *
+
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
 app.secret_key='secret123'
 conn = dbConnection()
 cursor = conn.cursor()
+stock = Stock()
 
 @app.route('/getUser', methods=['GET'])
 def getUser():
@@ -165,6 +168,90 @@ def setDB():
     except sqlite3.IntegrityError as e:
         print(e)
     return jsonify([{'response':'Set the DB'}])
+
+@app.route('/quant', methods=['GET'])
+@is_logged_in
+def portfolio():
+    mail = session['mail']
+    try:
+        cursor = conn.execute('SELECT id FROM User WHERE mail=\'' + str(mail) + '\'')
+        userID = str(cursor.fetchall()[0][0])
+    except sqlite3.InterfaceError as e:
+            print(e)
+    try:
+        cursor = conn.execute('SELECT ticker FROM UserPF WHERE id=\'' + userID + '\'')
+        tickerResult = [ row[0] for row in cursor.fetchall() ]
+        weights = [ 1/len(tickerResult) for elem in tickerResult ]
+    except sqlite3.IntegrityError as e:
+        print(e)
+
+    stock.initData(tickerResult, weights)
+    annualReturnW, volatility, amount = stock.recapPortfolio()
+    annual_returns, tickers = stock.recapStock()
+    messages = []
+    messages.append('The annual return of the portfolio is: ' + str(round(annualReturnW, 3)) + '%\n' + 'The volatility of the porfolio is: ' + str( round( (volatility*100), 2) ) + '%\n' + 'The amount of your portfolio is: ' + str( round(amount, 2) ) + '$\n')
+    for i in range(len(annual_returns)):
+        messages.append('The single annual return of the stock ' + tickers[i] + ' is ' + str( round(annual_returns.get(i)*100, 2) ) + '%\n' )
+    
+    return render_template('portfolio.html', messages=messages)
+
+@app.route('/personal-area', methods=['GET', 'POST'])
+@is_logged_in
+def personalArea():
+    if request.method == 'POST':
+        mail = session['mail']
+        try:
+            cursor = conn.execute('SELECT id FROM User WHERE mail=\'' + str(mail) + '\'')
+            userID = str(cursor.fetchall()[0][0])
+        except sqlite3.InterfaceError as e:
+            print(e)
+        addTicker = request.form['addTicker']
+        if len(addTicker) > 0:
+            addTicker = '\'' + str(addTicker.upper()) + '\''
+
+            try:
+                query = 'INSERT INTO UserPF (id, ticker) VALUES ( ' + userID + ', ' + addTicker + ')'
+                cursor = conn.execute( query )
+                conn.commit()
+            except sqlite3.IntegrityError as e:
+                print(e)
+            try:
+                cursor = conn.execute('SELECT ticker FROM UserPF WHERE id=\'' + userID + '\'')
+                tickerResult = [ row[0] for row in cursor.fetchall() ]
+            except sqlite3.IntegrityError as e:
+                print(e)
+        
+        delTicker = request.form['delTicker']
+        if len(delTicker) > 0:
+            delTicker = '\'' + str(delTicker.upper()) + '\''
+            try:
+                query = 'DELETE FROM UserPF WHERE id=' + userID + ' and ticker=' + delTicker
+                cursor =  conn.execute( query )
+                conn.commit()
+            except sqlite3.IntegrityError as e:
+                print(e)
+            try:
+                cursor = conn.execute('SELECT ticker FROM UserPF WHERE id=\'' + userID + '\'')
+                tickerResult = [ row[0] for row in cursor.fetchall() ]
+            except sqlite3.IntegrityError as e:
+                print(e)
+
+        return render_template('personalArea.html', ticker=tickerResult)
+
+    mail = session['mail']
+    try:
+        cursor = conn.execute('SELECT id FROM User WHERE mail=\'' + str(mail) + '\'')
+        userID = str(cursor.fetchall()[0][0])
+    except sqlite3.InterfaceError as e:
+            print(e)
+    try:
+        cursor = conn.execute('SELECT ticker FROM UserPF WHERE id=\'' + userID + '\'')
+        tickerResult = [ row[0] for row in cursor.fetchall() ]
+    except sqlite3.IntegrityError as e:
+        print(e)
+
+    return render_template('personalArea.html', ticker=tickerResult)
+
 
 if __name__ == '__main__':  
     app.run()

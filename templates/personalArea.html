@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+
+{% block body %}
+      <h1>Modify your personal Area</h1>
+      <form action="" method="POST">
+          <label for="fname">Add Ticker to your list:</label>
+          <input type="text" id="fname" name="addTicker"><br><br>
+          <label for="fname">Delete Ticker from your list:</label>
+          <input type="text" id="fname" name="delTicker"><br><br>
+          <button type="submit" class="btn btn-primary">Submit</button>         
+      </form>
+
+    <div class="container">
+      {% for t in ticker %}
+          <label for="fname"> {{ t }}</label><br>
+      {% endfor %}
+    </div>
+
+{% endblock %}
+
