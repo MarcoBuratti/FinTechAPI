@@ -12,11 +12,12 @@
 
     <div class="container">
         <table class="table table-striped">
-            <th>Ticker</th><th>Full name</th>
+            <th>Ticker</th><th>Full name</th><th>Exchange</th>
             {% for t in ticker %}
             <tr>
                 <td>{{ t['ticker'] }}</td>
-                <td><a href="http://finance.yahoo.com/q?s={{ t['ticker'] }}">{{ t['name'] }}</a></td>
+                <td>{{ t['name'] }}</td>
+                <td>{{ t['exchange'] }}</td>
             </tr>
             {% endfor %}
         </table>

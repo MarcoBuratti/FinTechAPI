@@ -250,10 +250,16 @@ def personalArea():
 
         company_name = []
         for t in tickerResult:
-            tickerName = yf.Ticker(t)
-            company_name.append(tickerName.info['longName'])
+            url = "http://d.yimg.com/autoc.finance.yahoo.com/autoc?query={}&region=1&lang=en".format(t)
+            result = requests.get(url).json()['ResultSet']['Result'][0]
+            o = {
+                'name': result['name'],
+                'ticker': result['symbol'],
+                'exchange': result['exchDisp']
+            }
+            company_name.append(o)
         
-        return render_template('personalArea.html', ticker=tickerResult, name=company_name)
+        return render_template('personalArea.html', ticker=company_name)
 
     mail = session['mail']
     try:
@@ -269,10 +275,12 @@ def personalArea():
 
     company_name = []
     for t in tickerResult:
-        tickerName = yf.Ticker(t)
+        url = "http://d.yimg.com/autoc.finance.yahoo.com/autoc?query={}&region=1&lang=en".format(t)
+        result = requests.get(url).json()['ResultSet']['Result'][0]
         o = {
-            'name': tickerName.info['longName'],
-            'ticker': t
+            'name': result['name'],
+            'ticker': result['symbol'],
+            'exchange': result['exchDisp']
         }
         company_name.append(o)
     
