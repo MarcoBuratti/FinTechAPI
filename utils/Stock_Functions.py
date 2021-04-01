@@ -2,7 +2,7 @@ from pandas_datareader import data as wb
 from yahoofinancials import YahooFinancials
 import pandas as pd
 import numpy as np
-from matplotlib import pyplot as plt
+#from matplotlib import pyplot as plt
 
 # Select data from database
 def portfolio(tickers):
@@ -48,6 +48,7 @@ def pfCorr(mydata):
     return returns(mydata).corr() 
 
 # Plot trend
+"""
 def recap(x, y):
     plt.plot(x, y)
     plt.annotate( str( int(y[-1]) ), (250, y[-1]) )
@@ -75,6 +76,7 @@ def stockMarkovitz(portfolios, pfpuntoMaxRet, pfpuntoMinVol, sharpeMax):
     plt.scatter( x = pfpuntoMinVol['Volatility'], y = pfpuntoMinVol['Return'], c = 'r')
     plt.savefig('./img/frontier.png')
     plt.close('all')
+"""
 
 #calculate a portfolio annual return
 def dailyReturn(mydata):
