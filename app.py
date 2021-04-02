@@ -209,7 +209,8 @@ def portfolio():
     annualReturnW, volatility, amount = stock.recapPortfolio()
     annual_returns, tickers = stock.recapStock()
     messages = []
-    messages.append('The annual return of the portfolio is: ' + str(round(annualReturnW, 3)) + '%\n' + 'The volatility of the porfolio is: ' + str( round( (volatility*100), 2) ) + '%\n' + 'The amount of your portfolio is: ' + str( round(amount, 2) ) + '$\n')
+    messages.append('The annual return of the portfolio is: ' + str(round(annualReturnW, 3)) + '%\n')
+    messages.append('The volatility of the porfolio is: ' + str( round( (volatility*100), 2) ) + '%\n' + 'The amount of your portfolio is: ' + str( round(amount, 2) ) + '$\n')
     for i in range(len(annual_returns)):
         messages.append('The single annual return of the stock ' + tickers[i] + ' is ' + str( round(annual_returns.get(i)*100, 2) ) + '%\n' )
     
@@ -294,6 +295,10 @@ def personalArea():
     
     return render_template('personalArea.html', ticker=company_name)
 
+@app.errorhandler(404)
+def page_not_found(e):
+    # note that we set the 404 status explicitly
+    return render_template('404.html'), 404
 
 if __name__ == '__main__':  
     app.run()
