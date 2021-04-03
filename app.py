@@ -294,7 +294,7 @@ def personalArea():
     
     return render_template('personalArea.html', ticker=company_name)
 
-@app.route('/financials', methods=['GET'])
+@app.route('/financials', methods=['GET', 'POST'])
 @is_logged_in
 def financials():
     mail = session['mail']
@@ -309,12 +309,15 @@ def financials():
     except sqlite3.IntegrityError as e:
         print(e)
 
-    #graphJSON = []
-    #for t in tickerResult:
-    #    graphJSON.append(dcf(t))
+    if request.method == 'POST':
+        ticker = request.form.get('comp_select') #request.form['ticker']
+        graphJSON = dcf(ticker)
 
-    graphJSON = dcf(tickerResult[0])
-    return render_template('financials.html', plot=graphJSON)
+        #graphJSON = dcf(tickerResult[0])
+        return render_template('financials.html', plot=graphJSON, ticker=tickerResult)
+    
+    return render_template('financials.html', ticker=tickerResult)
+    
 
 @app.errorhandler(404)
 def page_not_found(e):
