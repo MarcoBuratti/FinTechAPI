@@ -6,7 +6,7 @@ from wtforms import Form, StringField, TextAreaField, PasswordField, validators
 from functools import wraps
 import requests
 from utils.stock import *
-
+from utils.dcf import *
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
 app.secret_key='secret123'
@@ -43,7 +43,6 @@ def index():
     
 class CompanyForm(Form):
     ticker = StringField('ticker', [validators.Length(min=1, max=50)])
-
 
 @app.route('/company', methods = ['GET','POST'])
 def getCompany():
@@ -294,6 +293,28 @@ def personalArea():
         company_name.append(o)
     
     return render_template('personalArea.html', ticker=company_name)
+
+@app.route('/financials', methods=['GET'])
+@is_logged_in
+def financials():
+    mail = session['mail']
+    try:
+        cursor = conn.execute('SELECT id FROM User WHERE mail=\'' + str(mail) + '\'')
+        userID = str(cursor.fetchall()[0][0])
+    except sqlite3.InterfaceError as e:
+            print(e)
+    try:
+        cursor = conn.execute('SELECT ticker FROM UserPF WHERE id=\'' + userID + '\'')
+        tickerResult = [ row[0] for row in cursor.fetchall() ]
+    except sqlite3.IntegrityError as e:
+        print(e)
+
+    #graphJSON = []
+    #for t in tickerResult:
+    #    graphJSON.append(dcf(t))
+
+    graphJSON = dcf(tickerResult[0])
+    return render_template('financials.html', plot=graphJSON)
 
 @app.errorhandler(404)
 def page_not_found(e):
