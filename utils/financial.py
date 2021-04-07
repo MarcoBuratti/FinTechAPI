@@ -2,7 +2,6 @@ import pandas as pd     #(version 1.0.0)
 import plotly           #(version 4.5.0)
 import plotly.express as px
 import plotly.graph_objects as go
-import dash             #(version 1.8.0)
 from requests import get
 from pandas import DataFrame
 import json
