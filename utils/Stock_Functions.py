@@ -2,14 +2,17 @@ from pandas_datareader import data as wb
 from yahoofinancials import YahooFinancials
 import pandas as pd
 import numpy as np
-#from matplotlib import pyplot as plt
+
+import plotly.graph_objects as go
+import plotly.express as px
+import plotly
+import json
 
 # Select data from database
-def portfolio(tickers):
+def portfolio(t):
     print('Downloading data....')
     mydata = pd.DataFrame()
-    for t in tickers:
-        mydata[t]= wb.DataReader(t,data_source='yahoo', start='2020-01-01', end='2020-12-31')['Adj Close']
+    mydata[t]= wb.DataReader(t,data_source='yahoo', start='2020-01-02', end='2020-12-31')['Adj Close']
     return mydata    
     
 def SP500():
@@ -66,17 +69,58 @@ def stockRecap(mydata, tickers):
     plt.xlabel('Days')
     plt.savefig('./img/stock.png')
     plt.close('all')
-
-def stockMarkovitz(portfolios, pfpuntoMaxRet, pfpuntoMinVol, sharpeMax):
-    portfolios.plot( x = 'Volatility', y = 'Return', kind = 'scatter', figsize = (10,6) )
-    plt.scatter(portfolios['Volatility'], portfolios['Return'], c=portfolios['sharpe'], cmap='viridis')
-    plt.colorbar(label='Sharpe Ratio')
-    plt.scatter( x = pfpuntoMaxRet['Volatility'], y = pfpuntoMaxRet['Return'], c = 'r')
-    plt.scatter( x = sharpeMax['Volatility'], y = sharpeMax['Return'], c = 'r')
-    plt.scatter( x = pfpuntoMinVol['Volatility'], y = pfpuntoMinVol['Return'], c = 'r')
-    plt.savefig('./img/frontier.png')
-    plt.close('all')
 """
+def stockMarkovitz(portfolios, pfpuntoMaxRet, pfpuntoMinVol, sharpeMax, riskFree, tickers):
+    
+    m = (sharpeMax['Return']- riskFree)/ (sharpeMax['Volatility'])
+    xGreen = pfpuntoMinVol['Volatility']/1.2
+    yGreen = m * (xGreen) + riskFree
+    label = ''
+    for i in range(len(sharpeMax['weig_list'])):
+        label += tickers[i] + ': ' + str(round(sharpeMax['weig_list'][i]*100, 3)) + '%\n'
+    label += 'Porftofolio return: ' + str(round( sharpeMax['Return']*100, 3)) + '%\n'
+    label += 'Porftofolio risk: ' + str(round( sharpeMax['Volatility']*100, 3)) + '%\n'
+
+    fig = px.scatter(portfolios, x="Volatility", y="Return", color='sharpe',
+                      width=800,                   # figure width in pixels
+                      height=600,                   # figure height in pixels 
+                     )
+    fig.add_trace(
+      go.Scatter(
+          x=[xGreen, sharpeMax['Volatility']],
+          y=[yGreen, sharpeMax['Return']],
+          mode="lines",
+          line=go.scatter.Line(color="green"),
+          showlegend=False
+        )
+    )
+    fig.add_trace(
+      go.Scatter(
+          x=[sharpeMax['Volatility'], sharpeMax['Volatility']],
+          y=[sharpeMax['Return'], sharpeMax['Return']],
+          marker= dict(size=15),
+          text=label,
+          line=go.scatter.Line(color="green"),
+          showlegend=False
+        )
+    )
+    label = ''
+    for i in range(len(pfpuntoMinVol['weig_list'])):
+        label += tickers[i] + ': ' + str(round(pfpuntoMinVol['weig_list'][i]*100, 3)) + '%\n'
+    label += 'Porftofolio return: ' + str(round( pfpuntoMinVol['Return']*100, 3)) + '%\n'
+    label += 'Porftofolio risk: ' + str(round( pfpuntoMinVol['Volatility']*100, 3)) + '%\n'
+    fig.add_trace(
+      go.Scatter(
+          x=[pfpuntoMinVol['Volatility'], pfpuntoMinVol['Volatility']],
+          y=[pfpuntoMinVol['Return'], pfpuntoMinVol['Return']],
+          marker= dict(size=15),
+          text=label,
+          line=go.scatter.Line(color="green"),
+          showlegend=False
+        )
+    )
+    #fig.show()
+    return json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
 
 #calculate a portfolio annual return
 def dailyReturn(mydata):
@@ -93,5 +137,5 @@ def dailyReturn(mydata):
         new_list.append(j)
         i+=1
         day_list.append(i)
-    l = [10000 + (x * 10000) for x in new_list]
+    l = [1 + (x * 1) for x in new_list]
     return day_list, l

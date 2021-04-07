@@ -1,35 +1,43 @@
 {% extends 'index.html' %}
 
 {% block body %}
-
-
-<form class="form-inline" method="POST">
-    <div class="form-group">
-      <div class="input-group">
-          <span class="input-group-addon">Please select one ticker to get Financial Data: </span>
-              <select name="comp_select" class="selectpicker form-control">
+    <form method="POST">
+        <div class="form-row d-flex align-items-center py-5">
+        <div class="col">
+            <label class="mr-sm-2" for="inlineFormCustomSelect">Please select one ticker to get Financial Data:</label>
+            <select class="custom-select mr-sm-2" name="ticker" id="inlineFormCustomSelect">
+            <option selected>Choose...</option>
                 {% for o in ticker %}
-                <option value="{{ o }}">{{ o }}</option>
+                    <option value="{{ o }}">{{ o }}</option>
                 {% endfor %}
-              </select>
-      </div>
-      <button type="submit" class="btn btn-default">Go</button>
-    </div>
-  </form>
+            </select>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        </div>
+    </form>
 
+    <div class="row">
+        <div class="col-6 col-md-4">
+            <section id="home-articles" class="py-2">
+                <div class="container">
+                    <h2>Your Financial News</h2>
+                    <div class="articles-container">   
+                        <div class="chart" id="bargraph">
+                            <script>
+                                var graphs = {{ plot|safe }};
+                                Plotly.plot('bargraph',graphs,{});
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>  
 
-<section id="home-articles" class="py-2">
-    <div class="container">
-        <h2>Your Financial News</h2>
-        <div class="articles-container">   
-            <div class="chart" id="bargraph">
-                <script>
-                    var graphs = {{ plot|safe }};
-                    Plotly.plot('bargraph',graphs,{});
-                </script>
-            </div>
+        <div class="col-12 col-md-8"><br><br>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi temporibus earum placeat repellat ut possimus eius dolorum, et neque minus. Soluta in odio qui, nesciunt ipsa placeat! Alias, unde dolor.
+            </p>
         </div>
     </div>
-</section>
 
 {% endblock %}

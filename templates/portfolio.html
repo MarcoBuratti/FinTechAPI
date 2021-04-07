@@ -3,13 +3,15 @@
 {% block body %}
     <section id="home-articles" class="py-2">
         <div class="container">
-            <h2>Portfolio</h2>
-            {% for message in messages %}
-                <div class="articles-container">
-                    {{ message }}
+            <h2>Your Financial News</h2>
+            <div class="articles-container">   
+                <div class="chart" id="bargraph">
+                    <script>
+                        var graphs = {{ plot|safe }};
+                        Plotly.plot('bargraph',graphs,{});
+                    </script>
                 </div>
-            {% endfor %}
+            </div>
         </div>
     </section>
-    
 {%  endblock %}

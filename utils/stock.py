@@ -61,7 +61,6 @@ class Stock:
     #Markowitz Portfolio Optimization
     def markovitz(self):
         covRetLog = pfCov(self.mydata)
-        corrRetLog = pfCorr(self.mydata)
         num_assets = len(self.tickers)
         appendPfRet = returns(self.mydata).mean() * 250
 
@@ -97,7 +96,7 @@ class Stock:
         pfpuntoMinVol  = portfolios.iloc[minVolatilityPf]
         pfpuntoSharpe = portfolios.iloc[sharpeMax]
         #plot efficient frontier 
-        stockMarkovitz(portfolios, pfpuntoMaxRet, pfpuntoMinVol, pfpuntoSharpe)
-
-        return  pfpuntoMaxRet, pfpuntoMinVol, pfpuntoSharpe, self.tickers
+        fig = stockMarkovitz(portfolios, pfpuntoMaxRet, pfpuntoMinVol, pfpuntoSharpe,  self.getYR10(), self.getTickers())
+        return fig
+        #return  pfpuntoMaxRet, pfpuntoMinVol, pfpuntoSharpe, self.tickers
     

@@ -7,6 +7,7 @@ from functools import wraps
 import requests
 from utils.stock import *
 from utils.dcf import *
+from utils.financial import *
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
 app.secret_key='secret123'
@@ -51,19 +52,13 @@ def getCompany():
         ticker = request.form['ticker']
         
     return render_template('company.html', form = form)
+
 @app.route('/contactUs')
 def contact():
     return render_template('contactUs.html')
 
-class RegisterForm(Form):
-    name = StringField('name', [validators.Length(min=1, max=50)])
-    mail = StringField('mail', [validators.Length(min=6, max=50)])
-    password = PasswordField('password', [validators.Length(min=6, max=50)])
-    confirm = PasswordField('Confirm Password')
-
 @app.route('/register', methods=['GET', 'POST'])
 def register():
-    form = RegisterForm(request.form)
     if request.method == 'POST':
         mail = request.form['mail']
         password = request.form['password']
@@ -94,13 +89,12 @@ def register():
             except sqlite3.IntegrityError as e:
                 print(e) 
             flash('you are now register', 'success')
-            return render_template('login.html', form=form)
+            return render_template('login.html')
 
-    return render_template('register.html', form=form)
+    return render_template('register.html')
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    form = RegisterForm(request.form)
     if request.method == 'POST':
         mail = request.form['mail']
         password_user = request.form['password']
@@ -120,12 +114,12 @@ def login():
                 return render_template('home.html')
             else:
                 error = 'Invalid mail or password'
-                return render_template('login.html', error=error, form=form)
+                return render_template('login.html', error=error)
         except sqlite3.DatabaseError as e:
             print(e)
             error = 'Mail not found'
-            return render_template('home.html', error=error)
-    return render_template('login.html', form=form)
+            return render_template('home.html')
+    return render_template('login.html')
 
 # Check if user logged in
 def is_logged_in(f):
@@ -163,9 +157,10 @@ def news():
 
     news = []
     for t in tickerResult:
-        url = 'https://financialmodelingprep.com/api/v3/stock_news?tickers=' + t + '&limit=50&apikey=1c0254f41fa369f54c93e476c375529e' 
+        url = 'https://financialmodelingprep.com/api/v3/stock_news?tickers=' + t + '&limit=50&apikey=ee017fc9ea512948dafef934f2fc8565' 
         response = requests.get(url).json()
-        for i in range(2):
+        sublist = []
+        for i in range(3):
             o = {
             'title': response[i]['title'],
             'description':response[i]['text'],
@@ -175,7 +170,9 @@ def news():
             'url': response[i]['url'],
             'symbol': response[i]['symbol']
             }
-            news.append(o)
+            #news.append(o)
+            sublist.append(o)
+        news.append(sublist)
         
     return render_template('displayNews.html', news=news)
 
@@ -205,15 +202,9 @@ def portfolio():
         print(e)
 
     stock.initData(tickerResult, weights)
-    annualReturnW, volatility, amount = stock.recapPortfolio()
-    annual_returns, tickers = stock.recapStock()
-    messages = []
-    messages.append('The annual return of the portfolio is: ' + str(round(annualReturnW, 3)) + '%\n')
-    messages.append('The volatility of the porfolio is: ' + str( round( (volatility*100), 2) ) + '%\n' + 'The amount of your portfolio is: ' + str( round(amount, 2) ) + '$\n')
-    for i in range(len(annual_returns)):
-        messages.append('The single annual return of the stock ' + tickers[i] + ' is ' + str( round(annual_returns.get(i)*100, 2) ) + '%\n' )
+    graphJSON = stock.markovitz()
     
-    return render_template('portfolio.html', messages=messages)
+    return render_template('portfolio.html', plot=graphJSON)
 
 @app.route('/personal-area', methods=['GET', 'POST'])
 @is_logged_in
@@ -308,16 +299,20 @@ def financials():
         tickerResult = [ row[0] for row in cursor.fetchall() ]
     except sqlite3.IntegrityError as e:
         print(e)
-
+    
     if request.method == 'POST':
-        ticker = request.form.get('comp_select') #request.form['ticker']
-        graphJSON = dcf(ticker)
-
-        #graphJSON = dcf(tickerResult[0])
-        return render_template('financials.html', plot=graphJSON, ticker=tickerResult)
+        ticker = request.form.get('ticker')
+        finHealth1, finHealth2 = draw_bars(ticker)
+        description = getDescription(ticker)
+        revenues = draw_lines(ticker)
+        indicator1, indicator2, indicator3 = draw_indicators(ticker)
+        return render_template('financials-copy.html', fig1=finHealth1, fig2=finHealth2, ticker=tickerResult, result=ticker, description=description, revenues=revenues, indicator1=indicator1, indicator2=indicator2, indicator3=indicator3)
     
-    return render_template('financials.html', ticker=tickerResult)
-    
+    indicator1, indicator2, indicator3 = draw_indicators(tickerResult[0])
+    description = getDescription(tickerResult[0])
+    finHealth1, finHealth2 = draw_bars(tickerResult[0])
+    revenues = draw_lines(tickerResult[0])
+    return render_template('financials-copy.html', fig1=finHealth1, fig2=finHealth2, ticker=tickerResult, result=tickerResult[0], description=description, revenues=revenues, indicator1=indicator1, indicator2=indicator2, indicator3=indicator3)
 
 @app.errorhandler(404)
 def page_not_found(e):

@@ -1,0 +1,143 @@
+{% extends 'index.html' %}
+
+{% block body %}
+  <div class="container py-3">
+      <form method="POST">
+          <div class="form-row d-flex align-items-center py-5">
+          <div class="col">
+              <label class="mr-sm-2" for="inlineFormCustomSelect">Please select one ticker to get Financial Data:</label>
+              <select class="custom-select mr-sm-2" name="ticker" id="inlineFormCustomSelect">
+              <option selected>Choose...</option>
+                  {% for o in ticker %}
+                      <option value="{{ o }}">{{ o }}</option>
+                  {% endfor %}
+              </select>
+              <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+          </div>
+      </form>
+      <!-- Card Description -->
+      <div class="card">
+        <div class="row ">
+          <div class="col">
+            <div class="card-block px-6">
+              <h4 class="card-title">Those data are about {{ result }} </h4>
+              <p class="card-text">
+                {{ description }}
+              </p>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  
+  <div class="container py-3">
+    <div class="card">
+      <div class="row">
+        <div class="col">
+          <section id="home-articles" class="py-2">
+              <div class="container">
+                  <div class="articles-container">   
+                      <div class="chart" id="revenues">
+                          <script>
+                              var graphs = {{ revenues|safe }};
+                              Plotly.plot('revenues',graphs,{});
+                          </script>
+                      </div>
+                  </div>
+              </div>
+            </section>
+        </div> 
+        </div>
+    </div> 
+  </div>
+
+  <!-- Card Display -->
+  <div class="container py-3">
+    <div class="card">
+      <div class="row">
+        <div class="col">
+          <section id="home-articles" class="py-2">
+              <div class="container">
+                  <div class="articles-container">   
+                      <div class="chart" id="bar1">
+                          <script>
+                              var graphs = {{ fig1|safe }};
+                              Plotly.plot('bar1',graphs,{});
+                          </script>
+                      </div>
+                  </div>
+              </div>
+            </section>
+        </div>
+        <div class="col">
+          <section id="home-articles" class="py-2">
+              <div class="container">
+                  <div class="articles-container">   
+                      <div class="chart" id="bar2">
+                          <script>
+                              var graphs = {{ fig2|safe }};
+                              Plotly.plot('bar2',graphs,{});
+                          </script>
+                      </div>
+                  </div>
+              </div>
+            </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-3">
+    <div class="card">
+      <div class="row">
+        <div class="col">
+          <section id="home-articles" class="py-2">
+              <div class="container">
+                  <div class="articles-container">   
+                      <div class="chart" id="indicator1">
+                          <script>
+                              var graphs = {{ indicator1|safe }};
+                              Plotly.plot('indicator1',graphs,{});
+                          </script>
+                      </div>
+                  </div>
+              </div>
+            </section>
+        </div>
+        <div class="col">
+          <section id="home-articles" class="py-2">
+              <div class="container">
+                  <div class="articles-container">   
+                      <div class="chart" id="indicator2">
+                          <script>
+                              var graphs = {{ indicator2|safe }};
+                              Plotly.plot('indicator2',graphs,{});
+                          </script>
+                      </div>
+                  </div>
+              </div>
+          </section>
+        </div>
+        <div class="col">
+          <section id="home-articles" class="py-2">
+              <div class="container">
+                  <div class="articles-container">   
+                      <div class="chart" id="indicator3">
+                          <script>
+                              var graphs = {{ indicator3|safe }};
+                              Plotly.plot('indicator3',graphs,{});
+                          </script>
+                      </div>
+                  </div>
+              </div>
+            </section>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <br>
+  <br>
+{% endblock %}

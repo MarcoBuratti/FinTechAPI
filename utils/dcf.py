@@ -5,8 +5,6 @@ import plotly.io as pio
 import plotly
 import json
 
-from flask import Flask, render_template #this has changed
-
 def dcf(ticker):
     balance_sheet = get('https://financialmodelingprep.com/api/v3/balance-sheet-statement/' + ticker + '?limit=120&apikey=c02b588f1788d81805c7d379c213079e').json()
 
@@ -33,7 +31,6 @@ def dcf(ticker):
         width=500,                   # figure width in pixels
         height=400,                   # figure height in pixels
         template='gridon',            # 'ggplot2', 'seaborn', 'simple_white', 'plotly',
-
     )
 
     return json.dumps(barchart, cls=plotly.utils.PlotlyJSONEncoder)
