@@ -1,0 +1,600 @@
+[
+    {
+        "name": "Consumer Cyclical",
+        "children": [
+            {
+                "name": "Amazon.com Inc",
+                "size": 1651385960000
+            },
+            {
+                "name": "Tesla Inc",
+                "size": 644033220000
+            },
+            {
+                "name": "Trip.com Group Ltd",
+                "size": 186621772000
+            },
+            {
+                "name": "Pinduoduo Inc",
+                "size": 172767904000
+            },
+            {
+                "name": "Starbucks Corp",
+                "size": 133258584000
+            },
+            {
+                "name": "JD.com Inc.",
+                "size": 129746502000
+            },
+            {
+                "name": "Booking Holdings Inc",
+                "size": 98744148000
+            },
+            {
+                "name": "Mercadolibre Inc",
+                "size": 76899074000
+            },
+            {
+                "name": "Marriott International Inc",
+                "size": 48446288000
+            },
+            {
+                "name": "Ross Stores Inc",
+                "size": 44009366000
+            }
+        ]
+    },
+    {
+        "name": "Energy",
+        "children": [
+            {
+                "name": "BP p.l.c.",
+                "size": 121380577000
+            },
+            {
+                "name": "Diamondback Energy Inc",
+                "size": 13792727000
+            },
+            {
+                "name": "Noble Energy Inc",
+                "size": 4100139010
+            },
+            {
+                "name": "PDC Energy Inc",
+                "size": 3510305540
+            },
+            {
+                "name": "Renewable Energy Group Inc",
+                "size": 2855585020
+            },
+            {
+                "name": "Clean Energy Fuels Corp",
+                "size": 2693481470
+            },
+            {
+                "name": "Viper Energy Partners LP",
+                "size": 2283898620
+            },
+            {
+                "name": "Rattler Midstream LP",
+                "size": 1643697150
+            },
+            {
+                "name": "Noble Midstream Partners LP",
+                "size": 1308905090
+            },
+            {
+                "name": "Patterson-UTI Energy Inc",
+                "size": 1308520700
+            }
+        ]
+    },
+    {
+        "name": "Technology",
+        "children": [
+            {
+                "name": "Apple Inc",
+                "size": 2147198040000
+            },
+            {
+                "name": "Microsoft Corp",
+                "size": 1884800680000
+            },
+            {
+                "name": "NVIDIA Corp",
+                "size": 343765123000
+            },
+            {
+                "name": "Intel Corp",
+                "size": 269793182000
+            },
+            {
+                "name": "ASML Holding N.V.",
+                "size": 259590078000
+            },
+            {
+                "name": "Adobe Inc",
+                "size": 235849974000
+            },
+            {
+                "name": "Cisco Systems Inc",
+                "size": 218562068000
+            },
+            {
+                "name": "Broadcom Inc",
+                "size": 196989387000
+            },
+            {
+                "name": "Texas Instruments Inc",
+                "size": 178223612000
+            },
+            {
+                "name": "Qualcomm Inc",
+                "size": 158392467000
+            }
+        ]
+    },
+    {
+        "name": "Industrials",
+        "children": [
+            {
+                "name": "Automatic Data Processing Inc",
+                "size": 79515533000
+            },
+            {
+                "name": "CSX Corp",
+                "size": 73633137000
+            },
+            {
+                "name": "Cintas Corp",
+                "size": 36800066000
+            },
+            {
+                "name": "Paychex Inc",
+                "size": 34160042000
+            },
+            {
+                "name": "Paccar Inc",
+                "size": 32099573800
+            },
+            {
+                "name": "Verisk Analytics Inc",
+                "size": 29222817800
+            },
+            {
+                "name": "Fastenal Co",
+                "size": 28676845600
+            },
+            {
+                "name": "Old Dominion Freight Line Inc",
+                "size": 28462465000
+            },
+            {
+                "name": "Copart Inc",
+                "size": 26803073000
+            },
+            {
+                "name": "Ryanair Holdings plc American Depositary Shares each representing five Ordinary Shares",
+                "size": 22535673900
+            }
+        ]
+    },
+    {
+        "name": "Financial Services",
+        "children": [
+            {
+                "name": "PayPal Holdings Inc",
+                "size": 299353637000
+            },
+            {
+                "name": "Astrea Acquisition Corp.",
+                "size": 135998710000
+            },
+            {
+                "name": "HomeTown Bankshares Corporation",
+                "size": 129111474000
+            },
+            {
+                "name": "CME Group Inc",
+                "size": 73369502000
+            },
+            {
+                "name": "T. Rowe Price Group Inc",
+                "size": 40247808000
+            },
+            {
+                "name": "NatWest Group plc",
+                "size": 33819836400
+            },
+            {
+                "name": "Interactive Brokers Group Inc",
+                "size": 30846703600
+            },
+            {
+                "name": "Willis Towers Watson PLC",
+                "size": 30673410000
+            },
+            {
+                "name": "Huntington Bancshares Incorporated Depositary Shares each representing a 1/40th interest in a share of 5.875% Series C Non-Cumulative Perpetual Preferred Stock",
+                "size": 28373221400
+            },
+            {
+                "name": "Fifth Third Bancorp",
+                "size": 27289958400
+            }
+        ]
+    },
+    {
+        "name": "Basic Materials",
+        "children": [
+            {
+                "name": "Steel Dynamics Inc",
+                "size": 10789067800
+            },
+            {
+                "name": "Royal Gold Inc",
+                "size": 7248862200
+            },
+            {
+                "name": "Pan American Silver Corp",
+                "size": 6787920400
+            },
+            {
+                "name": "Ufp Industries Inc",
+                "size": 4871694300
+            },
+            {
+                "name": "Amyris Inc",
+                "size": 4452330500
+            },
+            {
+                "name": "WD-40 Co",
+                "size": 4169973500
+            },
+            {
+                "name": "Balchem Corp",
+                "size": 3915317760
+            },
+            {
+                "name": "SSR Mining Inc",
+                "size": 3342983940
+            },
+            {
+                "name": "Methanex Corp",
+                "size": 2847789060
+            },
+            {
+                "name": "Innospec Inc",
+                "size": 2577626620
+            }
+        ]
+    },
+    {
+        "name": "Communication Services",
+        "children": [
+            {
+                "name": "Alphabet Inc",
+                "size": 1512901310000
+            },
+            {
+                "name": "Alphabet Inc.",
+                "size": 1512900790000
+            },
+            {
+                "name": "Facebook Inc",
+                "size": 891576980000
+            },
+            {
+                "name": "Comcast Corp",
+                "size": 250104037000
+            },
+            {
+                "name": "Netflix Inc",
+                "size": 242259132000
+            },
+            {
+                "name": "T-Mobile US Inc",
+                "size": 161588855000
+            },
+            {
+                "name": "Charter Communications Inc",
+                "size": 131667419000
+            },
+            {
+                "name": "Airbnb, Inc.",
+                "size": 109481796000
+            },
+            {
+                "name": "Zoom Video Communications Inc",
+                "size": 94893113000
+            },
+            {
+                "name": "Activision Blizzard Inc",
+                "size": 75027169000
+            }
+        ]
+    },
+    {
+        "name": "Consumer Defensive",
+        "children": [
+            {
+                "name": "PepsiCo Inc",
+                "size": 197912986000
+            },
+            {
+                "name": "Costco Wholesale Corp",
+                "size": 158785634000
+            },
+            {
+                "name": "Mondelez International Inc",
+                "size": 84815716000
+            },
+            {
+                "name": "Reckitt Benckiser Group plc",
+                "size": 78603370000
+            },
+            {
+                "name": "Monster Beverage Corp",
+                "size": 49766351000
+            },
+            {
+                "name": "Kraft Heinz Co",
+                "size": 49707598000
+            },
+            {
+                "name": "Dollar Tree Inc",
+                "size": 27347603500
+            },
+            {
+                "name": "Newell Brands Inc",
+                "size": 11505203200
+            },
+            {
+                "name": "Beyond Meat Inc",
+                "size": 8200491500
+            },
+            {
+                "name": "Caseys General Stores Inc",
+                "size": 7961382400
+            }
+        ]
+    },
+    {
+        "name": "Healthcare",
+        "children": [
+            {
+                "name": "Roche Holding AG",
+                "size": 262798852000
+            },
+            {
+                "name": "Amgen Inc",
+                "size": 142867988000
+            },
+            {
+                "name": "Sanofi American Depositary Shares (Each repstg one-half of one)",
+                "size": 124747112000
+            },
+            {
+                "name": "Intuitive Surgical Inc",
+                "size": 90088030000
+            },
+            {
+                "name": "Gilead Sciences Inc",
+                "size": 82594333000
+            },
+            {
+                "name": "Celgene Corporation",
+                "size": 77035921000
+            },
+            {
+                "name": "Illumina Inc",
+                "size": 58440245000
+            },
+            {
+                "name": "Vertex Pharmaceuticals Inc",
+                "size": 55298691000
+            },
+            {
+                "name": "Shire plc",
+                "size": 54516320000
+            },
+            {
+                "name": "Express Scripts Holding Company",
+                "size": 53915840000
+            }
+        ]
+    },
+    {
+        "name": "Real Estate",
+        "children": [
+            {
+                "name": "Equinix Inc",
+                "size": 61113106000
+            },
+            {
+                "name": "CoStar Group Inc",
+                "size": 33888215000
+            },
+            {
+                "name": "SBA Communications Corp",
+                "size": 31047188500
+            },
+            {
+                "name": "Brookfield Property Partners LP",
+                "size": 16635390000
+            },
+            {
+                "name": "Brookfield Property Partners L.P.",
+                "size": 16626559000
+            },
+            {
+                "name": "Opendoor Technologies Inc",
+                "size": 12606660600
+            },
+            {
+                "name": "Gaming and Leisure Properties Inc",
+                "size": 10179512300
+            },
+            {
+                "name": "Regency Centers Corp",
+                "size": 9895935000
+            },
+            {
+                "name": "Lamar Advertising Co",
+                "size": 9888366600
+            },
+            {
+                "name": "AGNC Investment Corp.",
+                "size": 9150441500
+            }
+        ]
+    },
+    {
+        "name": "Utilities",
+        "children": [
+            {
+                "name": "Exelon Corp",
+                "size": 43905364000
+            },
+            {
+                "name": "Xcel Energy Inc",
+                "size": 36616008000
+            },
+            {
+                "name": "Alliant Energy Corp",
+                "size": 13604570100
+            },
+            {
+                "name": "New Fortress Energy LLC",
+                "size": 8752189400
+            },
+            {
+                "name": "TerraForm Power Inc",
+                "size": 4383394300
+            },
+            {
+                "name": "Atlantica Sustainable Infrastructure PLC",
+                "size": 4044685820
+            },
+            {
+                "name": "Pattern Energy Group Inc.",
+                "size": 2626365440
+            },
+            {
+                "name": "MGE Energy Inc",
+                "size": 2615336190
+            },
+            {
+                "name": "Otter Tail Corp",
+                "size": 1924423170
+            },
+            {
+                "name": "Middlesex Water Co",
+                "size": 1394295040
+            }
+        ]
+    },
+    {
+        "name": "Industrial Goods",
+        "children": [
+            {
+                "name": "CUI Global Inc.",
+                "size": 23463486
+            }
+        ]
+    },
+    {
+        "name": "Financial",
+        "children": [
+            {
+                "name": "PayPal Holdings Inc",
+                "size": 299353637000
+            },
+            {
+                "name": "Astrea Acquisition Corp.",
+                "size": 135998710000
+            },
+            {
+                "name": "HomeTown Bankshares Corporation",
+                "size": 129111474000
+            },
+            {
+                "name": "CME Group Inc",
+                "size": 73369502000
+            },
+            {
+                "name": "T. Rowe Price Group Inc",
+                "size": 40247808000
+            },
+            {
+                "name": "NatWest Group plc",
+                "size": 33819836400
+            },
+            {
+                "name": "Interactive Brokers Group Inc",
+                "size": 30846703600
+            },
+            {
+                "name": "Willis Towers Watson PLC",
+                "size": 30673410000
+            },
+            {
+                "name": "Huntington Bancshares Incorporated Depositary Shares each representing a 1/40th interest in a share of 5.875% Series C Non-Cumulative Perpetual Preferred Stock",
+                "size": 28373221400
+            },
+            {
+                "name": "Fifth Third Bancorp",
+                "size": 27289958400
+            }
+        ]
+    },
+    {
+        "name": "Services",
+        "children": [
+            {
+                "name": "Alphabet Inc",
+                "size": 1512901310000
+            },
+            {
+                "name": "Alphabet Inc.",
+                "size": 1512900790000
+            },
+            {
+                "name": "Facebook Inc",
+                "size": 891576980000
+            },
+            {
+                "name": "PayPal Holdings Inc",
+                "size": 299353637000
+            },
+            {
+                "name": "Comcast Corp",
+                "size": 250104037000
+            },
+            {
+                "name": "Netflix Inc",
+                "size": 242259132000
+            },
+            {
+                "name": "T-Mobile US Inc",
+                "size": 161588855000
+            },
+            {
+                "name": "Astrea Acquisition Corp.",
+                "size": 135998710000
+            },
+            {
+                "name": "Charter Communications Inc",
+                "size": 131667419000
+            },
+            {
+                "name": "HomeTown Bankshares Corporation",
+                "size": 129111474000
+            }
+        ]
+    },
+    {
+        "name": "Conglomerates",
+        "children": []
+    }
+]
