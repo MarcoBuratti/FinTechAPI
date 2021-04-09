@@ -1,0 +1,2402 @@
+[
+    {
+        "ticker": "AAPL",
+        "marketCap": 2179011440000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "Apple Inc",
+        "price": 130.78
+    },
+    {
+        "ticker": "MSFT",
+        "marketCap": 1906635440000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "Microsoft Corp",
+        "price": 254.09
+    },
+    {
+        "ticker": "AMZN",
+        "marketCap": 1658959560000,
+        "exchange": "NASDAQ",
+        "sector": "Consumer Cyclical",
+        "name": "Amazon.com Inc",
+        "price": 3324.99
+    },
+    {
+        "ticker": "GOOG",
+        "marketCap": 1519906980000,
+        "exchange": "NASDAQ",
+        "sector": "Communication Services",
+        "name": "Alphabet Inc.",
+        "price": 2266.0
+    },
+    {
+        "ticker": "GOOGL",
+        "marketCap": 1518573980000,
+        "exchange": "NASDAQ",
+        "sector": "Communication Services",
+        "name": "Alphabet Inc",
+        "price": 2249.21
+    },
+    {
+        "ticker": "FB",
+        "marketCap": 892688400000,
+        "exchange": "NASDAQ",
+        "sector": "Communication Services",
+        "name": "Facebook Inc",
+        "price": 312.48
+    },
+    {
+        "ticker": "TSLA",
+        "marketCap": 647680690000,
+        "exchange": "NASDAQ",
+        "sector": "Consumer Cyclical",
+        "name": "Tesla Inc",
+        "price": 673.8901
+    },
+    {
+        "ticker": "NVDA",
+        "marketCap": 348272329000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "NVIDIA Corp",
+        "price": 572.47
+    },
+    {
+        "ticker": "PYPL",
+        "marketCap": 306778898000,
+        "exchange": "NASDAQ",
+        "sector": "Financial Services",
+        "name": "PayPal Holdings Inc",
+        "price": 264.003
+    },
+    {
+        "ticker": "INTC",
+        "marketCap": 271951528000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "Intel Corp",
+        "price": 67.595
+    },
+    {
+        "ticker": "RO.SW",
+        "marketCap": 264541684000,
+        "exchange": "NASDAQ",
+        "sector": "Healthcare",
+        "name": "Roche Holding AG",
+        "price": 324.4
+    },
+    {
+        "ticker": "ASML",
+        "marketCap": 260939055000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "ASML Holding N.V.",
+        "price": 635.12
+    },
+    {
+        "ticker": "CMCSA",
+        "marketCap": 244424032000,
+        "exchange": "NASDAQ",
+        "sector": "Communication Services",
+        "name": "Comcast Corp",
+        "price": 52.885
+    },
+    {
+        "ticker": "NFLX",
+        "marketCap": 244354023000,
+        "exchange": "NASDAQ",
+        "sector": "Communication Services",
+        "name": "Netflix Inc",
+        "price": 551.51
+    },
+    {
+        "ticker": "ADBE",
+        "marketCap": 236294521000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "Adobe Inc",
+        "price": 499.722
+    },
+    {
+        "ticker": "CSCO",
+        "marketCap": 219195326000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "Cisco Systems Inc",
+        "price": 51.855
+    },
+    {
+        "ticker": "PEP",
+        "marketCap": 197126341000,
+        "exchange": "NASDAQ",
+        "sector": "Consumer Defensive",
+        "name": "PepsiCo Inc",
+        "price": 142.05
+    },
+    {
+        "ticker": "AVGO",
+        "marketCap": 195915547000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "Broadcom Inc",
+        "price": 477.62
+    },
+    {
+        "ticker": "TXN",
+        "marketCap": 178288230000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "Texas Instruments Inc",
+        "price": 194.16
+    },
+    {
+        "ticker": "PDD",
+        "marketCap": 173544718000,
+        "exchange": "NASDAQ",
+        "sector": "Consumer Cyclical",
+        "name": "Pinduoduo Inc",
+        "price": 136.88
+    },
+    {
+        "ticker": "TMUS",
+        "marketCap": 161228440000,
+        "exchange": "NASDAQ",
+        "sector": "Communication Services",
+        "name": "T-Mobile US Inc",
+        "price": 128.62
+    },
+    {
+        "ticker": "COST",
+        "marketCap": 159701680000,
+        "exchange": "NASDAQ",
+        "sector": "Consumer Defensive",
+        "name": "Costco Wholesale Corp",
+        "price": 361.94
+    },
+    {
+        "ticker": "QCOM",
+        "marketCap": 158335681000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "Qualcomm Inc",
+        "price": 139.645
+    },
+    {
+        "ticker": "AMGN",
+        "marketCap": 142200062000,
+        "exchange": "NASDAQ",
+        "sector": "Healthcare",
+        "name": "Amgen Inc",
+        "price": 247.29
+    },
+    {
+        "ticker": "ESGU",
+        "marketCap": 135998710000,
+        "exchange": "NASDAQ",
+        "sector": "",
+        "name": "iShares MSCI USA ESG Optimized ETF",
+        "price": 93.86
+    },
+    {
+        "ticker": "ASAX",
+        "marketCap": 135998710000,
+        "exchange": "NASDAQ",
+        "sector": "Financial Services",
+        "name": "Astrea Acquisition Corp.",
+        "price": 9.81
+    },
+    {
+        "ticker": "SBUX",
+        "marketCap": 132081287000,
+        "exchange": "NASDAQ",
+        "sector": "Consumer Cyclical",
+        "name": "Starbucks Corp",
+        "price": 112.58
+    },
+    {
+        "ticker": "QQQ",
+        "marketCap": 131106710000,
+        "exchange": "NASDAQ",
+        "sector": "",
+        "name": "PowerShares QQQ Trust Series 1",
+        "price": 334.63
+    },
+    {
+        "ticker": "CHTR",
+        "marketCap": 130597511000,
+        "exchange": "NASDAQ",
+        "sector": "Communication Services",
+        "name": "Charter Communications Inc",
+        "price": 606.4
+    },
+    {
+        "ticker": "HMTA",
+        "marketCap": 129111474000,
+        "exchange": "NASDAQ",
+        "sector": "Financial Services",
+        "name": "HomeTown Bankshares Corporation",
+        "price": 83.51
+    },
+    {
+        "ticker": "AMAT",
+        "marketCap": 127366758000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "Applied Materials Inc",
+        "price": 139.51
+    },
+    {
+        "ticker": "JD",
+        "marketCap": 125825810000,
+        "exchange": "NASDAQ",
+        "sector": "Consumer Cyclical",
+        "name": "JD.com Inc.",
+        "price": 80.25
+    },
+    {
+        "ticker": "SNY",
+        "marketCap": 125793960000,
+        "exchange": "NASDAQ",
+        "sector": "Healthcare",
+        "name": "Sanofi American Depositary Shares (Each repstg one-half of one)",
+        "price": 50.484
+    },
+    {
+        "ticker": "BP.SW",
+        "marketCap": 117633647000,
+        "exchange": "NASDAQ",
+        "sector": "Energy",
+        "name": "BP p.l.c.",
+        "price": 6.825
+    },
+    {
+        "ticker": "INTU",
+        "marketCap": 112615326000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "Intuit Inc",
+        "price": 413.35
+    },
+    {
+        "ticker": "ABNB",
+        "marketCap": 109722132000,
+        "exchange": "NASDAQ",
+        "sector": "Communication Services",
+        "name": "Airbnb, Inc.",
+        "price": 180.37
+    },
+    {
+        "ticker": "MU",
+        "marketCap": 105581699000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "Micron Technology Inc",
+        "price": 94.7
+    },
+    {
+        "ticker": "AMD",
+        "marketCap": 100035281000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "Advanced Micro Devices Inc",
+        "price": 83.155
+    },
+    {
+        "ticker": "BKNG",
+        "marketCap": 99430261000,
+        "exchange": "NASDAQ",
+        "sector": "Consumer Cyclical",
+        "name": "Booking Holdings Inc",
+        "price": 2422.94
+    },
+    {
+        "ticker": "ZM",
+        "marketCap": 95803621000,
+        "exchange": "NASDAQ",
+        "sector": "Communication Services",
+        "name": "Zoom Video Communications Inc",
+        "price": 324.045
+    },
+    {
+        "ticker": "LRCX",
+        "marketCap": 95236743000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "Lam Research Corp",
+        "price": 663.465
+    },
+    {
+        "ticker": "ISRG",
+        "marketCap": 91503231000,
+        "exchange": "NASDAQ",
+        "sector": "Healthcare",
+        "name": "Intuitive Surgical Inc",
+        "price": 772.91
+    },
+    {
+        "ticker": "MDLZ",
+        "marketCap": 83082158000,
+        "exchange": "NASDAQ",
+        "sector": "Consumer Defensive",
+        "name": "Mondelez International Inc",
+        "price": 58.655
+    },
+    {
+        "ticker": "FISV",
+        "marketCap": 82309546000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "Fiserv Inc",
+        "price": 123.56
+    },
+    {
+        "ticker": "GILD",
+        "marketCap": 81775944000,
+        "exchange": "NASDAQ",
+        "sector": "Healthcare",
+        "name": "Gilead Sciences Inc",
+        "price": 64.405
+    },
+    {
+        "ticker": "ADP",
+        "marketCap": 80557564000,
+        "exchange": "NASDAQ",
+        "sector": "Industrials",
+        "name": "Automatic Data Processing Inc",
+        "price": 187.59
+    },
+    {
+        "ticker": "MELI",
+        "marketCap": 77913145000,
+        "exchange": "NASDAQ",
+        "sector": "Consumer Cyclical",
+        "name": "Mercadolibre Inc",
+        "price": 1579.38
+    },
+    {
+        "ticker": "RB.SW",
+        "marketCap": 77080969000,
+        "exchange": "NASDAQ",
+        "sector": "Consumer Defensive",
+        "name": "Reckitt Benckiser Group plc",
+        "price": 78.14
+    },
+    {
+        "ticker": "CELG",
+        "marketCap": 77035921000,
+        "exchange": "NASDAQ",
+        "sector": "Healthcare",
+        "name": "Celgene Corporation",
+        "price": null
+    },
+    {
+        "ticker": "BIDU",
+        "marketCap": 74784104000,
+        "exchange": "NASDAQ",
+        "sector": "Communication Services",
+        "name": "Baidu Inc",
+        "price": 222.8
+    },
+    {
+        "ticker": "ATVI",
+        "marketCap": 74105217000,
+        "exchange": "NASDAQ",
+        "sector": "Communication Services",
+        "name": "Activision Blizzard Inc",
+        "price": 94.97
+    },
+    {
+        "ticker": "CSX",
+        "marketCap": 73549586000,
+        "exchange": "NASDAQ",
+        "sector": "Industrials",
+        "name": "CSX Corp",
+        "price": 97.72
+    },
+    {
+        "ticker": "CME",
+        "marketCap": 73374884000,
+        "exchange": "NASDAQ",
+        "sector": "Financial Services",
+        "name": "CME Group Inc",
+        "price": 202.895
+    },
+    {
+        "ticker": "NTES",
+        "marketCap": 70764085000,
+        "exchange": "NASDAQ",
+        "sector": "Communication Services",
+        "name": "NetEase Inc.",
+        "price": 104.17
+    },
+    {
+        "ticker": "ADSK",
+        "marketCap": 63867236000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "Autodesk Inc",
+        "price": 295.18
+    },
+    {
+        "ticker": "IEFA",
+        "marketCap": 62297356000,
+        "exchange": "NASDAQ",
+        "sector": "",
+        "name": "iShares Core MSCI EAFE",
+        "price": 73.965
+    },
+    {
+        "ticker": "WDAY",
+        "marketCap": 61718458000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "Workday Inc",
+        "price": 256.275
+    },
+    {
+        "ticker": "EQIX",
+        "marketCap": 61362217000,
+        "exchange": "NASDAQ",
+        "sector": "Real Estate",
+        "name": "Equinix Inc",
+        "price": 688.01
+    },
+    {
+        "ticker": "ADI",
+        "marketCap": 59259134000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "Analog Devices Inc",
+        "price": 160.87
+    },
+    {
+        "ticker": "ILMN",
+        "marketCap": 58578850000,
+        "exchange": "NASDAQ",
+        "sector": "Healthcare",
+        "name": "Illumina Inc",
+        "price": 403.15
+    },
+    {
+        "ticker": "NXPI",
+        "marketCap": 56954167000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "NXP Semiconductors NV",
+        "price": 208.415
+    },
+    {
+        "ticker": "TEAM",
+        "marketCap": 55256199000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "Atlassian Corporation PLC",
+        "price": 219.96
+    },
+    {
+        "ticker": "VRTX",
+        "marketCap": 54939947000,
+        "exchange": "NASDAQ",
+        "sector": "Healthcare",
+        "name": "Vertex Pharmaceuticals Inc",
+        "price": 211.08
+    },
+    {
+        "ticker": "SHPG",
+        "marketCap": 54516320000,
+        "exchange": "NASDAQ",
+        "sector": "Healthcare",
+        "name": "Shire plc",
+        "price": null
+    },
+    {
+        "ticker": "MRNA",
+        "marketCap": 54412124000,
+        "exchange": "NASDAQ",
+        "sector": "Healthcare",
+        "name": "Moderna Inc",
+        "price": 141.29
+    },
+    {
+        "ticker": "KLAC",
+        "marketCap": 53975556000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "KLA Corp",
+        "price": 352.25
+    },
+    {
+        "ticker": "ESRX",
+        "marketCap": 53915840000,
+        "exchange": "NASDAQ",
+        "sector": "Healthcare",
+        "name": "Express Scripts Holding Company",
+        "price": 0
+    },
+    {
+        "ticker": "VOD",
+        "marketCap": 52422136000,
+        "exchange": "NASDAQ",
+        "sector": "Communication Services",
+        "name": "Vodafone Group Plc",
+        "price": 18.695
+    },
+    {
+        "ticker": "REGN",
+        "marketCap": 50968584000,
+        "exchange": "NASDAQ",
+        "sector": "Healthcare",
+        "name": "Regeneron Pharmaceuticals Inc",
+        "price": 473.86
+    },
+    {
+        "ticker": "MNST",
+        "marketCap": 50315608000,
+        "exchange": "NASDAQ",
+        "sector": "Consumer Defensive",
+        "name": "Monster Beverage Corp",
+        "price": 95.16
+    },
+    {
+        "ticker": "KHC",
+        "marketCap": 50123457000,
+        "exchange": "NASDAQ",
+        "sector": "Consumer Defensive",
+        "name": "Kraft Heinz Co",
+        "price": 40.255
+    },
+    {
+        "ticker": "MAR",
+        "marketCap": 48104452000,
+        "exchange": "NASDAQ",
+        "sector": "Consumer Cyclical",
+        "name": "Marriott International Inc",
+        "price": 147.97
+    },
+    {
+        "ticker": "WBA",
+        "marketCap": 47463875000,
+        "exchange": "NASDAQ",
+        "sector": "Healthcare",
+        "name": "Walgreens Boots Alliance Inc",
+        "price": 54.19
+    },
+    {
+        "ticker": "ROKU",
+        "marketCap": 47400563000,
+        "exchange": "NASDAQ",
+        "sector": "Communication Services",
+        "name": "Roku Inc",
+        "price": 373.8327
+    },
+    {
+        "ticker": "ERIC",
+        "marketCap": 46187258000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "Ericsson",
+        "price": 13.95
+    },
+    {
+        "ticker": "ALGN",
+        "marketCap": 45741961000,
+        "exchange": "NASDAQ",
+        "sector": "Healthcare",
+        "name": "Align Technology Inc",
+        "price": 578.35
+    },
+    {
+        "ticker": "ROST",
+        "marketCap": 45232538000,
+        "exchange": "NASDAQ",
+        "sector": "Consumer Cyclical",
+        "name": "Ross Stores Inc",
+        "price": 127.23
+    },
+    {
+        "ticker": "CRWD",
+        "marketCap": 44131557000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "Crowdstrike Holdings Inc",
+        "price": 201.04
+    },
+    {
+        "ticker": "EXC",
+        "marketCap": 43861406000,
+        "exchange": "NASDAQ",
+        "sector": "Utilities",
+        "name": "Exelon Corp",
+        "price": 44.885
+    },
+    {
+        "ticker": "MCHP",
+        "marketCap": 43224629000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "Microchip Technology Inc",
+        "price": 161.54
+    },
+    {
+        "ticker": "IDXX",
+        "marketCap": 42831974000,
+        "exchange": "NASDAQ",
+        "sector": "Healthcare",
+        "name": "IDEXX Laboratories Inc",
+        "price": 500.5
+    },
+    {
+        "ticker": "CTSH",
+        "marketCap": 42438513000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "Cognizant Technology Solutions Corp",
+        "price": 80.31
+    },
+    {
+        "ticker": "EBAY",
+        "marketCap": 42174042000,
+        "exchange": "NASDAQ",
+        "sector": "Consumer Cyclical",
+        "name": "eBay Inc",
+        "price": 62.13
+    },
+    {
+        "ticker": "LULU",
+        "marketCap": 42125722000,
+        "exchange": "NASDAQ",
+        "sector": "Consumer Cyclical",
+        "name": "Lululemon Athletica Inc",
+        "price": 317.2055
+    },
+    {
+        "ticker": "BIIB",
+        "marketCap": 40519090000,
+        "exchange": "NASDAQ",
+        "sector": "Healthcare",
+        "name": "Biogen Inc",
+        "price": 264.77
+    },
+    {
+        "ticker": "TROW",
+        "marketCap": 40472986000,
+        "exchange": "NASDAQ",
+        "sector": "Financial Services",
+        "name": "T. Rowe Price Group Inc",
+        "price": 177.1
+    },
+    {
+        "ticker": "CDNS",
+        "marketCap": 40429015000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "Cadence Design Systems Inc",
+        "price": 144.735
+    },
+    {
+        "ticker": "EA",
+        "marketCap": 40351048000,
+        "exchange": "NASDAQ",
+        "sector": "Communication Services",
+        "name": "Electronic Arts Inc",
+        "price": 139.14
+    },
+    {
+        "ticker": "DOCU",
+        "marketCap": 40260256000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "DocuSign Inc",
+        "price": 211.8259
+    },
+    {
+        "ticker": "BILI",
+        "marketCap": 40108057000,
+        "exchange": "NASDAQ",
+        "sector": "Communication Services",
+        "name": "Bilibili Inc",
+        "price": 105.97
+    },
+    {
+        "ticker": "SNPS",
+        "marketCap": 39458509000,
+        "exchange": "NASDAQ",
+        "sector": "Technology",
+        "name": "Synopsys Inc",
+        "price": 260.5
+    },
+    {
+        "ticker": "MTCH",
+        "marketCap": 38613619000,
+        "exchange": "NASDAQ",
+        "sector": "Communication Services",
+        "name": "Match Group Inc",
+        "price": 141.93
+    },
+    {
+        "ticker": "XEL",
+        "marketCap": 36664431000,
+        "exchange": "NASDAQ",
+        "sector": "Utilities",
+        "name": "Xcel Energy Inc",
+        "price": 67.815
+    },
+    {
+        "ticker": "CTAS",
+        "marketCap": 36372500000,
+        "exchange": "NASDAQ",
+        "sector": "Industrials",
+        "name": "Cintas Corp",
+        "price": 350.5
+    },
+    {
+        "ticker": "DXCM",
+        "marketCap": 36318511000,
+        "exchange": "NASDAQ",
+        "sector": "Healthcare",
+        "name": "DexCom Inc",
+        "price": 378.28
+    },
+    {
+        "ticker": "ORLY",
+        "marketCap": 35625066000,
+        "exchange": "NASDAQ",
+        "sector": "Consumer Cyclical",
+        "name": "O'Reilly Automotive Inc",
+        "price": 511.42
+    },
+    {
+        "ticker": "PTON",
+        "marketCap": 35481604000,
+        "exchange": "NASDAQ",
+        "sector": "Consumer Cyclical",
+        "name": "Peloton Interactive Inc",
+        "price": 119.87
+    },
+    {
+        "ticker": "HTHT",
+        "marketCap": 34999673000,
+        "exchange": "NASDAQ",
+        "sector": "Consumer Cyclical",
+        "name": "Huazhu Group Ltd",
+        "price": 55.54
+    },
+    {
+        "ticker": "Z",
+        "marketCap": 34985546000,
+        "exchange": "NASDAQ",
+        "sector": "Communication Services",
+        "name": "Zillow Group Inc.",
+        "price": 143.99
+    },
+    {
+        "ticker": "ZG",
+        "marketCap": 34867921000,
+        "exchange": "NASDAQ",
+        "sector": "Communication Services",
+        "name": "Zillow Group Inc",
+        "price": 145.93
+    },
+    {
+        "ticker": "BRK-A",
+        "marketCap": 608698630000,
+        "exchange": "NYSE",
+        "sector": "Financial Services",
+        "name": "Berkshire Hathaway Inc",
+        "price": 397255.0
+    },
+    {
+        "ticker": "BRK-B",
+        "marketCap": 608337530000,
+        "exchange": "NYSE",
+        "sector": "Financial Services",
+        "name": "Berkshire Hathaway Inc.",
+        "price": 264.03
+    },
+    {
+        "ticker": "BABA",
+        "marketCap": 608028460000,
+        "exchange": "NYSE",
+        "sector": "Consumer Cyclical",
+        "name": "Alibaba Group Holding Ltd",
+        "price": 222.0
+    },
+    {
+        "ticker": "BRKA",
+        "marketCap": 562440830000,
+        "exchange": "NYSE",
+        "sector": "Industrials",
+        "name": "Berkshire Hathaway Inc.",
+        "price": 341260.0
+    },
+    {
+        "ticker": "TSM",
+        "marketCap": 552958690000,
+        "exchange": "NYSE",
+        "sector": "Technology",
+        "name": "Taiwan Semiconductor Manufacturing Company Ltd.",
+        "price": 122.29
+    },
+    {
+        "ticker": "BRKB",
+        "marketCap": 537046876000,
+        "exchange": "NYSE",
+        "sector": "",
+        "name": "Berkshire Hathaway Inc.",
+        "price": null
+    },
+    {
+        "ticker": "V",
+        "marketCap": 484573086000,
+        "exchange": "NYSE",
+        "sector": "Financial Services",
+        "name": "Visa Inc",
+        "price": 220.335
+    },
+    {
+        "ticker": "JPM",
+        "marketCap": 474676855000,
+        "exchange": "NYSE",
+        "sector": "Financial Services",
+        "name": "JPMorgan Chase & Co",
+        "price": 156.4469
+    },
+    {
+        "ticker": "JNJ",
+        "marketCap": 427367793000,
+        "exchange": "NYSE",
+        "sector": "Healthcare",
+        "name": "Johnson & Johnson",
+        "price": 160.73
+    },
+    {
+        "ticker": "WMT",
+        "marketCap": 392953135000,
+        "exchange": "NYSE",
+        "sector": "Consumer Defensive",
+        "name": "Walmart Inc",
+        "price": 139.2
+    },
+    {
+        "ticker": "MA",
+        "marketCap": 372923007000,
+        "exchange": "NYSE",
+        "sector": "Financial Services",
+        "name": "Mastercard Inc",
+        "price": 377.3
+    },
+    {
+        "ticker": "UNH",
+        "marketCap": 348765979000,
+        "exchange": "NYSE",
+        "sector": "Healthcare",
+        "name": "UnitedHealth Group Inc",
+        "price": 371.81
+    },
+    {
+        "ticker": "BAC",
+        "marketCap": 344917443000,
+        "exchange": "NYSE",
+        "sector": "Financial Services",
+        "name": "Bank of America Corp",
+        "price": 39.965
+    },
+    {
+        "ticker": "DIS",
+        "marketCap": 339798524000,
+        "exchange": "NYSE",
+        "sector": "Consumer Cyclical",
+        "name": "Walt Disney Co",
+        "price": 187.28
+    },
+    {
+        "ticker": "HD",
+        "marketCap": 339242648000,
+        "exchange": "NYSE",
+        "sector": "Consumer Cyclical",
+        "name": "Home Depot Inc",
+        "price": 316.1464
+    },
+    {
+        "ticker": "PG",
+        "marketCap": 337409016000,
+        "exchange": "NYSE",
+        "sector": "Consumer Defensive",
+        "name": "Procter & Gamble Co",
+        "price": 136.645
+    },
+    {
+        "ticker": "GJS",
+        "marketCap": 281484880000,
+        "exchange": "NYSE",
+        "sector": "",
+        "name": "Goldman Sachs Group Securities STRATS Trust for Series 2006-2",
+        "price": 20.85
+    },
+    {
+        "ticker": "VZ",
+        "marketCap": 238546797000,
+        "exchange": "NYSE",
+        "sector": "Communication Services",
+        "name": "Verizon Communications Inc",
+        "price": 57.35
+    },
+    {
+        "ticker": "XOM",
+        "marketCap": 236865454000,
+        "exchange": "NYSE",
+        "sector": "Energy",
+        "name": "Exxon Mobil Corp",
+        "price": 55.94
+    },
+    {
+        "ticker": "KO",
+        "marketCap": 229169103000,
+        "exchange": "NYSE",
+        "sector": "Consumer Defensive",
+        "name": "Coca-Cola Co",
+        "price": 52.89
+    },
+    {
+        "ticker": "T",
+        "marketCap": 214689202000,
+        "exchange": "NYSE",
+        "sector": "Communication Services",
+        "name": "AT&T Inc",
+        "price": 30.0
+    },
+    {
+        "ticker": "TM",
+        "marketCap": 214270329000,
+        "exchange": "NYSE",
+        "sector": "Consumer Cyclical",
+        "name": "Toyota Motor Corporation",
+        "price": 154.322
+    },
+    {
+        "ticker": "ORCL",
+        "marketCap": 213396701000,
+        "exchange": "NYSE",
+        "sector": "Technology",
+        "name": "Oracle Corp",
+        "price": 75.03
+    },
+    {
+        "ticker": "FFEU",
+        "marketCap": 212775879000,
+        "exchange": "NYSE",
+        "sector": "",
+        "name": "Barclays ETN+ FI Enhanced Europe 50 ETN Series C",
+        "price": 90.8522
+    },
+    {
+        "ticker": "ABT",
+        "marketCap": 212583596000,
+        "exchange": "NYSE",
+        "sector": "Healthcare",
+        "name": "Abbott Laboratories",
+        "price": 119.535
+    },
+    {
+        "ticker": "NKE",
+        "marketCap": 211455295000,
+        "exchange": "NYSE",
+        "sector": "Consumer Cyclical",
+        "name": "Nike Inc",
+        "price": 133.875
+    },
+    {
+        "ticker": "CRM",
+        "marketCap": 206276379000,
+        "exchange": "NYSE",
+        "sector": "Technology",
+        "name": "Salesforce.Com Inc",
+        "price": 227.28
+    },
+    {
+        "ticker": "PFE",
+        "marketCap": 201622602000,
+        "exchange": "NYSE",
+        "sector": "Healthcare",
+        "name": "Pfizer Inc",
+        "price": 36.525
+    },
+    {
+        "ticker": "CVX",
+        "marketCap": 198482444000,
+        "exchange": "NYSE",
+        "sector": "Energy",
+        "name": "Chevron Corp",
+        "price": 102.79
+    },
+    {
+        "ticker": "NVS",
+        "marketCap": 196436509000,
+        "exchange": "NYSE",
+        "sector": "Healthcare",
+        "name": "Novartis AG",
+        "price": 87.28
+    },
+    {
+        "ticker": "MRK",
+        "marketCap": 191796593000,
+        "exchange": "NYSE",
+        "sector": "Healthcare",
+        "name": "Merck & Co Inc",
+        "price": 75.99
+    },
+    {
+        "ticker": "ABBV",
+        "marketCap": 187442594000,
+        "exchange": "NYSE",
+        "sector": "Healthcare",
+        "name": "Abbvie Inc",
+        "price": 106.91
+    },
+    {
+        "ticker": "TMO",
+        "marketCap": 187017134000,
+        "exchange": "NYSE",
+        "sector": "Healthcare",
+        "name": "Thermo Fisher Scientific Inc",
+        "price": 472.53
+    },
+    {
+        "ticker": "ACN",
+        "marketCap": 180955972000,
+        "exchange": "NYSE",
+        "sector": "Technology",
+        "name": "Accenture PLC",
+        "price": 286.17
+    },
+    {
+        "ticker": "BHP",
+        "marketCap": 179600785000,
+        "exchange": "NYSE",
+        "sector": "Basic Materials",
+        "name": "BHP Billiton Limited",
+        "price": 70.52
+    },
+    {
+        "ticker": "LLY",
+        "marketCap": 175380464000,
+        "exchange": "NYSE",
+        "sector": "Healthcare",
+        "name": "Eli Lilly and Co",
+        "price": 182.9455
+    },
+    {
+        "ticker": "BT",
+        "marketCap": 173378967464.86,
+        "exchange": "NYSE",
+        "sector": "Communication Services",
+        "name": "BT Group plc American Depositary Shares",
+        "price": null
+    },
+    {
+        "ticker": "MCD",
+        "marketCap": 171481547000,
+        "exchange": "NYSE",
+        "sector": "Consumer Cyclical",
+        "name": "Mcdonald's Corp",
+        "price": 229.266
+    },
+    {
+        "ticker": "WFC",
+        "marketCap": 166895632000,
+        "exchange": "NYSE",
+        "sector": "Financial Services",
+        "name": "Wells Fargo & Co",
+        "price": 40.7728
+    },
+    {
+        "ticker": "DHR",
+        "marketCap": 164447502000,
+        "exchange": "NYSE",
+        "sector": "Healthcare",
+        "name": "Danaher Corp",
+        "price": 230.09
+    },
+    {
+        "ticker": "TBB",
+        "marketCap": 164177723000,
+        "exchange": "NYSE",
+        "sector": "",
+        "name": "AT&T Inc. 5.350% Global Notes due 2066",
+        "price": 26.69
+    },
+    {
+        "ticker": "MDT",
+        "marketCap": 163237790000,
+        "exchange": "NYSE",
+        "sector": "Healthcare",
+        "name": "Medtronic PLC",
+        "price": 120.865
+    },
+    {
+        "ticker": "NVO",
+        "marketCap": 161315570000,
+        "exchange": "NYSE",
+        "sector": "Healthcare",
+        "name": "Novo Nordisk A/S",
+        "price": 69.84
+    },
+    {
+        "ticker": "UN",
+        "marketCap": 158839718000,
+        "exchange": "NYSE",
+        "sector": "Consumer Defensive",
+        "name": "Unilever NV",
+        "price": 60.5
+    },
+    {
+        "ticker": "HON",
+        "marketCap": 157843948000,
+        "exchange": "NYSE",
+        "sector": "Industrials",
+        "name": "Honeywell International Inc",
+        "price": 224.87
+    },
+    {
+        "ticker": "SAP",
+        "marketCap": 154905723000,
+        "exchange": "NYSE",
+        "sector": "Technology",
+        "name": "SAP SE ADS",
+        "price": 133.46
+    },
+    {
+        "ticker": "NEE",
+        "marketCap": 152924439000,
+        "exchange": "NYSE",
+        "sector": "Utilities",
+        "name": "Nextera Energy Inc",
+        "price": 77.74
+    },
+    {
+        "ticker": "LFC",
+        "marketCap": 151808737000,
+        "exchange": "NYSE",
+        "sector": "Financial Services",
+        "name": "China Life Insurance Company Limited American Depositary Shares",
+        "price": 10.205
+    },
+    {
+        "ticker": "C",
+        "marketCap": 151702356000,
+        "exchange": "NYSE",
+        "sector": "Financial Services",
+        "name": "Citigroup Inc",
+        "price": 72.81
+    },
+    {
+        "ticker": "RDS-A",
+        "marketCap": 151437296000,
+        "exchange": "NYSE",
+        "sector": "Energy",
+        "name": "Royal Dutch Shell plc",
+        "price": 38.8554
+    },
+    {
+        "ticker": "RDS-B",
+        "marketCap": 151210820000,
+        "exchange": "NYSE",
+        "sector": "Energy",
+        "name": "Royal Dutch Shell plc",
+        "price": 36.72
+    },
+    {
+        "ticker": "UPS",
+        "marketCap": 151056155000,
+        "exchange": "NYSE",
+        "sector": "Industrials",
+        "name": "United Parcel Service Inc",
+        "price": 174.31
+    },
+    {
+        "ticker": "MS",
+        "marketCap": 150054732000,
+        "exchange": "NYSE",
+        "sector": "Financial Services",
+        "name": "Morgan Stanley",
+        "price": 80.16
+    },
+    {
+        "ticker": "UL",
+        "marketCap": 149508489000,
+        "exchange": "NYSE",
+        "sector": "Consumer Defensive",
+        "name": "Unilever PLC",
+        "price": 56.665
+    },
+    {
+        "ticker": "BBL",
+        "marketCap": 149484585000,
+        "exchange": "NYSE",
+        "sector": "Basic Materials",
+        "name": "BHP Billiton plc Sponsored ADR",
+        "price": 59.27
+    },
+    {
+        "ticker": "LIN",
+        "marketCap": 148281508000,
+        "exchange": "NYSE",
+        "sector": "Basic Materials",
+        "name": "Linde PLC",
+        "price": 282.1
+    },
+    {
+        "ticker": "SHOP",
+        "marketCap": 147353518000,
+        "exchange": "NYSE",
+        "sector": "Technology",
+        "name": "Shopify Inc",
+        "price": 1200.1
+    },
+    {
+        "ticker": "UNP",
+        "marketCap": 147128238000,
+        "exchange": "NYSE",
+        "sector": "Industrials",
+        "name": "Union Pacific Corp",
+        "price": 221.885
+    },
+    {
+        "ticker": "BA",
+        "marketCap": 146034147000,
+        "exchange": "NYSE",
+        "sector": "Industrials",
+        "name": "Boeing Co",
+        "price": 251.3701
+    },
+    {
+        "ticker": "LOW",
+        "marketCap": 140503482000,
+        "exchange": "NYSE",
+        "sector": "Consumer Cyclical",
+        "name": "Lowe`s Companies Inc",
+        "price": 196.58
+    },
+    {
+        "ticker": "PM",
+        "marketCap": 140322619000,
+        "exchange": "NYSE",
+        "sector": "Consumer Defensive",
+        "name": "Philip Morris International Inc",
+        "price": 90.395
+    },
+    {
+        "ticker": "BMY",
+        "marketCap": 138369614000,
+        "exchange": "NYSE",
+        "sector": "Healthcare",
+        "name": "Bristol-Myers Squibb Co",
+        "price": 62.29
+    },
+    {
+        "ticker": "SONY",
+        "marketCap": 136263901000,
+        "exchange": "NYSE",
+        "sector": "Technology",
+        "name": "Sony Corporation",
+        "price": 111.685
+    },
+    {
+        "ticker": "RY",
+        "marketCap": 132184277000,
+        "exchange": "NYSE",
+        "sector": "Financial Services",
+        "name": "Royal Bank of Canada",
+        "price": 92.87
+    },
+    {
+        "ticker": "AZN",
+        "marketCap": 131760333000,
+        "exchange": "NYSE",
+        "sector": "Healthcare",
+        "name": "Astrazeneca PLC",
+        "price": 49.85
+    },
+    {
+        "ticker": "UTX",
+        "marketCap": 130414379000,
+        "exchange": "NYSE",
+        "sector": "Industrials",
+        "name": "United Technologies Corporation",
+        "price": null
+    },
+    {
+        "ticker": "SE",
+        "marketCap": 130066686000,
+        "exchange": "NYSE",
+        "sector": "Communication Services",
+        "name": "Sea Ltd",
+        "price": 251.4299
+    },
+    {
+        "ticker": "SCHW",
+        "marketCap": 128645366000,
+        "exchange": "NYSE",
+        "sector": "Financial Services",
+        "name": "Charles Schwab Corp",
+        "price": 67.56
+    },
+    {
+        "ticker": "BUD",
+        "marketCap": 127582003000,
+        "exchange": "NYSE",
+        "sector": "Consumer Defensive",
+        "name": "Anheuser-Busch Inbev SA Sponsored ADR (Belgium)",
+        "price": 64.98
+    },
+    {
+        "ticker": "MSF",
+        "marketCap": 127276020000,
+        "exchange": "NYSE",
+        "sector": "Financial Services",
+        "name": "Morgan Stanley Emerging Markets Fund Inc.",
+        "price": 0
+    },
+    {
+        "ticker": "VSM",
+        "marketCap": 127249113000,
+        "exchange": "NYSE",
+        "sector": "Basic Materials",
+        "name": "Versum Materials Inc.",
+        "price": null
+    },
+    {
+        "ticker": "CAT",
+        "marketCap": 126455996000,
+        "exchange": "NYSE",
+        "sector": "Industrials",
+        "name": "Caterpillar Inc",
+        "price": 228.925
+    },
+    {
+        "ticker": "RIO",
+        "marketCap": 126025507000,
+        "exchange": "NYSE",
+        "sector": "Basic Materials",
+        "name": "Rio Tinto Plc",
+        "price": 79.0
+    },
+    {
+        "ticker": "HSBC",
+        "marketCap": 124355305000,
+        "exchange": "NYSE",
+        "sector": "Financial Services",
+        "name": "HSBC Holdings plc.",
+        "price": 30.0111
+    },
+    {
+        "ticker": "BLK",
+        "marketCap": 122557473000,
+        "exchange": "NYSE",
+        "sector": "Financial Services",
+        "name": "BlackRock Inc",
+        "price": 804.11
+    },
+    {
+        "ticker": "FCAU",
+        "marketCap": 121868354000,
+        "exchange": "NYSE",
+        "sector": "Consumer Cyclical",
+        "name": "Fiat Chrysler Automobiles NV",
+        "price": null
+    },
+    {
+        "ticker": "IBM",
+        "marketCap": 120563696000,
+        "exchange": "NYSE",
+        "sector": "Technology",
+        "name": "International Business Machines Corp",
+        "price": 135.06
+    },
+    {
+        "ticker": "GE",
+        "marketCap": 120305779000,
+        "exchange": "NYSE",
+        "sector": "Industrials",
+        "name": "General Electric Co",
+        "price": 13.507
+    },
+    {
+        "ticker": "TD",
+        "marketCap": 119396745000,
+        "exchange": "NYSE",
+        "sector": "Financial Services",
+        "name": "Toronto-Dominion Bank",
+        "price": 65.89
+    },
+    {
+        "ticker": "AXP",
+        "marketCap": 119010755000,
+        "exchange": "NYSE",
+        "sector": "Financial Services",
+        "name": "American Express Co",
+        "price": 147.81
+    },
+    {
+        "ticker": "RTX",
+        "marketCap": 118674825000,
+        "exchange": "NYSE",
+        "sector": "Industrials",
+        "name": "Raytheon Technologies Corp",
+        "price": 78.23
+    },
+    {
+        "ticker": "QARP",
+        "marketCap": 118371623000,
+        "exchange": "NYSE",
+        "sector": "",
+        "name": "Xtrackers Russell 1000 US QARP ETF",
+        "price": 38.0349
+    },
+    {
+        "ticker": "TOT",
+        "marketCap": 118230237000,
+        "exchange": "NYSE",
+        "sector": "Energy",
+        "name": "Total S.A.",
+        "price": 45.057
+    },
+    {
+        "ticker": "DE",
+        "marketCap": 117939044000,
+        "exchange": "NYSE",
+        "sector": "Industrials",
+        "name": "Deere & Co",
+        "price": 373.845
+    },
+    {
+        "ticker": "SQ",
+        "marketCap": 116322337000,
+        "exchange": "NYSE",
+        "sector": "Technology",
+        "name": "Square Inc",
+        "price": 262.15
+    },
+    {
+        "ticker": "MMM",
+        "marketCap": 114346672000,
+        "exchange": "NYSE",
+        "sector": "Industrials",
+        "name": "3M Co",
+        "price": 197.71
+    },
+    {
+        "ticker": "GS",
+        "marketCap": 113715495000,
+        "exchange": "NYSE",
+        "sector": "Financial Services",
+        "name": "Goldman Sachs Group Inc",
+        "price": 331.63
+    },
+    {
+        "ticker": "PTR",
+        "marketCap": 112778248000,
+        "exchange": "NYSE",
+        "sector": "Energy",
+        "name": "PetroChina Company Limited",
+        "price": 35.27
+    },
+    {
+        "ticker": "CHL",
+        "marketCap": 109593518000,
+        "exchange": "NYSE",
+        "sector": "Communication Services",
+        "name": "China Mobile Limited",
+        "price": null
+    },
+    {
+        "ticker": "EL",
+        "marketCap": 108027822000,
+        "exchange": "NYSE",
+        "sector": "Consumer Defensive",
+        "name": "Estee Lauder Companies Inc",
+        "price": 298.38
+    },
+    {
+        "ticker": "LMT",
+        "marketCap": 107816952000,
+        "exchange": "NYSE",
+        "sector": "Industrials",
+        "name": "Lockheed Martin Corp",
+        "price": 386.725
+    },
+    {
+        "ticker": "AMT",
+        "marketCap": 106749927000,
+        "exchange": "NYSE",
+        "sector": "Real Estate",
+        "name": "American Tower Corp",
+        "price": 239.7227
+    },
+    {
+        "ticker": "UBER",
+        "marketCap": 106257957000,
+        "exchange": "NYSE",
+        "sector": "Technology",
+        "name": "Uber Technologies Inc",
+        "price": 56.83
+    },
+    {
+        "ticker": "HDB",
+        "marketCap": 103947174000,
+        "exchange": "NYSE",
+        "sector": "Financial Services",
+        "name": "HDFC Bank Limited",
+        "price": 73.42
+    },
+    {
+        "ticker": "DEO",
+        "marketCap": 103438238000,
+        "exchange": "NYSE",
+        "sector": "Consumer Defensive",
+        "name": "Diageo plc",
+        "price": 174.4
+    },
+    {
+        "ticker": "TGT",
+        "marketCap": 101889688000,
+        "exchange": "NYSE",
+        "sector": "Consumer Defensive",
+        "name": "Target Corp",
+        "price": 203.63
+    },
+    {
+        "ticker": "GS-PN",
+        "marketCap": 101143552000,
+        "exchange": "NYSE",
+        "sector": "Financial Services",
+        "name": "The Goldman Sachs Group, Inc.",
+        "price": 25.45
+    },
+    {
+        "ticker": "NOW",
+        "marketCap": 100709114000,
+        "exchange": "NYSE",
+        "sector": "Technology",
+        "name": "ServiceNow Inc",
+        "price": 524.54
+    },
+    {
+        "ticker": "RY-PT",
+        "marketCap": 99861938000,
+        "exchange": "NYSE",
+        "sector": "Financial Services",
+        "name": "Royal Bank of Canada",
+        "price": 28.7
+    },
+    {
+        "ticker": "CVS",
+        "marketCap": 97310228000,
+        "exchange": "NYSE",
+        "sector": "Healthcare",
+        "name": "CVS Health Corp",
+        "price": 73.91
+    },
+    {
+        "ticker": "MSF.BR",
+        "marketCap": 1911576850000,
+        "exchange": "EURONEXT",
+        "sector": "Technology",
+        "name": "Microsoft Corporation",
+        "price": 253.0
+    },
+    {
+        "ticker": "MC.PA",
+        "marketCap": 295969391000,
+        "exchange": "EURONEXT",
+        "sector": "Consumer Cyclical",
+        "name": "LVMH Moet Hennessy Louis Vuitton SE",
+        "price": 586.2
+    },
+    {
+        "ticker": "INCO.BR",
+        "marketCap": 289820672000,
+        "exchange": "EURONEXT",
+        "sector": "Technology",
+        "name": "Intel Corporation",
+        "price": 67.12
+    },
+    {
+        "ticker": "ASML.AS",
+        "marketCap": 223293129000,
+        "exchange": "EURONEXT",
+        "sector": "Technology",
+        "name": "ASML Holding NV",
+        "price": 534.2
+    },
+    {
+        "ticker": "CIS.BR",
+        "marketCap": 219153121000,
+        "exchange": "EURONEXT",
+        "sector": "Technology",
+        "name": "Cisco Systems, Inc.",
+        "price": 51.09
+    },
+    {
+        "ticker": "CHTEX.BR",
+        "marketCap": 192028262000,
+        "exchange": "EURONEXT",
+        "sector": "Energy",
+        "name": "Chevron Corporation",
+        "price": 102.0
+    },
+    {
+        "ticker": "OR.PA",
+        "marketCap": 189757227000,
+        "exchange": "EURONEXT",
+        "sector": "Consumer Defensive",
+        "name": "L'Oreal SA",
+        "price": 339.0
+    },
+    {
+        "ticker": "PEP.BR",
+        "marketCap": 188263072000,
+        "exchange": "EURONEXT",
+        "sector": "Consumer Defensive",
+        "name": "PepsiCo, Inc.",
+        "price": null
+    },
+    {
+        "ticker": "MRK.PA",
+        "marketCap": 161552138000,
+        "exchange": "EURONEXT",
+        "sector": "Healthcare",
+        "name": "Merck & Co Inc",
+        "price": 63.4
+    },
+    {
+        "ticker": "PRX.AS",
+        "marketCap": 153147720000,
+        "exchange": "EURONEXT",
+        "sector": "Communication Services",
+        "name": "Prosus N.V.",
+        "price": 94.59
+    },
+    {
+        "ticker": "BOEI.BR",
+        "marketCap": 147415941000,
+        "exchange": "EURONEXT",
+        "sector": "Industrials",
+        "name": "The Boeing Company",
+        "price": 257.85
+    },
+    {
+        "ticker": "VWA.BR",
+        "marketCap": 137976906000,
+        "exchange": "EURONEXT",
+        "sector": "Consumer Cyclical",
+        "name": "Volkswagen AG",
+        "price": 295.0
+    },
+    {
+        "ticker": "VWAP.BR",
+        "marketCap": 137976889000,
+        "exchange": "EURONEXT",
+        "sector": "Consumer Cyclical",
+        "name": "Volkswagen AG",
+        "price": 246.6
+    },
+    {
+        "ticker": "VOW.DE",
+        "marketCap": 135594639000,
+        "exchange": "EURONEXT",
+        "sector": "Consumer Cyclical",
+        "name": "Volkswagen AG",
+        "price": 296.6
+    },
+    {
+        "ticker": "UNA.AS",
+        "marketCap": 125175144000,
+        "exchange": "EURONEXT",
+        "sector": "Consumer Defensive",
+        "name": "Unilever NV",
+        "price": 47.645
+    },
+    {
+        "ticker": "RDSA.AS",
+        "marketCap": 124214583000,
+        "exchange": "EURONEXT",
+        "sector": "Energy",
+        "name": "Royal Dutch Shell PLC",
+        "price": 16.304
+    },
+    {
+        "ticker": "RDSB.AS",
+        "marketCap": 124189467000,
+        "exchange": "EURONEXT",
+        "sector": "Energy",
+        "name": "Royal Dutch Shell plc",
+        "price": 15.48
+    },
+    {
+        "ticker": "IBMA.BR",
+        "marketCap": 120572707000,
+        "exchange": "EURONEXT",
+        "sector": "Technology",
+        "name": "International Business Machines Corporation",
+        "price": 132.35
+    },
+    {
+        "ticker": "SIA.BR",
+        "marketCap": 111439978000,
+        "exchange": "EURONEXT",
+        "sector": "Industrials",
+        "name": "Siemens Aktiengesellschaft",
+        "price": 139.46
+    },
+    {
+        "ticker": "ABI.BR",
+        "marketCap": 107941241000,
+        "exchange": "EURONEXT",
+        "sector": "Consumer Defensive",
+        "name": "Anheuser Busch Inbev NV",
+        "price": 54.74
+    },
+    {
+        "ticker": "CATR.PA",
+        "marketCap": 106169459000,
+        "exchange": "EURONEXT",
+        "sector": "Industrials",
+        "name": "Caterpillar Inc",
+        "price": 196.9
+    },
+    {
+        "ticker": "SAN.PA",
+        "marketCap": 105974252000,
+        "exchange": "EURONEXT",
+        "sector": "Healthcare",
+        "name": "Sanofi SA",
+        "price": 84.92
+    },
+    {
+        "ticker": "RMS.PA",
+        "marketCap": 103204274000,
+        "exchange": "EURONEXT",
+        "sector": "Consumer Cyclical",
+        "name": "Hermes International SCA",
+        "price": 990.6
+    },
+    {
+        "ticker": "GNE.PA",
+        "marketCap": 102391448000,
+        "exchange": "EURONEXT",
+        "sector": "Industrials",
+        "name": "General Electric Co",
+        "price": 11.4
+    },
+    {
+        "ticker": "FP.PA",
+        "marketCap": 99861332000,
+        "exchange": "EURONEXT",
+        "sector": "Energy",
+        "name": "Total SE",
+        "price": 37.82
+    },
+    {
+        "ticker": "ROUTE.NS",
+        "marketCap": 97986978000,
+        "exchange": "EURONEXT",
+        "sector": "Communication Services",
+        "name": "Route Mobile Limited",
+        "price": 1700.05
+    },
+    {
+        "ticker": "CDI.PA",
+        "marketCap": 96519889000,
+        "exchange": "EURONEXT",
+        "sector": "Consumer Cyclical",
+        "name": "Christian Dior SE",
+        "price": 537.5
+    },
+    {
+        "ticker": "DGE.PA",
+        "marketCap": 85376893000,
+        "exchange": "EURONEXT",
+        "sector": "Consumer Defensive",
+        "name": "Diageo PLC",
+        "price": 36.69
+    },
+    {
+        "ticker": "HSB.PA",
+        "marketCap": 85157093000,
+        "exchange": "EURONEXT",
+        "sector": "Financial Services",
+        "name": "HSBC Holdings PLC",
+        "price": 4.2
+    },
+    {
+        "ticker": "AIR.PA",
+        "marketCap": 80035602000,
+        "exchange": "EURONEXT",
+        "sector": "Industrials",
+        "name": "Airbus SE",
+        "price": 101.24
+    },
+    {
+        "ticker": "DTEL.BR",
+        "marketCap": 78290780000,
+        "exchange": "EURONEXT",
+        "sector": "Communication Services",
+        "name": "Deutsche Telekom AG",
+        "price": 16.384
+    },
+    {
+        "ticker": "KER.PA",
+        "marketCap": 76051005000,
+        "exchange": "EURONEXT",
+        "sector": "Consumer Cyclical",
+        "name": "Kering SA",
+        "price": 609.9
+    },
+    {
+        "ticker": "SU.PA",
+        "marketCap": 74889576000,
+        "exchange": "EURONEXT",
+        "sector": "Industrials",
+        "name": "Schneider Electric SE",
+        "price": 135.18
+    },
+    {
+        "ticker": "BPE5.DE",
+        "marketCap": 70782853000,
+        "exchange": "EURONEXT",
+        "sector": "Energy",
+        "name": "BP p.l.c.",
+        "price": 3.438
+    },
+    {
+        "ticker": "AI.PA",
+        "marketCap": 66494935000,
+        "exchange": "EURONEXT",
+        "sector": "Basic Materials",
+        "name": "L'Air Liquide Societe Anonyme pour l'Etude et l'Exploitation des Procedes Georges Claude SA",
+        "price": 140.96
+    },
+    {
+        "ticker": "BNP.PA",
+        "marketCap": 64320483000,
+        "exchange": "EURONEXT",
+        "sector": "Financial Services",
+        "name": "BNP Paribas SA",
+        "price": 51.54
+    },
+    {
+        "ticker": "ADYEN.AS",
+        "marketCap": 60357181000,
+        "exchange": "EURONEXT",
+        "sector": "Technology",
+        "name": "Adyen NV",
+        "price": 1988.0
+    },
+    {
+        "ticker": "EL.PA",
+        "marketCap": 59496460000,
+        "exchange": "EURONEXT",
+        "sector": "Healthcare",
+        "name": "EssilorLuxottica SA",
+        "price": 136.84
+    },
+    {
+        "ticker": "BMW3.DE",
+        "marketCap": 57029607000,
+        "exchange": "EURONEXT",
+        "sector": "Consumer Cyclical",
+        "name": "Bayerische Motoren Werke Aktiengesellschaft",
+        "price": 68.4
+    },
+    {
+        "ticker": "CS.PA",
+        "marketCap": 56136999000,
+        "exchange": "EURONEXT",
+        "sector": "Financial Services",
+        "name": "AXA SA",
+        "price": 23.53
+    },
+    {
+        "ticker": "3RB.DE",
+        "marketCap": 52891578000,
+        "exchange": "EURONEXT",
+        "sector": "Consumer Defensive",
+        "name": "RECKITT BENCK.GRP LS -,10",
+        "price": 77.5
+    },
+    {
+        "ticker": "HEIA.AS",
+        "marketCap": 52522594000,
+        "exchange": "EURONEXT",
+        "sector": "Consumer Defensive",
+        "name": "Heineken NV",
+        "price": 91.74
+    },
+    {
+        "ticker": "SAF.PA",
+        "marketCap": 51050140000,
+        "exchange": "EURONEXT",
+        "sector": "Industrials",
+        "name": "Safran SA",
+        "price": 118.9
+    },
+    {
+        "ticker": "DG.PA",
+        "marketCap": 50844369000,
+        "exchange": "EURONEXT",
+        "sector": "Industrials",
+        "name": "Vinci SA",
+        "price": 90.27
+    },
+    {
+        "ticker": "SANTA.BR",
+        "marketCap": 50147742000,
+        "exchange": "EURONEXT",
+        "sector": "Financial Services",
+        "name": "Banco Santander, S.A.",
+        "price": 2.91
+    },
+    {
+        "ticker": "DSY.PA",
+        "marketCap": 49783284000,
+        "exchange": "EURONEXT",
+        "sector": "Technology",
+        "name": "Dassault Systemes SE",
+        "price": 190.7
+    },
+    {
+        "ticker": "PHIA.AS",
+        "marketCap": 45935247000,
+        "exchange": "EURONEXT",
+        "sector": "Healthcare",
+        "name": "Koninklijke Philips NV",
+        "price": 50.75
+    },
+    {
+        "ticker": "RI.PA",
+        "marketCap": 44022825000,
+        "exchange": "EURONEXT",
+        "sector": "Consumer Defensive",
+        "name": "Pernod Ricard SA",
+        "price": 168.45
+    },
+    {
+        "ticker": "REN.AS",
+        "marketCap": 42495726000,
+        "exchange": "EURONEXT",
+        "sector": "Communication Services",
+        "name": "Relx PLC",
+        "price": 22.23
+    },
+    {
+        "ticker": "INGA.AS",
+        "marketCap": 40964833000,
+        "exchange": "EURONEXT",
+        "sector": "Financial Services",
+        "name": "ING Groep NV",
+        "price": 10.452
+    },
+    {
+        "ticker": "HEN.DE",
+        "marketCap": 39449039000,
+        "exchange": "EURONEXT",
+        "sector": "Consumer Defensive",
+        "name": "Henkel AG & Co. KGaA",
+        "price": 85.85
+    },
+    {
+        "ticker": "BN.PA",
+        "marketCap": 38708347000,
+        "exchange": "EURONEXT",
+        "sector": "Consumer Defensive",
+        "name": "Danone SA",
+        "price": 59.61
+    },
+    {
+        "ticker": "ENI.BR",
+        "marketCap": 37535498000,
+        "exchange": "EURONEXT",
+        "sector": "Energy",
+        "name": "Eni S.p.A.",
+        "price": 10.65
+    },
+    {
+        "ticker": "NNGF.DE",
+        "marketCap": 37265224000,
+        "exchange": "EURONEXT",
+        "sector": "Utilities",
+        "name": "National Grid plc",
+        "price": 10.41
+    },
+    {
+        "ticker": "EDF.PA",
+        "marketCap": 37232206000,
+        "exchange": "EURONEXT",
+        "sector": "Utilities",
+        "name": "Electricite de France SA",
+        "price": 12.01
+    },
+    {
+        "ticker": "MEURV.BR",
+        "marketCap": 37210501000,
+        "exchange": "EURONEXT",
+        "sector": "Financial Services",
+        "name": "Munchener Ruckversicherungs-Gesellschaft Aktiengesellschaft",
+        "price": 265.0
+    },
+    {
+        "ticker": "ACA.PA",
+        "marketCap": 36500984000,
+        "exchange": "EURONEXT",
+        "sector": "Financial Services",
+        "name": "Credit Agricole SA",
+        "price": 12.52
+    },
+    {
+        "ticker": "690D.DE",
+        "marketCap": 35358589000,
+        "exchange": "EURONEXT",
+        "sector": "Technology",
+        "name": "Haier Smart Home Co., Ltd.",
+        "price": 1.9624
+    },
+    {
+        "ticker": "DIM.PA",
+        "marketCap": 33618120700,
+        "exchange": "EURONEXT",
+        "sector": "Healthcare",
+        "name": "Sartorius Stedim Biotech SA",
+        "price": 365.4
+    },
+    {
+        "ticker": "VIV.PA",
+        "marketCap": 33581064200,
+        "exchange": "EURONEXT",
+        "sector": "Communication Services",
+        "name": "Vivendi SA",
+        "price": 28.25
+    },
+    {
+        "ticker": "SLB.PA",
+        "marketCap": 31943895000,
+        "exchange": "EURONEXT",
+        "sector": "Energy",
+        "name": "Schlumberger NV",
+        "price": 22.4
+    },
+    {
+        "ticker": "LHN.PA",
+        "marketCap": 31716698100,
+        "exchange": "EURONEXT",
+        "sector": "Basic Materials",
+        "name": "LafargeHolcim Ltd",
+        "price": 51.82
+    },
+    {
+        "ticker": "BBV.BR",
+        "marketCap": 30197071900,
+        "exchange": "EURONEXT",
+        "sector": "Financial Services",
+        "name": "Banco Bilbao Vizcaya Argentaria, S.A.",
+        "price": 4.53
+    },
+    {
+        "ticker": "STM.PA",
+        "marketCap": 29868451800,
+        "exchange": "EURONEXT",
+        "sector": "Technology",
+        "name": "STMicroelectronics N.V.",
+        "price": 33.255
+    },
+    {
+        "ticker": "SGM.DE",
+        "marketCap": 29742235600,
+        "exchange": "EURONEXT",
+        "sector": "Technology",
+        "name": "STMicroelectronics N.V.",
+        "price": 33.285
+    },
+    {
+        "ticker": "ENGI.PA",
+        "marketCap": 29581875200,
+        "exchange": "EURONEXT",
+        "sector": "Utilities",
+        "name": "Engie SA",
+        "price": 12.288
+    },
+    {
+        "ticker": "ORA.PA",
+        "marketCap": 27837530100,
+        "exchange": "EURONEXT",
+        "sector": "Communication Services",
+        "name": "Orange SA",
+        "price": 10.456
+    },
+    {
+        "ticker": "SGO.PA",
+        "marketCap": 27551166500,
+        "exchange": "EURONEXT",
+        "sector": "Industrials",
+        "name": "Compagnie de Saint Gobain SA",
+        "price": 51.77
+    },
+    {
+        "ticker": "GEN.BR",
+        "marketCap": 26848276500,
+        "exchange": "EURONEXT",
+        "sector": "Financial Services",
+        "name": "Assicurazioni Generali S.p.A.",
+        "price": 16.99
+    },
+    {
+        "ticker": "KBC.BR",
+        "marketCap": 26050396200,
+        "exchange": "EURONEXT",
+        "sector": "Financial Services",
+        "name": "KBC Groep NV",
+        "price": 62.3
+    },
+    {
+        "ticker": "EON.BR",
+        "marketCap": 25940744200,
+        "exchange": "EURONEXT",
+        "sector": "Utilities",
+        "name": "E.ON SE",
+        "price": 10.022
+    },
+    {
+        "ticker": "MT.AS",
+        "marketCap": 25777547300,
+        "exchange": "EURONEXT",
+        "sector": "Basic Materials",
+        "name": "ArcelorMittal SA",
+        "price": 24.415
+    },
+    {
+        "ticker": "DSM.AS",
+        "marketCap": 25652021200,
+        "exchange": "EURONEXT",
+        "sector": "Basic Materials",
+        "name": "Koninklijke DSM NV",
+        "price": 149.05
+    },
+    {
+        "ticker": "CAP.PA",
+        "marketCap": 25489358800,
+        "exchange": "EURONEXT",
+        "sector": "Technology",
+        "name": "Capgemini SE",
+        "price": 151.1
+    },
+    {
+        "ticker": "ANGELBRKG.NS",
+        "marketCap": 24935854100,
+        "exchange": "EURONEXT",
+        "sector": "Financial Services",
+        "name": "Angel Broking Limited",
+        "price": 305.05
+    },
+    {
+        "ticker": "AD.AS",
+        "marketCap": 24697780200,
+        "exchange": "EURONEXT",
+        "sector": "Consumer Defensive",
+        "name": "Koninklijke Ahold Delhaize NV",
+        "price": 23.825
+    },
+    {
+        "ticker": "HEIO.AS",
+        "marketCap": 22670811100,
+        "exchange": "EURONEXT",
+        "sector": "Consumer Defensive",
+        "name": "Heineken Holding NV",
+        "price": 79.1
+    },
+    {
+        "ticker": "ML.PA",
+        "marketCap": 22230081500,
+        "exchange": "EURONEXT",
+        "sector": "Consumer Cyclical",
+        "name": "Compagnie Generale des Etablissements Michelin SCA",
+        "price": 124.3
+    },
+    {
+        "ticker": "LR.PA",
+        "marketCap": 21969836000,
+        "exchange": "EURONEXT",
+        "sector": "Industrials",
+        "name": "Legrand SA",
+        "price": 82.36
+    },
+    {
+        "ticker": "ENR.DE",
+        "marketCap": 21669374000,
+        "exchange": "EURONEXT",
+        "sector": "Utilities",
+        "name": "SIEMENS ENERGY AG NA O.N.",
+        "price": 30.37
+    },
+    {
+        "ticker": "TFA.BR",
+        "marketCap": 20783403000,
+        "exchange": "EURONEXT",
+        "sector": "Communication Services",
+        "name": "Telefonica, S.A.",
+        "price": 3.769
+    },
+    {
+        "ticker": "CCEP.AS",
+        "marketCap": 20622276600,
+        "exchange": "EURONEXT",
+        "sector": "Consumer Defensive",
+        "name": "Coca-Cola European Partners PLC",
+        "price": 45.04
+    },
+    {
+        "ticker": "WLN.PA",
+        "marketCap": 20551231500,
+        "exchange": "EURONEXT",
+        "sector": "Technology",
+        "name": "Worldline SA",
+        "price": 74.05
+    },
+    {
+        "ticker": "EDP.LS",
+        "marketCap": 20519823400,
+        "exchange": "EURONEXT",
+        "sector": "Utilities",
+        "name": "EDP Energias de Portugal SA",
+        "price": 5.184
+    },
+    {
+        "ticker": "WKL.AS",
+        "marketCap": 19830591500,
+        "exchange": "EURONEXT",
+        "sector": "Communication Services",
+        "name": "Wolters Kluwer NV",
+        "price": 76.16
+    },
+    {
+        "ticker": "NOKIA.PA",
+        "marketCap": 19830534100,
+        "exchange": "EURONEXT",
+        "sector": "Technology",
+        "name": "Nokia Oyj",
+        "price": 3.475
+    },
+    {
+        "ticker": "BSP.DE",
+        "marketCap": 19471730700,
+        "exchange": "EURONEXT",
+        "sector": "Industrials",
+        "name": "BAE Systems plc",
+        "price": 6.05
+    },
+    {
+        "ticker": "UG.PA",
+        "marketCap": 19381780500,
+        "exchange": "EURONEXT",
+        "sector": "Industrials",
+        "name": "Peugeot SA",
+        "price": 21.85
+    },
+    {
+        "ticker": "TEP.PA",
+        "marketCap": 18853486600,
+        "exchange": "EURONEXT",
+        "sector": "Industrials",
+        "name": "Teleperformance SE",
+        "price": 320.8
+    },
+    {
+        "ticker": "GLE.PA",
+        "marketCap": 18658252800,
+        "exchange": "EURONEXT",
+        "sector": "Financial Services",
+        "name": "Societe Generale SA",
+        "price": 21.835
+    },
+    {
+        "ticker": "AKZA.AS",
+        "marketCap": 18506051600,
+        "exchange": "EURONEXT",
+        "sector": "Basic Materials",
+        "name": "Akzo Nobel NV",
+        "price": 98.62
+    },
+    {
+        "ticker": "HO.PA",
+        "marketCap": 18282649600,
+        "exchange": "EURONEXT",
+        "sector": "Industrials",
+        "name": "Thales SA",
+        "price": 85.78
+    },
+    {
+        "ticker": "EDPR.LS",
+        "marketCap": 16512790500,
+        "exchange": "EURONEXT",
+        "sector": "Utilities",
+        "name": "EDP Renovaveis SA",
+        "price": 18.94
+    },
+    {
+        "ticker": "ALO.PA",
+        "marketCap": 16492504100,
+        "exchange": "EURONEXT",
+        "sector": "Industrials",
+        "name": "Alstom SA",
+        "price": 44.85
+    },
+    {
+        "ticker": "ERF.PA",
+        "marketCap": 16419913700,
+        "exchange": "EURONEXT",
+        "sector": "Healthcare",
+        "name": "Eurofins Scientific SE",
+        "price": 86.14
+    },
+    {
+        "ticker": "JDEP.AS",
+        "marketCap": 16061346800,
+        "exchange": "EURONEXT",
+        "sector": "Consumer Defensive",
+        "name": "JDE Peet's N.V.",
+        "price": 31.73
+    },
+    {
+        "ticker": "UCB.BR",
+        "marketCap": 15280779300,
+        "exchange": "EURONEXT",
+        "sector": "Healthcare",
+        "name": "Ucb SA",
+        "price": 80.94
+    },
+    {
+        "ticker": "AMUN.PA",
+        "marketCap": 14981333000,
+        "exchange": "EURONEXT",
+        "sector": "Financial Services",
+        "name": "Amundi SA",
+        "price": 74.5
+    },
+    {
+        "ticker": "BIM.PA",
+        "marketCap": 14797870100,
+        "exchange": "EURONEXT",
+        "sector": "Healthcare",
+        "name": "Biomerieux SA",
+        "price": 111.1
+    },
+    {
+        "ticker": "GBLB.BR",
+        "marketCap": 13935798300,
+        "exchange": "EURONEXT",
+        "sector": "Financial Services",
+        "name": "Groep Brussel Lambert NV",
+        "price": 91.38
+    }
+]

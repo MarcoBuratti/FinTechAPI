@@ -1,0 +1,11 @@
+[
+    {
+        "exchange": "NASDAQ"
+    },
+    {
+        "exchange": "NYSE"
+    },
+    {
+        "exchange": "EURONEXT"
+    }
+]

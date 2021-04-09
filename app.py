@@ -14,44 +14,11 @@ conn = dbConnection()
 cursor = conn.cursor()
 stock = Stock()
 
-@app.route('/getUser', methods=['GET'])
-def getUser():
-    if request.method == 'GET':
-        try:
-            cursor = conn.execute('SELECT * FROM User')
-        except sqlite3.IntegrityError as e:
-            return jsonify([{'error': str(e)}])
-        users = [ dict(id=row[0], name=row[1], mail=row[2]) for row in cursor.fetchall() ]
-        if users is not None:
-            return jsonify(users), 200
-        else:
-            return jsonify([{'error':'Nothing Found'}])
-        
-@app.route('/delUser/<int:id>', methods=['DELETE'])    
-def deleteUser(id):
-    if request.method == 'DELETE':
-        try:
-            cursor =  conn.execute('DELETE FROM User WHERE id=?', (id,))
-            conn.commit()
-            return 'The User with the ID: {} has been deleted.'.format(id), 200
-        except sqlite3.DatabaseError as e:
-            return jsonify([{'error': str(e)}])
 
 @app.route('/')
 def index():
     return render_template('home.html')
     
-class CompanyForm(Form):
-    ticker = StringField('ticker', [validators.Length(min=1, max=50)])
-
-@app.route('/company', methods = ['GET','POST'])
-def getCompany():
-    form = CompanyForm(request.form)
-    if request.method == 'POST':
-        ticker = request.form['ticker']
-        
-    return render_template('company.html', form = form)
-
 @app.route('/contactUs')
 def contact():
     return render_template('contactUs.html')
@@ -287,31 +254,55 @@ def personalArea():
 @app.route('/financials', methods=['GET', 'POST'])
 @is_logged_in
 def financials():
-    mail = session['mail']
-    try:
-        cursor = conn.execute('SELECT id FROM User WHERE mail=\'' + str(mail) + '\'')
-        userID = str(cursor.fetchall()[0][0])
-    except sqlite3.InterfaceError as e:
-            print(e)
-    try:
-        cursor = conn.execute('SELECT ticker FROM UserPF WHERE id=\'' + userID + '\'')
-        tickerResult = [ row[0] for row in cursor.fetchall() ]
-    except sqlite3.IntegrityError as e:
-        print(e)
-    
+    listaSector = []
+    listaExchange = []
+    stockPrice = [5, 10, 20, 50, 100, 200, 500, 1000]
+    with open('./static/assets/sector.json') as f:
+        dataJson = json.load(f)
+    for i in range(len(dataJson)):
+        listaSector.append(dataJson[i]['sector'])
+
+    with open('./static/assets/exchange.json') as f:
+        dataJson = json.load(f)
+    for i in range(len(dataJson)):
+        listaExchange.append(dataJson[i]['exchange'])
+
     if request.method == 'POST':
+        exchange = request.form.get('exchange')
+        sector = request.form.get('sector')
         ticker = request.form.get('ticker')
-        finHealth1, finHealth2 = draw_bars(ticker)
-        description = getDescription(ticker)
-        revenues = draw_lines(ticker)
-        indicator1, indicator2, indicator3 = draw_indicators(ticker)
-        return render_template('financials-copy.html', fig1=finHealth1, fig2=finHealth2, ticker=tickerResult, result=ticker, description=description, revenues=revenues, indicator1=indicator1, indicator2=indicator2, indicator3=indicator3)
+        tickerList = []
+        marketCapList = []
+        nameList = []
+        priceList = []
+        with open('./static/assets/stockData.json') as f:
+            dataJson = json.load(f)
+        bigList = []
+        for i in range(len(dataJson)):
+           if dataJson[i]['exchange'] == exchange and dataJson[i]['sector'] == sector:
+               o = {
+                   'ticker':dataJson[i]['ticker'],
+                   'marketCap':dataJson[i]['marketCap'],
+                   'name':dataJson[i]['name'],
+                   'price':dataJson[i]['price']
+               }
+               bigList.append(o)
+        if ticker != None:
+            finHealth1, finHealth2 = draw_bars(ticker)
+            description = getDescription(ticker)
+            revenues = draw_lines(ticker)
+            indicator1, indicator2, indicator3 = draw_indicators(ticker)
+            return render_template('financials-copy.html', listaExchange=listaExchange, listaSector=listaSector, bigList=bigList, fig1=finHealth1, fig2=finHealth2, ticker=ticker, result=ticker, description=description, revenues=revenues, indicator1=indicator1, indicator2=indicator2, indicator3=indicator3)
+        else:
+            return render_template('financials-copy.html', listaExchange=listaExchange, listaSector=listaSector, stockPrice=stockPrice, bigList=bigList)
     
-    indicator1, indicator2, indicator3 = draw_indicators(tickerResult[0])
-    description = getDescription(tickerResult[0])
-    finHealth1, finHealth2 = draw_bars(tickerResult[0])
-    revenues = draw_lines(tickerResult[0])
-    return render_template('financials-copy.html', fig1=finHealth1, fig2=finHealth2, ticker=tickerResult, result=tickerResult[0], description=description, revenues=revenues, indicator1=indicator1, indicator2=indicator2, indicator3=indicator3)
+    #return render_template('financials-copy.html', listaExchange=listaExchange, listaSector=listaSector, fig1=finHealth1, fig2=finHealth2, ticker=tickerResult, result=tickerResult[0], description=description, revenues=revenues, indicator1=indicator1, indicator2=indicator2, indicator3=indicator3)
+    return render_template('financials-copy.html', listaExchange=listaExchange, listaSector=listaSector, stockPrice=stockPrice)
+"""
+@app.route('/tmp', methods=['GET'])
+@is_logged_in
+def tmp():
+ """   
 
 @app.errorhandler(404)
 def page_not_found(e):

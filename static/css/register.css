@@ -3,6 +3,10 @@
   --input-padding-y: .75rem;
 }
 
+.register{
+  min-height: 100vh;
+}
+
 .card-signin {
   border: 0;
   border-radius: 1rem;
