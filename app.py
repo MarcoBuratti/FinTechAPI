@@ -292,17 +292,12 @@ def financials():
             description = getDescription(ticker)
             revenues = draw_lines(ticker)
             indicator1, indicator2, indicator3 = draw_indicators(ticker)
-            return render_template('financials-copy.html', listaExchange=listaExchange, listaSector=listaSector, bigList=bigList, fig1=finHealth1, fig2=finHealth2, ticker=ticker, result=ticker, description=description, revenues=revenues, indicator1=indicator1, indicator2=indicator2, indicator3=indicator3)
+            return render_template('financials-copy.html', listaExchange=listaExchange, listaSector=listaSector, stockPrice=stockPrice, bigList=bigList, fig1=finHealth1, fig2=finHealth2, ticker=ticker, result=ticker, description=description, revenues=revenues, indicator1=indicator1, indicator2=indicator2, indicator3=indicator3)
         else:
             return render_template('financials-copy.html', listaExchange=listaExchange, listaSector=listaSector, stockPrice=stockPrice, bigList=bigList)
     
     #return render_template('financials-copy.html', listaExchange=listaExchange, listaSector=listaSector, fig1=finHealth1, fig2=finHealth2, ticker=tickerResult, result=tickerResult[0], description=description, revenues=revenues, indicator1=indicator1, indicator2=indicator2, indicator3=indicator3)
     return render_template('financials-copy.html', listaExchange=listaExchange, listaSector=listaSector, stockPrice=stockPrice)
-"""
-@app.route('/tmp', methods=['GET'])
-@is_logged_in
-def tmp():
- """   
 
 @app.errorhandler(404)
 def page_not_found(e):
