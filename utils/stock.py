@@ -11,24 +11,19 @@ class Stock:
     def __init__(self):
         self.mydata = None
         self.tickers = None
-        self.weights = None
         self.sp500 = None
         self.yr_10 = None
 
     
-    def initData(self, tickers, weights):
+    def initData(self, tickers, data1, data2):
         #self.tickers = ['ACN', 'TSLA', 'EZJ', 'BLK','IBM','VGT']
         #self.weights = np.array([1/6, 1/6, 1/6, 1/6, 1/6, 1/6])
         self.tickers = tickers
-        self.weights = weights
-        self.mydata = portfolio(self.tickers)
-        self.sp500, self.yr_10 = SP500()
+        self.mydata = portfolio(self.tickers, data1, data2)
+        self.yr_10 = SP500()
 
     def getMydata(self):
         return self.mydata
-
-    def getWeights(self):
-        return self.weights
     
     def getTickers(self):
         return self.tickers
@@ -39,24 +34,6 @@ class Stock:
     def getYR10(self):
         return self.yr_10
 
-    # Pesi delle singole azioni, ritorno annuale, ritorno annuale pesato e volatilità
-    def recapPortfolio(self):
-        annual_returns = pf_return(self.mydata)
-        annualReturnW = weigthedReturn(annual_returns, self.weights)
-        x, y = dailyReturn(self.mydata)
-        volatility = pfRisk(annual_returns, self.tickers)
-        #disegna grafico
-        #recap(x,y)
-        return annualReturnW, volatility, y[-1]
-        
-
-    def recapStock(self):
-        ### singole azioni stock
-        annual_returns = pf_return(self.mydata)
-        volatility = pfRisk(annual_returns, self.tickers)
-        #stockRecap(self.mydata, self.tickers)
-        return annual_returns, self.tickers
-        
     
     #Markowitz Portfolio Optimization
     def markovitz(self):
@@ -100,3 +77,21 @@ class Stock:
         return fig
         #return  pfpuntoMaxRet, pfpuntoMinVol, pfpuntoSharpe, self.tickers
     
+
+    def logRet(self, data1, data2):
+        mydata = pd.DataFrame()
+        mydata = wb.DataReader('AAPL',data_source='yahoo', start=data1, end=data2)['Close']
+        dateStr = [str(mydata.keys()[i+1])[:-9] for i in range(len(mydata)-1)]
+        vettoreDate = []
+        vettorePrezzi = []
+        vettoreTicker = []
+        tick = self.getTickers()
+        for t in tick:
+            dRet = dailyReturn(portfolio(t, data1, data2))
+            for i in range(len(dateStr)):
+                vettoreDate.append(dateStr[i])
+                vettorePrezzi.append(dRet[i])
+                vettoreTicker.append(t)
+        d = { 'Date': vettoreDate, 'Ticker': vettoreTicker, 'Price': vettorePrezzi}
+        df = pd.DataFrame(data=d)
+        return plotLogRet(df)

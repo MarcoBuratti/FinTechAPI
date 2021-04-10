@@ -9,17 +9,16 @@ import plotly
 import json
 
 # Select data from database
-def portfolio(t):
+def portfolio(t, data1, data2):
     print('Downloading data....')
     mydata = pd.DataFrame()
-    mydata[t]= wb.DataReader(t,data_source='yahoo', start='2020-01-02', end='2020-12-31')['Adj Close']
+    mydata[t]= wb.DataReader(t,data_source='yahoo', start=data1, end=data2)['Adj Close']
     return mydata    
     
 def SP500():
-    SP500_ret = wb.get_data_yahoo('^GSPC', start = '2020-01-01', end='2020-12-31')["Adj Close"].pct_change()[1:]
     yahoo_financials = YahooFinancials('^TNX')
     yr_10 = yahoo_financials.get_current_price()/100  
-    return SP500_ret, yr_10
+    return yr_10
       
 #calculate a portfolio annual return
 def pf_return(mydata):
@@ -82,8 +81,8 @@ def stockMarkovitz(portfolios, pfpuntoMaxRet, pfpuntoMinVol, sharpeMax, riskFree
     label += 'Porftofolio risk: ' + str(round( sharpeMax['Volatility']*100, 3)) + '%\n'
 
     fig = px.scatter(portfolios, x="Volatility", y="Return", color='sharpe',
-                      width=800,                   # figure width in pixels
-                      height=600,                   # figure height in pixels 
+                      width=1000,                   # figure width in pixels
+                      height=500,                   # figure height in pixels 
                      )
     fig.add_trace(
       go.Scatter(
@@ -122,6 +121,14 @@ def stockMarkovitz(portfolios, pfpuntoMaxRet, pfpuntoMinVol, sharpeMax, riskFree
     #fig.show()
     return json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
 
+def plotLogRet(df):
+    fig = px.line(df, x="Date", y="Price", color="Ticker",
+              width=1000,                   # figure width in pixels
+              height=500, 
+              )
+
+    return json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
+
 #calculate a portfolio annual return
 def dailyReturn(mydata):
     daily = (mydata/ mydata.shift(1)).mean(axis = 1) - 1
@@ -138,4 +145,4 @@ def dailyReturn(mydata):
         i+=1
         day_list.append(i)
     l = [1 + (x * 1) for x in new_list]
-    return day_list, l
+    return l

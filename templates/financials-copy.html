@@ -4,7 +4,7 @@
   <div class="container py-3">
     <form method="POST">
       <br>
-      <h3>Select different parameter to get Company List</h3>
+      <h2>Set your parameters</h2>
       <div class="row">
           <div class="form-group col">
               <label for="inputState">Exchange</label>
@@ -31,6 +31,7 @@
               </select>
           </div>
       </div>
+      <h3>Select a company and get financial analysis</h3>
       <div class="row">
         <div class="col">
           <br>
@@ -65,15 +66,27 @@
   </form>
   </div>
 
-  
+  <div class="container py-3">
+
+      <div class="row">
+        <div class="col">
+          <h3>{{ result }}</h3>
+          <p style="text-align: justify;">
+            {{ description }}
+          </p>
+        </div> 
+      </div>
+
+  </div>
+
+
   <div class="container py-3">
     <div class="card">
       <div class="row">
         <div class="col">
-
               <div class="container">
                   <div class="articles-container">   
-                      <div class="chart" id="revenues">
+                      <div class="chart" id="revenues" width="100%" height="100%">
                           <script>
                               var graphs = {{ revenues|safe }};
                               Plotly.plot('revenues',graphs,{});
@@ -81,9 +94,8 @@
                       </div>
                   </div>
               </div>
-
         </div> 
-        </div>
+      </div>
     </div> 
   </div>
 
@@ -92,32 +104,28 @@
     <div class="card">
       <div class="row">
         <div class="col">
-
-              <div class="container">
-                  <div class="articles-container">   
-                      <div class="chart" id="bar1">
-                          <script>
-                              var graphs = {{ fig1|safe }};
-                              Plotly.plot('bar1',graphs,{});
-                          </script>
-                      </div>
+          <div class="container">
+              <div class="articles-container">   
+                  <div class="chart" id="bar1">
+                      <script>
+                          var graphs = {{ fig1|safe }};
+                          Plotly.plot('bar1',graphs,{});
+                      </script>
                   </div>
               </div>
-
+          </div>
         </div>
         <div class="col">
-
-              <div class="container">
-                  <div class="articles-container">   
-                      <div class="chart" id="bar2">
-                          <script>
-                              var graphs = {{ fig2|safe }};
-                              Plotly.plot('bar2',graphs,{});
-                          </script>
-                      </div>
+          <div class="container">
+              <div class="articles-container">   
+                  <div class="chart" id="bar2">
+                      <script>
+                          var graphs = {{ fig2|safe }};
+                          Plotly.plot('bar2',graphs,{});
+                      </script>
                   </div>
               </div>
-
+          </div>
         </div>
       </div>
     </div>
@@ -127,46 +135,40 @@
     <div class="card">
       <div class="row">
         <div class="col">
-
-              <div class="container">
-                  <div class="articles-container">   
-                      <div class="chart" id="indicator1">
-                          <script>
-                              var graphs = {{ indicator1|safe }};
-                              Plotly.plot('indicator1',graphs,{});
-                          </script>
-                      </div>
+          <div class="container">
+              <div class="articles-container">   
+                  <div class="chart" id="indicator1">
+                      <script>
+                          var graphs = {{ indicator1|safe }};
+                          Plotly.plot('indicator1',graphs,{});
+                      </script>
                   </div>
               </div>
-
+          </div>
         </div>
         <div class="col">
-
-              <div class="container">
-                  <div class="articles-container">   
-                      <div class="chart" id="indicator2">
-                          <script>
-                              var graphs = {{ indicator2|safe }};
-                              Plotly.plot('indicator2',graphs,{});
-                          </script>
-                      </div>
+          <div class="container">
+              <div class="articles-container">   
+                  <div class="chart" id="indicator2">
+                      <script>
+                          var graphs = {{ indicator2|safe }};
+                          Plotly.plot('indicator2',graphs,{});
+                      </script>
                   </div>
               </div>
-
+          </div>
         </div>
         <div class="col">
-
-              <div class="container">
-                  <div class="articles-container">   
-                      <div class="chart" id="indicator3">
-                          <script>
-                              var graphs = {{ indicator3|safe }};
-                              Plotly.plot('indicator3',graphs,{});
-                          </script>
-                      </div>
+          <div class="container">
+              <div class="articles-container">   
+                  <div class="chart" id="indicator3">
+                      <script>
+                          var graphs = {{ indicator3|safe }};
+                          Plotly.plot('indicator3',graphs,{});
+                      </script>
                   </div>
               </div>
-
+          </div>
         </div>
       </div>
     </div>

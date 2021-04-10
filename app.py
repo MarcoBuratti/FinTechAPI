@@ -7,13 +7,13 @@ from functools import wraps
 import requests
 from utils.stock import *
 from utils.financial import *
+import datetime
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
 app.secret_key='secret123'
 conn = dbConnection()
 cursor = conn.cursor()
 stock = Stock()
-
 
 @app.route('/')
 def index():
@@ -163,14 +163,16 @@ def portfolio():
     try:
         cursor = conn.execute('SELECT ticker FROM UserPF WHERE id=\'' + userID + '\'')
         tickerResult = [ row[0] for row in cursor.fetchall() ]
-        weights = [ 1/len(tickerResult) for elem in tickerResult ]
     except sqlite3.IntegrityError as e:
         print(e)
 
-    stock.initData(tickerResult, weights)
-    graphJSON = stock.markovitz()
-    
-    return render_template('portfolio.html', plot=graphJSON)
+    data2 = datetime.datetime.today().strftime('%Y-%m-%d')
+    data1 = datetime.date.today() - datetime.timedelta(days=365)
+
+    stock.initData(tickerResult, data1=data1, data2=data2)
+    markovitz = stock.markovitz()
+    logRet = stock.logRet(data1, data2)
+    return render_template('portfolio.html', markovitz=markovitz, logRet=logRet)
 
 @app.route('/personal-area', methods=['GET', 'POST'])
 @is_logged_in
@@ -256,7 +258,7 @@ def personalArea():
 def financials():
     listaSector = []
     listaExchange = []
-    stockPrice = [5, 10, 20, 50, 100, 200, 500, 1000]
+    stockPrice = ['5$', '10$', '20$', '50$', '100$', '200$', '500$', '1000$', '+5000$']
     with open('./static/assets/sector.json') as f:
         dataJson = json.load(f)
     for i in range(len(dataJson)):
@@ -270,16 +272,31 @@ def financials():
     if request.method == 'POST':
         exchange = request.form.get('exchange')
         sector = request.form.get('sector')
+        price = request.form.get('price')
         ticker = request.form.get('ticker')
         tickerList = []
         marketCapList = []
         nameList = []
         priceList = []
+        switcher = {
+            '5$': [0, 5],
+            '10$': [5, 10],
+            '20$': [10, 20],
+            '50$': [20, 50],
+            '100$': [50, 100],
+            '200$': [100, 200],
+            '500$': [200, 500],
+            '1000$': [500, 1000],
+            '+5000$': [1000, 100000]
+        }
+
         with open('./static/assets/stockData.json') as f:
             dataJson = json.load(f)
         bigList = []
         for i in range(len(dataJson)):
-           if dataJson[i]['exchange'] == exchange and dataJson[i]['sector'] == sector:
+           if dataJson[i]['exchange'] == exchange and dataJson[i]['sector'] == sector \
+                and dataJson[i]['price'] > switcher[price][0] and dataJson[i]['price'] < switcher[price][1]:
+
                o = {
                    'ticker':dataJson[i]['ticker'],
                    'marketCap':dataJson[i]['marketCap'],
@@ -292,7 +309,7 @@ def financials():
             description = getDescription(ticker)
             revenues = draw_lines(ticker)
             indicator1, indicator2, indicator3 = draw_indicators(ticker)
-            return render_template('financials-copy.html', listaExchange=listaExchange, listaSector=listaSector, stockPrice=stockPrice, bigList=bigList, fig1=finHealth1, fig2=finHealth2, ticker=ticker, result=ticker, description=description, revenues=revenues, indicator1=indicator1, indicator2=indicator2, indicator3=indicator3)
+            return render_template('financials-copy.html', listaExchange=listaExchange, listaSector=listaSector, stockPrice=stockPrice, bigList=bigList, fig1=finHealth1, fig2=finHealth2, result=ticker, description=description, revenues=revenues, indicator1=indicator1, indicator2=indicator2, indicator3=indicator3)
         else:
             return render_template('financials-copy.html', listaExchange=listaExchange, listaSector=listaSector, stockPrice=stockPrice, bigList=bigList)
     
