@@ -68,8 +68,8 @@ def get_dataframe(ticker):
 def draw_lines(ticker):
     df, assets_liab = get_dataframe(ticker)
     figure= px.line(df, x=df['Date'], y=df['Value'], color=df['Data'],
-                width=800,                   # figure width in pixels
-                height=400, 
+                width=1000,                   # figure width in pixels
+                height=500, 
             )
     return json.dumps(figure, cls=plotly.utils.PlotlyJSONEncoder) 
 

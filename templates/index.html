@@ -19,7 +19,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
-
+    <!--DATA PICK-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" media="all" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">    
     <title>Financial Advisor</title>
@@ -59,5 +60,10 @@
     <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
 
   </main>
+    <script type="text/javascript">
+      $(function() {
+          $('#datetimepicker1').datetimepicker();
+      });
+    </script>
   </body>  
 </html>
