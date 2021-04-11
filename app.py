@@ -18,10 +18,6 @@ stock = Stock()
 @app.route('/')
 def index():
     return render_template('home.html')
-    
-@app.route('/contactUs')
-def contact():
-    return render_template('contactUs.html')
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
