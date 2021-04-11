@@ -389,7 +389,7 @@
         "exchange": "NASDAQ",
         "sector": "Healthcare",
         "name": "Celgene Corporation",
-        "price": null
+        "price": 0
     },
     {
         "ticker": "BIDU",
@@ -509,7 +509,7 @@
         "exchange": "NASDAQ",
         "sector": "Healthcare",
         "name": "Shire plc",
-        "price": null
+        "price": 0
     },
     {
         "ticker": "MRNA",
@@ -845,7 +845,7 @@
         "exchange": "NYSE",
         "sector": "",
         "name": "Berkshire Hathaway Inc.",
-        "price": null
+        "price": 266
     },
     {
         "ticker": "V",
@@ -1093,7 +1093,7 @@
         "exchange": "NYSE",
         "sector": "Communication Services",
         "name": "BT Group plc American Depositary Shares",
-        "price": null
+        "price": 153
     },
     {
         "ticker": "MCD",
@@ -1325,7 +1325,7 @@
         "exchange": "NYSE",
         "sector": "Industrials",
         "name": "United Technologies Corporation",
-        "price": null
+        "price": 126
     },
     {
         "ticker": "SE",
@@ -1365,7 +1365,7 @@
         "exchange": "NYSE",
         "sector": "Basic Materials",
         "name": "Versum Materials Inc.",
-        "price": null
+        "price": 104
     },
     {
         "ticker": "CAT",
@@ -1405,7 +1405,7 @@
         "exchange": "NYSE",
         "sector": "Consumer Cyclical",
         "name": "Fiat Chrysler Automobiles NV",
-        "price": null
+        "price": 12.68
     },
     {
         "ticker": "IBM",
@@ -1509,7 +1509,7 @@
         "exchange": "NYSE",
         "sector": "Communication Services",
         "name": "China Mobile Limited",
-        "price": null
+        "price": 50.25
     },
     {
         "ticker": "EL",
@@ -1661,7 +1661,7 @@
         "exchange": "EURONEXT",
         "sector": "Consumer Defensive",
         "name": "PepsiCo, Inc.",
-        "price": null
+        "price": 142
     },
     {
         "ticker": "MRK.PA",

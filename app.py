@@ -98,7 +98,6 @@ def is_logged_in(f):
             return redirect(url_for('login'))
     return wrap
 
-# Logout
 @app.route('/logout')
 @is_logged_in
 def logout():
@@ -121,26 +120,30 @@ def news():
     except sqlite3.IntegrityError as e:
         print(e)
 
-    news = []
-    for t in tickerResult:
-        url = 'https://financialmodelingprep.com/api/v3/stock_news?tickers=' + t + '&limit=50&apikey=ee017fc9ea512948dafef934f2fc8565' 
-        response = requests.get(url).json()
-        sublist = []
-        for i in range(3):
-            o = {
-            'title': response[i]['title'],
-            'description':response[i]['text'],
-            'author':response[i]['site'],
-            'publishedAt':response[i]['publishedDate'][:-10],
-            'urlToImage':response[i]['image'],
-            'url': response[i]['url'],
-            'symbol': response[i]['symbol']
-            }
-            #news.append(o)
-            sublist.append(o)
-        news.append(sublist)
-        
-    return render_template('displayNews.html', news=news)
+    if len(tickerResult) < 1:
+        flash('You have to add at least one Ticker to your Watch List to use this function', 'danger')
+        return redirect(url_for('personalArea'))
+    else:
+        news = []
+        for t in tickerResult:
+            url = 'https://financialmodelingprep.com/api/v3/stock_news?tickers=' + t + '&limit=50&apikey=ee017fc9ea512948dafef934f2fc8565' 
+            response = requests.get(url).json()
+            sublist = []
+            for i in range(3):
+                o = {
+                'title': response[i]['title'],
+                'description':response[i]['text'],
+                'author':response[i]['site'],
+                'publishedAt':response[i]['publishedDate'][:-10],
+                'urlToImage':response[i]['image'],
+                'url': response[i]['url'],
+                'symbol': response[i]['symbol']
+                }
+                #news.append(o)
+                sublist.append(o)
+            news.append(sublist)
+            
+        return render_template('displayNews.html', news=news)
 
 @app.route('/setDB')
 def setDB():
@@ -166,25 +169,34 @@ def portfolio():
     except sqlite3.IntegrityError as e:
         print(e)
 
-    data2 = datetime.datetime.today().strftime('%Y-%m-%d')
-    data1 = datetime.date.today() - datetime.timedelta(days=365)
+    if len(tickerResult) < 2:
+        flash('You have to add at least two Ticker to your Watch List to use this function', 'danger')
+        return redirect(url_for('personalArea'))
+    else:
+        data2 = datetime.datetime.today().strftime('%Y-%m-%d')
+        data1 = datetime.date.today() - datetime.timedelta(days=365)
 
-    stock.initData(tickerResult, data1=data1, data2=data2)
-    markovitz = stock.markovitz()
-    logRet = stock.logRet(data1, data2)
-    return render_template('portfolio.html', markovitz=markovitz, logRet=logRet)
+        stock.initData(tickerResult, data1=data1, data2=data2)
+        markovitz = stock.markovitz()
+        logRet = stock.logRet(data1, data2)
+        return render_template('portfolio.html', markovitz=markovitz, logRet=logRet)
 
 @app.route('/personal-area', methods=['GET', 'POST'])
 @is_logged_in
 def personalArea():
     if request.method == 'POST':
+        addTicker = request.form['addTicker']
+        delTicker = request.form['delTicker']
+        if len(addTicker) == 0 and len(delTicker) == 0:
+            flash('You have to add at least one Ticker in the box', 'danger')
+            return redirect(url_for('personalArea'))
         mail = session['mail']
         try:
             cursor = conn.execute('SELECT id FROM User WHERE mail=\'' + str(mail) + '\'')
             userID = str(cursor.fetchall()[0][0])
         except sqlite3.InterfaceError as e:
             print(e)
-        addTicker = request.form['addTicker']
+
         if len(addTicker) > 0:
             addTicker = '\'' + str(addTicker.upper()) + '\''
 
@@ -200,7 +212,6 @@ def personalArea():
             except sqlite3.IntegrityError as e:
                 print(e)
         
-        delTicker = request.form['delTicker']
         if len(delTicker) > 0:
             delTicker = '\'' + str(delTicker.upper()) + '\''
             try:
