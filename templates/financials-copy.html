@@ -65,6 +65,20 @@
       </div>
   </form>
   </div>
+  <div class="container py-3">
+      <div class="row">
+        <div class="col">
+          <script src="http://d3js.org/d3.v3.min.js"></script>
+            <script type="module">
+              import define from "../static/js/index.js";
+              import {Runtime, Library, Inspector} from "../static/js/runtime.js";
+
+              const runtime = new Runtime();
+              const main = runtime.module(define, Inspector.into(document.body));
+          </script>
+        </div>
+      </div>
+  </div>
 
   <div class="container py-3">
 
