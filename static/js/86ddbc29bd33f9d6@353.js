@@ -15,11 +15,9 @@ This variant of a [sunburst diagram](/@d3/sunburst) shows only two layers of the
   root.each(d => d.current = d);
 
   const svg = d3.create("svg")
-      .attr("viewBox", [0, 0, width*2, width*2])
+      .attr("viewBox", [-200, 200, 1800, 1800])
       .style("font", "10px sans-serif")
       .style('margin-left', "auto")
-      .style('width', "100%")
-      .style('height', "100%")
       .style("margin-right", "auto");
       
 
