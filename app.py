@@ -265,7 +265,8 @@ def personalArea():
 def financials():
     listaSector = []
     listaExchange = []
-    stockPrice = ['5$', '10$', '20$', '50$', '100$', '200$', '500$', '1000$', '+5000$']
+    #stockPrice = ['5$', '10$', '20$', '50$', '100$', '200$', '500$', '1000$', '+5000$']
+    marketCapDimension = ['Micro ($50mln to $300mln)', 'Small ($300mln to $2bln)', 'Mid ($2bln to $10bln)', 'Large ($10bln to $200bln)', 'Mega ($200bln and more)']
     with open('./static/assets/sector.json') as f:
         dataJson = json.load(f)
     for i in range(len(dataJson)):
@@ -286,15 +287,11 @@ def financials():
         nameList = []
         priceList = []
         switcher = {
-            '5$': [0, 5],
-            '10$': [5, 10],
-            '20$': [10, 20],
-            '50$': [20, 50],
-            '100$': [50, 100],
-            '200$': [100, 200],
-            '500$': [200, 500],
-            '1000$': [500, 1000],
-            '+5000$': [1000, 100000]
+            'Micro ($50mln to $300mln)': [0, 300000000],
+            'Small ($300mln to $2bln)': [300000000, 2000000000],
+            'Mid ($2bln to $10bln)': [2000000000, 10000000000],
+            'Large ($10bln to $200bln)': [10000000000, 200000000000],
+            'Mega ($200bln and more)': [200000000000, 20000000000000]
         }
 
         with open('./static/assets/stockData.json') as f:
@@ -302,7 +299,7 @@ def financials():
         bigList = []
         for i in range(len(dataJson)):
            if dataJson[i]['exchange'] == exchange and dataJson[i]['sector'] == sector \
-                and dataJson[i]['price'] > switcher[price][0] and dataJson[i]['price'] < switcher[price][1]:
+                and dataJson[i]['marketCap'] > switcher[price][0] and dataJson[i]['marketCap'] < switcher[price][1]:
 
                o = {
                    'ticker':dataJson[i]['ticker'],
@@ -316,12 +313,12 @@ def financials():
             description = getDescription(ticker)
             revenues = draw_lines(ticker)
             indicator1, indicator2, indicator3 = draw_indicators(ticker)
-            return render_template('financials-copy.html', listaExchange=listaExchange, listaSector=listaSector, stockPrice=stockPrice, bigList=bigList, fig1=finHealth1, fig2=finHealth2, result=ticker, description=description, revenues=revenues, indicator1=indicator1, indicator2=indicator2, indicator3=indicator3)
+            return render_template('financials-copy.html', listaExchange=listaExchange, listaSector=listaSector, stockPrice=marketCapDimension, bigList=bigList, fig1=finHealth1, fig2=finHealth2, result=ticker, description=description, revenues=revenues, indicator1=indicator1, indicator2=indicator2, indicator3=indicator3)
         else:
-            return render_template('financials-copy.html', listaExchange=listaExchange, listaSector=listaSector, stockPrice=stockPrice, bigList=bigList)
+            return render_template('financials-copy.html', listaExchange=listaExchange, listaSector=listaSector, stockPrice=marketCapDimension, bigList=bigList)
     
     #return render_template('financials-copy.html', listaExchange=listaExchange, listaSector=listaSector, fig1=finHealth1, fig2=finHealth2, ticker=tickerResult, result=tickerResult[0], description=description, revenues=revenues, indicator1=indicator1, indicator2=indicator2, indicator3=indicator3)
-    return render_template('financials-copy.html', listaExchange=listaExchange, listaSector=listaSector, stockPrice=stockPrice)
+    return render_template('financials-copy.html', listaExchange=listaExchange, listaSector=listaSector, stockPrice=marketCapDimension)
 
 @app.errorhandler(404)
 def page_not_found(e):
