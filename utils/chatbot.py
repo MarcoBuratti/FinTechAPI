@@ -1,24 +1,9 @@
-import random
-import json
-import pickle
-import numpy as np 
-
-import nltk
-nltk.download('punkt')
-nltk.download('wordnet')
-from nltk.stem import WordNetLemmatizer
-
 from tensorflow.keras.models import load_model
 
 import random
 import json
 import pickle
 import numpy as np 
-from flask import redirect, url_for
-
-import nltk
-nltk.download('punkt')
-nltk.download('wordnet')
 from nltk.stem import WordNetLemmatizer
 
 from tensorflow.keras.models import Sequential
