@@ -5,6 +5,7 @@ import json
 import pickle
 import numpy as np 
 import WordNetLemmatizer
+import word_tokenize
 
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Activation, Dropout
@@ -24,7 +25,7 @@ class Chat:
 
         for intent in self.intents["intents"]:
             for pattern in intent["patterns"]:
-                word_list = nltk.word_tokenize(pattern)
+                word_list = word_tokenize(pattern)
                 self.words.extend(word_list)
                 self.documents.append((word_list, intent["tag"]))
                 if intent["tag"] not in self.classes:
