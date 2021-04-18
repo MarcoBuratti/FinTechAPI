@@ -17,11 +17,5 @@ userPortfolioTable = """ CREATE TABLE UserPF (
     ticker CHAR(500) NOT NULL
 )"""
 
-telegramTable = """ CREATE TABLE telegram (
-    id INT PRIMARY KEY NOT NULL,
-    telephone CHAR(10) NOT NULL
-)"""
-
 cursor.execute(userTable)
 cursor.execute(userPortfolioTable)
-cursor.execute(telegramTable)
