@@ -7,7 +7,7 @@ from functools import wraps
 import requests
 from utils.stock import *
 from utils.financial import *
-from utils.chatbot import *
+#from utils.chatbot import *
 import datetime
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
@@ -330,10 +330,10 @@ def home():
 @app.route("/get")
 def get_bot_response():
 
-    userText = request.args.get('msg')
-    ciao = chatbot.get_answer(userText)
+    #userText = request.args.get('msg')
+    #ciao = chatbot.get_answer(userText)
     
-    return str(ciao)
+    return str('ciao')
 
 @app.errorhandler(404)
 def page_not_found(e):
