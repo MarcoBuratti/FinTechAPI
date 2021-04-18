@@ -4,7 +4,7 @@ import random
 import json
 import pickle
 import numpy as np 
-from nltk.stem import WordNetLemmatizer
+import WordNetLemmatizer
 
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Activation, Dropout
@@ -81,7 +81,7 @@ class Chat:
 
 
     def clean_up_sentence(self, sentence):
-        sentence_words = nltk.word_tokenize(sentence)
+        sentence_words = word_tokenize(sentence)
         sentence_words = [self.lemmatizer.lemmatize(word) for word in sentence_words]
         return sentence_words
 
