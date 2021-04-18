@@ -321,7 +321,7 @@ def financials():
     #return render_template('financials-copy.html', listaExchange=listaExchange, listaSector=listaSector, fig1=finHealth1, fig2=finHealth2, ticker=tickerResult, result=tickerResult[0], description=description, revenues=revenues, indicator1=indicator1, indicator2=indicator2, indicator3=indicator3)
     return render_template('financials.html', listaExchange=listaExchange, listaSector=listaSector, stockPrice=marketCapDimension)
 
-chatbot = Chat()
+#chatbot = Chat()
 
 @app.route("/Chatbot")
 def home():
