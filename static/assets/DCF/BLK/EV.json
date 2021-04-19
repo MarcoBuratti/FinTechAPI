@@ -1,0 +1,222 @@
+[
+    {
+        "symbol": "BLK",
+        "date": "2020-12-31",
+        "stockPrice": 701.26001,
+        "numberOfShares": 156014343,
+        "marketCapitalization": 109406619732.32343,
+        "minusCashAndCashEquivalents": 8664000000,
+        "addTotalDebt": 7364000000,
+        "enterpriseValue": 108106619732.32343
+    },
+    {
+        "symbol": "BLK",
+        "date": "2019-12-31",
+        "stockPrice": 539.690002,
+        "numberOfShares": 156014343,
+        "marketCapitalization": 84199381085.6987,
+        "minusCashAndCashEquivalents": 4829000000,
+        "addTotalDebt": 4955000000,
+        "enterpriseValue": 84325381085.6987
+    },
+    {
+        "symbol": "BLK",
+        "date": "2018-12-31",
+        "stockPrice": 408.329987,
+        "numberOfShares": 160301116,
+        "marketCapitalization": 65455752612.36549,
+        "minusCashAndCashEquivalents": 6488000000,
+        "addTotalDebt": 5063000000,
+        "enterpriseValue": 64030752612.36549
+    },
+    {
+        "symbol": "BLK",
+        "date": "2017-12-31",
+        "stockPrice": 562.289978,
+        "numberOfShares": 162148003,
+        "marketCapitalization": 91174197039.61394,
+        "minusCashAndCashEquivalents": 7038000000,
+        "addTotalDebt": 5014000000,
+        "enterpriseValue": 89150197039.61394
+    },
+    {
+        "symbol": "BLK",
+        "date": "2016-12-31",
+        "stockPrice": 375.179993,
+        "numberOfShares": 164425858,
+        "marketCapitalization": 61689292253.459,
+        "minusCashAndCashEquivalents": 6175000000,
+        "addTotalDebt": 4915000000,
+        "enterpriseValue": 60429292253.459
+    },
+    {
+        "symbol": "BLK",
+        "date": "2015-12-31",
+        "stockPrice": 314.26001,
+        "numberOfShares": 166390009,
+        "marketCapitalization": 52289725892.2401,
+        "minusCashAndCashEquivalents": 6231000000,
+        "addTotalDebt": 4930000000,
+        "enterpriseValue": 50988725892.2401
+    },
+    {
+        "symbol": "BLK",
+        "date": "2014-12-31",
+        "stockPrice": 340.51001,
+        "numberOfShares": 168225154,
+        "marketCapitalization": 57282348870.79154,
+        "minusCashAndCashEquivalents": 6001000000,
+        "addTotalDebt": 8327000000,
+        "enterpriseValue": 59608348870.79154
+    },
+    {
+        "symbol": "BLK",
+        "date": "2013-12-31",
+        "stockPrice": 305.440002,
+        "numberOfShares": 170185870,
+        "marketCapitalization": 51981572473.17174,
+        "minusCashAndCashEquivalents": 4551000000,
+        "addTotalDebt": 7308000000,
+        "enterpriseValue": 54738572473.17174
+    },
+    {
+        "symbol": "BLK",
+        "date": "2012-12-31",
+        "stockPrice": 237.399994,
+        "numberOfShares": 174961018,
+        "marketCapitalization": 41535744623.43389,
+        "minusCashAndCashEquivalents": 4903000000,
+        "addTotalDebt": 8189000000,
+        "enterpriseValue": 44821744623.43389
+    },
+    {
+        "symbol": "BLK",
+        "date": "2011-12-31",
+        "stockPrice": 183.220001,
+        "numberOfShares": 184265367,
+        "marketCapitalization": 33761100726.005367,
+        "minusCashAndCashEquivalents": 3560000000,
+        "addTotalDebt": 6364000000,
+        "enterpriseValue": 36565100726.00537
+    },
+    {
+        "symbol": "BLK",
+        "date": "2010-12-31",
+        "stockPrice": 194.279999,
+        "numberOfShares": 190554510,
+        "marketCapitalization": 37020930012.24549,
+        "minusCashAndCashEquivalents": 3460000000,
+        "addTotalDebt": 4637000000,
+        "enterpriseValue": 38197930012.24549
+    },
+    {
+        "symbol": "BLK",
+        "date": "2009-12-31",
+        "stockPrice": 213.820007,
+        "numberOfShares": 136669164,
+        "marketCapitalization": 29222601603.16415,
+        "minusCashAndCashEquivalents": 4708000000,
+        "addTotalDebt": 5668000000,
+        "enterpriseValue": 30182601603.16415
+    },
+    {
+        "symbol": "BLK",
+        "date": "2008-12-31",
+        "stockPrice": 108.800003,
+        "numberOfShares": 129543443,
+        "marketCapitalization": 14094326987.030329,
+        "minusCashAndCashEquivalents": 2032000000,
+        "addTotalDebt": 1146000000,
+        "enterpriseValue": 13208326987.030329
+    },
+    {
+        "symbol": "BLK",
+        "date": "2007-12-31",
+        "stockPrice": 216,
+        "numberOfShares": 128488561,
+        "marketCapitalization": 27753529176,
+        "minusCashAndCashEquivalents": 1656200000,
+        "addTotalDebt": 1247021000,
+        "enterpriseValue": 27344350176
+    },
+    {
+        "symbol": "BLK",
+        "date": "2006-12-31",
+        "stockPrice": 168.119995,
+        "numberOfShares": 80638167,
+        "marketCapitalization": 13556888232.849165,
+        "minusCashAndCashEquivalents": 1160304000,
+        "addTotalDebt": 497003000,
+        "enterpriseValue": 12893587232.849165
+    },
+    {
+        "symbol": "BLK",
+        "date": "2005-12-31",
+        "stockPrice": 133.399994,
+        "numberOfShares": 64182766,
+        "marketCapitalization": 8561980599.303404,
+        "minusCashAndCashEquivalents": 484223000,
+        "addTotalDebt": 253791000,
+        "enterpriseValue": 8331548599.303404
+    },
+    {
+        "symbol": "BLK",
+        "date": "2004-12-31",
+        "stockPrice": 79.050003,
+        "numberOfShares": 63688955,
+        "marketCapitalization": 5034612083.816865,
+        "minusCashAndCashEquivalents": 457673000,
+        "addTotalDebt": 0,
+        "enterpriseValue": 4576939083.816865
+    },
+    {
+        "symbol": "BLK",
+        "date": "2003-12-31",
+        "stockPrice": 58.02,
+        "numberOfShares": 64653352,
+        "marketCapitalization": 3751187483.0400004,
+        "minusCashAndCashEquivalents": 315941000,
+        "addTotalDebt": 0,
+        "enterpriseValue": 3435246483.0400004
+    },
+    {
+        "symbol": "BLK",
+        "date": "2002-12-31",
+        "stockPrice": 41.25,
+        "numberOfShares": 64756290,
+        "marketCapitalization": 2671196962.5,
+        "minusCashAndCashEquivalents": 255234000,
+        "addTotalDebt": 0,
+        "enterpriseValue": 2415962962.5
+    },
+    {
+        "symbol": "BLK",
+        "date": "2001-12-31",
+        "stockPrice": 41.619999,
+        "numberOfShares": 64271538,
+        "marketCapitalization": 2674981347.288462,
+        "minusCashAndCashEquivalents": 186451000,
+        "addTotalDebt": 0,
+        "enterpriseValue": 2488530347.288462
+    },
+    {
+        "symbol": "BLK",
+        "date": "2000-12-31",
+        "stockPrice": 40.790001,
+        "numberOfShares": 63886353,
+        "marketCapitalization": 2605924402.756353,
+        "minusCashAndCashEquivalents": 192590000,
+        "addTotalDebt": 0,
+        "enterpriseValue": 2413334402.756353
+    },
+    {
+        "symbol": "BLK",
+        "date": "1999-12-31",
+        "stockPrice": 17.375,
+        "numberOfShares": 57057014,
+        "marketCapitalization": 991365618.25,
+        "minusCashAndCashEquivalents": 157129000,
+        "addTotalDebt": 56400000,
+        "enterpriseValue": 890636618.25
+    }
+]

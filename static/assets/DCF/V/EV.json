@@ -1,0 +1,132 @@
+[
+    {
+        "symbol": "V",
+        "date": "2020-09-30",
+        "stockPrice": 181.710007,
+        "numberOfShares": 2138586000,
+        "marketCapitalization": 388602477030.102,
+        "minusCashAndCashEquivalents": 16289000000,
+        "addTotalDebt": 24070000000,
+        "enterpriseValue": 396383477030.102
+    },
+    {
+        "symbol": "V",
+        "date": "2019-09-30",
+        "stockPrice": 179.25,
+        "numberOfShares": 2189301000,
+        "marketCapitalization": 392432204250,
+        "minusCashAndCashEquivalents": 7838000000,
+        "addTotalDebt": 16729000000,
+        "enterpriseValue": 401323204250
+    },
+    {
+        "symbol": "V",
+        "date": "2018-09-30",
+        "stockPrice": 132.759995,
+        "numberOfShares": 2239301000,
+        "marketCapitalization": 297289589563.495,
+        "minusCashAndCashEquivalents": 8162000000,
+        "addTotalDebt": 16630000000,
+        "enterpriseValue": 305757589563.495
+    },
+    {
+        "symbol": "V",
+        "date": "2017-09-30",
+        "stockPrice": 110.040001,
+        "numberOfShares": 2305000000,
+        "marketCapitalization": 253642202305,
+        "minusCashAndCashEquivalents": 9874000000,
+        "addTotalDebt": 18367000000,
+        "enterpriseValue": 262135202305
+    },
+    {
+        "symbol": "V",
+        "date": "2016-09-30",
+        "stockPrice": 82.220001,
+        "numberOfShares": 2386000000,
+        "marketCapitalization": 196176922386,
+        "minusCashAndCashEquivalents": 5619000000,
+        "addTotalDebt": 15882000000,
+        "enterpriseValue": 206439922386
+    },
+    {
+        "symbol": "V",
+        "date": "2015-09-30",
+        "stockPrice": 77.580002,
+        "numberOfShares": 2446000000,
+        "marketCapitalization": 189760684891.99997,
+        "minusCashAndCashEquivalents": 3518000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 186242684891.99997
+    },
+    {
+        "symbol": "V",
+        "date": "2014-09-30",
+        "stockPrice": 59.162498,
+        "numberOfShares": 2508000000,
+        "marketCapitalization": 148379544984,
+        "minusCashAndCashEquivalents": 1971000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 146408544984
+    },
+    {
+        "symbol": "V",
+        "date": "2013-09-30",
+        "stockPrice": 50.955002,
+        "numberOfShares": 2604000000,
+        "marketCapitalization": 132686825208,
+        "minusCashAndCashEquivalents": 2186000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 130500825208
+    },
+    {
+        "symbol": "V",
+        "date": "2012-09-30",
+        "stockPrice": 34.577499,
+        "numberOfShares": 3240000000,
+        "marketCapitalization": 112031096760.00002,
+        "minusCashAndCashEquivalents": 2074000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 109957096760.00002
+    },
+    {
+        "symbol": "V",
+        "date": "2011-09-30",
+        "stockPrice": 23.775,
+        "numberOfShares": 3296000000,
+        "marketCapitalization": 78362400000,
+        "minusCashAndCashEquivalents": 2127000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 76235400000
+    },
+    {
+        "symbol": "V",
+        "date": "2010-09-30",
+        "stockPrice": 19.540001,
+        "numberOfShares": 3356000000,
+        "marketCapitalization": 65576243356,
+        "minusCashAndCashEquivalents": 3867000000,
+        "addTotalDebt": 44000000,
+        "enterpriseValue": 61753243356
+    },
+    {
+        "symbol": "V",
+        "date": "2009-09-30",
+        "stockPrice": 18.940001,
+        "numberOfShares": 1804000000,
+        "marketCapitalization": 34167761803.999996,
+        "minusCashAndCashEquivalents": 4617000000,
+        "addTotalDebt": 56000000,
+        "enterpriseValue": 29606761803.999996
+    },
+    {
+        "symbol": "V",
+        "date": "2008-09-30",
+        "stockPrice": 13.5625,
+        "numberOfShares": 2672000000,
+        "marketCapitalization": 36239000000,
+        "minusCashAndCashEquivalents": 4979000000,
+        "addTotalDebt": 106000000,
+        "enterpriseValue": 31366000000
+    }
+]

@@ -1,0 +1,362 @@
+[
+    {
+        "symbol": "AAPL",
+        "date": "2020-09-26",
+        "stockPrice": 115.050003,
+        "numberOfShares": 17352119000,
+        "marketCapitalization": 1996361343006.3572,
+        "minusCashAndCashEquivalents": 38016000000,
+        "addTotalDebt": 112436000000,
+        "enterpriseValue": 2070781343006.3572
+    },
+    {
+        "symbol": "AAPL",
+        "date": "2019-09-28",
+        "stockPrice": 62.262501,
+        "numberOfShares": 18471336000,
+        "marketCapitalization": 1150071576171.336,
+        "minusCashAndCashEquivalents": 48844000000,
+        "addTotalDebt": 108047000000,
+        "enterpriseValue": 1209274576171.336
+    },
+    {
+        "symbol": "AAPL",
+        "date": "2018-09-29",
+        "stockPrice": 53.060001,
+        "numberOfShares": 19821508000,
+        "marketCapitalization": 1051729234301.5079,
+        "minusCashAndCashEquivalents": 25913000000,
+        "addTotalDebt": 114483000000,
+        "enterpriseValue": 1140299234301.5078
+    },
+    {
+        "symbol": "AAPL",
+        "date": "2017-09-30",
+        "stockPrice": 41.68,
+        "numberOfShares": 20868968000,
+        "marketCapitalization": 869818586240,
+        "minusCashAndCashEquivalents": 20289000000,
+        "addTotalDebt": 115680000000,
+        "enterpriseValue": 965209586240
+    },
+    {
+        "symbol": "AAPL",
+        "date": "2016-09-24",
+        "stockPrice": 29.4125,
+        "numberOfShares": 21883280000,
+        "marketCapitalization": 643641973000,
+        "minusCashAndCashEquivalents": 20484000000,
+        "addTotalDebt": 83532000000,
+        "enterpriseValue": 706689973000
+    },
+    {
+        "symbol": "AAPL",
+        "date": "2015-09-26",
+        "stockPrice": 28.82,
+        "numberOfShares": 23013684000,
+        "marketCapitalization": 663254372880,
+        "minusCashAndCashEquivalents": 21120000000,
+        "addTotalDebt": 61828000000,
+        "enterpriseValue": 703962372880
+    },
+    {
+        "symbol": "AAPL",
+        "date": "2014-09-27",
+        "stockPrice": 26.2775,
+        "numberOfShares": 24342288000,
+        "marketCapitalization": 639654472920,
+        "minusCashAndCashEquivalents": 13844000000,
+        "addTotalDebt": 35295000000,
+        "enterpriseValue": 661105472920
+    },
+    {
+        "symbol": "AAPL",
+        "date": "2013-09-28",
+        "stockPrice": 18.924286,
+        "numberOfShares": 25909268000,
+        "marketCapitalization": 490314397682.64795,
+        "minusCashAndCashEquivalents": 14259000000,
+        "addTotalDebt": 16960000000,
+        "enterpriseValue": 493015397682.64795
+    },
+    {
+        "symbol": "AAPL",
+        "date": "2012-09-29",
+        "stockPrice": 21.571428,
+        "numberOfShares": 26174904000,
+        "marketCapitalization": 564630057042.912,
+        "minusCashAndCashEquivalents": 10746000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 553884057042.912
+    },
+    {
+        "symbol": "AAPL",
+        "date": "2011-09-24",
+        "stockPrice": 14.491786,
+        "numberOfShares": 25879224000,
+        "marketCapitalization": 375036176054.06396,
+        "minusCashAndCashEquivalents": 9815000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 365221176054.06396
+    },
+    {
+        "symbol": "AAPL",
+        "date": "2010-09-25",
+        "stockPrice": 11.03,
+        "numberOfShares": 25464908000,
+        "marketCapitalization": 280877935240,
+        "minusCashAndCashEquivalents": 11261000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 269616935240
+    },
+    {
+        "symbol": "AAPL",
+        "date": "2009-09-26",
+        "stockPrice": 7.231429,
+        "numberOfShares": 25004448000,
+        "marketCapitalization": 180817890396.19202,
+        "minusCashAndCashEquivalents": 5263000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 175554890396.19202
+    },
+    {
+        "symbol": "AAPL",
+        "date": "2008-09-27",
+        "stockPrice": 3.288929,
+        "numberOfShares": 24684576000,
+        "marketCapitalization": 81185817859.104,
+        "minusCashAndCashEquivalents": 11875000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 69310817859.104
+    },
+    {
+        "symbol": "AAPL",
+        "date": "2007-09-29",
+        "stockPrice": 6.610357,
+        "numberOfShares": 24208660000,
+        "marketCapitalization": 160027885091.62,
+        "minusCashAndCashEquivalents": 9352000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 150675885091.62
+    },
+    {
+        "symbol": "AAPL",
+        "date": "2006-09-30",
+        "stockPrice": 2.872143,
+        "numberOfShares": 23633624000,
+        "marketCapitalization": 67879147736.231995,
+        "minusCashAndCashEquivalents": 6392000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 61487147736.231995
+    },
+    {
+        "symbol": "AAPL",
+        "date": "2005-09-24",
+        "stockPrice": 2.028214,
+        "numberOfShares": 22636292000,
+        "marketCapitalization": 45911244342.48801,
+        "minusCashAndCashEquivalents": 3491000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 42420244342.48801
+    },
+    {
+        "symbol": "AAPL",
+        "date": "2004-09-25",
+        "stockPrice": 0.849107,
+        "numberOfShares": 20809040000,
+        "marketCapitalization": 17669101527.28,
+        "minusCashAndCashEquivalents": 2969000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 14700101527.279999
+    },
+    {
+        "symbol": "AAPL",
+        "date": "2003-09-27",
+        "stockPrice": 0.403571,
+        "numberOfShares": 20195336000,
+        "marketCapitalization": 8150251944.856,
+        "minusCashAndCashEquivalents": 3396000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 4754251944.856
+    },
+    {
+        "symbol": "AAPL",
+        "date": "2002-09-28",
+        "stockPrice": 0.27875,
+        "numberOfShares": 19881232000,
+        "marketCapitalization": 5541893420,
+        "minusCashAndCashEquivalents": 2252000000,
+        "addTotalDebt": 316000000,
+        "enterpriseValue": 3605893420
+    },
+    {
+        "symbol": "AAPL",
+        "date": "2001-09-29",
+        "stockPrice": 0.314821,
+        "numberOfShares": 19354328000,
+        "marketCapitalization": 6093148895.288,
+        "minusCashAndCashEquivalents": 2310000000,
+        "addTotalDebt": 317000000,
+        "enterpriseValue": 4100148895.288
+    },
+    {
+        "symbol": "AAPL",
+        "date": "2000-09-30",
+        "stockPrice": 0.344866,
+        "numberOfShares": 18175808000,
+        "marketCapitalization": 6268218201.728,
+        "minusCashAndCashEquivalents": 1191000000,
+        "addTotalDebt": 300000000,
+        "enterpriseValue": 5377218201.728
+    },
+    {
+        "symbol": "AAPL",
+        "date": "1999-09-25",
+        "stockPrice": 0.665179,
+        "numberOfShares": 16033584000,
+        "marketCapitalization": 10665203371.536,
+        "minusCashAndCashEquivalents": 1326000000,
+        "addTotalDebt": 300000000,
+        "enterpriseValue": 9639203371.536
+    },
+    {
+        "symbol": "AAPL",
+        "date": "1998-09-25",
+        "stockPrice": 0.316964,
+        "numberOfShares": 14781088000,
+        "marketCapitalization": 4685072776.832001,
+        "minusCashAndCashEquivalents": 1481000000,
+        "addTotalDebt": 954000000,
+        "enterpriseValue": 4158072776.8320007
+    },
+    {
+        "symbol": "AAPL",
+        "date": "1997-09-26",
+        "stockPrice": 0.147879,
+        "numberOfShares": 14118944000,
+        "marketCapitalization": 2087895319.7760003,
+        "minusCashAndCashEquivalents": 1230000000,
+        "addTotalDebt": 976000000,
+        "enterpriseValue": 1833895319.7760003
+    },
+    {
+        "symbol": "AAPL",
+        "date": "1996-09-27",
+        "stockPrice": 0.21875,
+        "numberOfShares": 13858208000,
+        "marketCapitalization": 3031483000,
+        "minusCashAndCashEquivalents": 1552000000,
+        "addTotalDebt": 1135000000,
+        "enterpriseValue": 2614483000
+    },
+    {
+        "symbol": "AAPL",
+        "date": "1995-09-29",
+        "stockPrice": 0.310268,
+        "numberOfShares": 13781264000,
+        "marketCapitalization": 4275885218.752,
+        "minusCashAndCashEquivalents": 756000000,
+        "addTotalDebt": 764000000,
+        "enterpriseValue": 4283885218.752
+    },
+    {
+        "symbol": "AAPL",
+        "date": "1994-09-30",
+        "stockPrice": 0.376116,
+        "numberOfShares": 13298320000,
+        "marketCapitalization": 5001710925.12,
+        "minusCashAndCashEquivalents": 1203488000,
+        "addTotalDebt": 596200000,
+        "enterpriseValue": 4394422925.12
+    },
+    {
+        "symbol": "AAPL",
+        "date": "1993-09-30",
+        "stockPrice": 0.274554,
+        "numberOfShares": 13107027027,
+        "marketCapitalization": 3598586698.3709583,
+        "minusCashAndCashEquivalents": 676400000,
+        "addTotalDebt": 823200000,
+        "enterpriseValue": 3745386698.3709583
+    },
+    {
+        "symbol": "AAPL",
+        "date": "1992-09-30",
+        "stockPrice": 0.46875,
+        "numberOfShares": 13687741935,
+        "marketCapitalization": 6416129032.03125,
+        "minusCashAndCashEquivalents": 498600000,
+        "addTotalDebt": 184500000,
+        "enterpriseValue": 6102029032.03125
+    },
+    {
+        "symbol": "AAPL",
+        "date": "1991-09-30",
+        "stockPrice": 0.444196,
+        "numberOfShares": 13448682171,
+        "marketCapitalization": 5973850825.629516,
+        "minusCashAndCashEquivalents": 604100000,
+        "addTotalDebt": 148600000,
+        "enterpriseValue": 5518350825.629516
+    },
+    {
+        "symbol": "AAPL",
+        "date": "1990-09-30",
+        "stockPrice": 0.271205,
+        "numberOfShares": 14071111111,
+        "marketCapitalization": 3816155688.8587546,
+        "minusCashAndCashEquivalents": 374700000,
+        "addTotalDebt": 122600000,
+        "enterpriseValue": 3564055688.8587546
+    },
+    {
+        "symbol": "AAPL",
+        "date": "1989-09-30",
+        "stockPrice": 0.408482,
+        "numberOfShares": 14363841808,
+        "marketCapitalization": 5867370829.415456,
+        "minusCashAndCashEquivalents": 438300000,
+        "addTotalDebt": 56800000,
+        "enterpriseValue": 5485870829.415456
+    },
+    {
+        "symbol": "AAPL",
+        "date": "1988-09-30",
+        "stockPrice": 0.34375,
+        "numberOfShares": 14556363636,
+        "marketCapitalization": 5003749999.875,
+        "minusCashAndCashEquivalents": 545700000,
+        "addTotalDebt": 127900000,
+        "enterpriseValue": 4585949999.875
+    },
+    {
+        "symbol": "AAPL",
+        "date": "1987-09-30",
+        "stockPrice": 0.344866,
+        "numberOfShares": 14674698795,
+        "marketCapitalization": 5060804674.63647,
+        "minusCashAndCashEquivalents": 565100000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 4495704674.63647
+    },
+    {
+        "symbol": "AAPL",
+        "date": "1986-09-30",
+        "stockPrice": 0.152902,
+        "numberOfShares": 14373333333,
+        "marketCapitalization": 2197711413.2823663,
+        "minusCashAndCashEquivalents": 576200000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 1621511413.2823663
+    },
+    {
+        "symbol": "AAPL",
+        "date": "1985-09-30",
+        "stockPrice": 0.084821,
+        "numberOfShares": 13708800000,
+        "marketCapitalization": 1162794124.8,
+        "minusCashAndCashEquivalents": 337000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 825794124.8
+    }
+]

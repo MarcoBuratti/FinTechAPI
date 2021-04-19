@@ -1,0 +1,402 @@
+[
+    {
+        "symbol": "DIS",
+        "date": "2020-10-03",
+        "stockPrice": 120.129997,
+        "numberOfShares": 1808000000,
+        "marketCapitalization": 217195034576,
+        "minusCashAndCashEquivalents": 17914000000,
+        "addTotalDebt": 52917000000,
+        "enterpriseValue": 252198034576
+    },
+    {
+        "symbol": "DIS",
+        "date": "2019-09-28",
+        "stockPrice": 130.529999,
+        "numberOfShares": 1666000000,
+        "marketCapitalization": 217462978334,
+        "minusCashAndCashEquivalents": 5418000000,
+        "addTotalDebt": 38129000000,
+        "enterpriseValue": 250173978334
+    },
+    {
+        "symbol": "DIS",
+        "date": "2018-09-30",
+        "stockPrice": 114.760002,
+        "numberOfShares": 1499000000,
+        "marketCapitalization": 172025242998,
+        "minusCashAndCashEquivalents": 4150000000,
+        "addTotalDebt": 20874000000,
+        "enterpriseValue": 188749242998
+    },
+    {
+        "symbol": "DIS",
+        "date": "2018-09-29",
+        "stockPrice": 110.8156,
+        "numberOfShares": 1507000000,
+        "marketCapitalization": 166999109200,
+        "minusCashAndCashEquivalents": 4150000000,
+        "addTotalDebt": 17084000000,
+        "enterpriseValue": 179933109200
+    },
+    {
+        "symbol": "DIS",
+        "date": "2017-09-30",
+        "stockPrice": 98.040001,
+        "numberOfShares": 1568000000,
+        "marketCapitalization": 153726721568,
+        "minusCashAndCashEquivalents": 4017000000,
+        "addTotalDebt": 25291000000,
+        "enterpriseValue": 175000721568
+    },
+    {
+        "symbol": "DIS",
+        "date": "2016-10-01",
+        "stockPrice": 88.083,
+        "numberOfShares": 1639000000,
+        "marketCapitalization": 144368037000,
+        "minusCashAndCashEquivalents": 4610000000,
+        "addTotalDebt": 16483000000,
+        "enterpriseValue": 156241037000
+    },
+    {
+        "symbol": "DIS",
+        "date": "2016-09-30",
+        "stockPrice": 93.849998,
+        "numberOfShares": 1629000000,
+        "marketCapitalization": 152881646742,
+        "minusCashAndCashEquivalents": 4610000000,
+        "addTotalDebt": 20170000000,
+        "enterpriseValue": 168441646742
+    },
+    {
+        "symbol": "DIS",
+        "date": "2015-10-03",
+        "stockPrice": 107.8424,
+        "numberOfShares": 1709000000,
+        "marketCapitalization": 184302661600,
+        "minusCashAndCashEquivalents": 4269000000,
+        "addTotalDebt": 12773000000,
+        "enterpriseValue": 192806661600
+    },
+    {
+        "symbol": "DIS",
+        "date": "2015-09-30",
+        "stockPrice": 113.739998,
+        "numberOfShares": 1694000000,
+        "marketCapitalization": 192675556612,
+        "minusCashAndCashEquivalents": 4269000000,
+        "addTotalDebt": 17336000000,
+        "enterpriseValue": 205742556612
+    },
+    {
+        "symbol": "DIS",
+        "date": "2014-09-30",
+        "stockPrice": 90.220001,
+        "numberOfShares": 1740000000,
+        "marketCapitalization": 156982801740,
+        "minusCashAndCashEquivalents": 3421000000,
+        "addTotalDebt": 14840000000,
+        "enterpriseValue": 168401801740
+    },
+    {
+        "symbol": "DIS",
+        "date": "2014-09-27",
+        "stockPrice": 81.402,
+        "numberOfShares": 1759000000,
+        "marketCapitalization": 143186118000,
+        "minusCashAndCashEquivalents": 3421000000,
+        "addTotalDebt": 12676000000,
+        "enterpriseValue": 152441118000
+    },
+    {
+        "symbol": "DIS",
+        "date": "2013-09-30",
+        "stockPrice": 68.470001,
+        "numberOfShares": 1792000000,
+        "marketCapitalization": 122698241792,
+        "minusCashAndCashEquivalents": 3931000000,
+        "addTotalDebt": 14288000000,
+        "enterpriseValue": 133055241792
+    },
+    {
+        "symbol": "DIS",
+        "date": "2013-09-28",
+        "stockPrice": 62.7274,
+        "numberOfShares": 1813000000,
+        "marketCapitalization": 113724776200,
+        "minusCashAndCashEquivalents": 3931000000,
+        "addTotalDebt": 13050000000,
+        "enterpriseValue": 122843776200
+    },
+    {
+        "symbol": "DIS",
+        "date": "2012-09-30",
+        "stockPrice": 50.080002,
+        "numberOfShares": 1794000000,
+        "marketCapitalization": 89843523588,
+        "minusCashAndCashEquivalents": 3387000000,
+        "addTotalDebt": 14311000000,
+        "enterpriseValue": 100767523588
+    },
+    {
+        "symbol": "DIS",
+        "date": "2012-09-29",
+        "stockPrice": 44.8388,
+        "numberOfShares": 1818000000,
+        "marketCapitalization": 81516938400,
+        "minusCashAndCashEquivalents": 3387000000,
+        "addTotalDebt": 10981000000,
+        "enterpriseValue": 89110938400
+    },
+    {
+        "symbol": "DIS",
+        "date": "2011-10-01",
+        "stockPrice": 30.7138,
+        "numberOfShares": 1909000000,
+        "marketCapitalization": 58632644200,
+        "minusCashAndCashEquivalents": 3185000000,
+        "addTotalDebt": 11210000000,
+        "enterpriseValue": 66657644200
+    },
+    {
+        "symbol": "DIS",
+        "date": "2011-09-30",
+        "stockPrice": 36.209999,
+        "numberOfShares": 1878000000,
+        "marketCapitalization": 68002378122.00001,
+        "minusCashAndCashEquivalents": 3185000000,
+        "addTotalDebt": 13977000000,
+        "enterpriseValue": 78794378122
+    },
+    {
+        "symbol": "DIS",
+        "date": "2010-10-02",
+        "stockPrice": 31.3832,
+        "numberOfShares": 1948000000,
+        "marketCapitalization": 61134473600,
+        "minusCashAndCashEquivalents": 2722000000,
+        "addTotalDebt": 10354000000,
+        "enterpriseValue": 68766473600
+    },
+    {
+        "symbol": "DIS",
+        "date": "2010-09-30",
+        "stockPrice": 36.130001,
+        "numberOfShares": 1915000000,
+        "marketCapitalization": 69188951915,
+        "minusCashAndCashEquivalents": 2722000000,
+        "addTotalDebt": 12480000000,
+        "enterpriseValue": 78946951915
+    },
+    {
+        "symbol": "DIS",
+        "date": "2009-10-03",
+        "stockPrice": 23.6027,
+        "numberOfShares": 1875000000,
+        "marketCapitalization": 44255062500,
+        "minusCashAndCashEquivalents": 3417000000,
+        "addTotalDebt": 11721000000,
+        "enterpriseValue": 52559062500
+    },
+    {
+        "symbol": "DIS",
+        "date": "2009-09-30",
+        "stockPrice": 27.370001,
+        "numberOfShares": 1856000000,
+        "marketCapitalization": 50798721856,
+        "minusCashAndCashEquivalents": 3417000000,
+        "addTotalDebt": 12701000000,
+        "enterpriseValue": 60082721856
+    },
+    {
+        "symbol": "DIS",
+        "date": "2008-09-30",
+        "stockPrice": 25.33,
+        "numberOfShares": 1890000000,
+        "marketCapitalization": 47873700000,
+        "minusCashAndCashEquivalents": 3001000000,
+        "addTotalDebt": 14639000000,
+        "enterpriseValue": 59511700000
+    },
+    {
+        "symbol": "DIS",
+        "date": "2008-09-27",
+        "stockPrice": 18.1299,
+        "numberOfShares": 1948000000,
+        "marketCapitalization": 35317045200,
+        "minusCashAndCashEquivalents": 3001000000,
+        "addTotalDebt": 11351000000,
+        "enterpriseValue": 43667045200
+    },
+    {
+        "symbol": "DIS",
+        "date": "2007-09-30",
+        "stockPrice": 34.290001,
+        "numberOfShares": 2004000000,
+        "marketCapitalization": 68717162003.99999,
+        "minusCashAndCashEquivalents": 3670000000,
+        "addTotalDebt": 15172000000,
+        "enterpriseValue": 80219162004
+    },
+    {
+        "symbol": "DIS",
+        "date": "2007-09-29",
+        "stockPrice": 29.1075,
+        "numberOfShares": 2092000000,
+        "marketCapitalization": 60892890000,
+        "minusCashAndCashEquivalents": 3670000000,
+        "addTotalDebt": 12166000000,
+        "enterpriseValue": 69388890000
+    },
+    {
+        "symbol": "DIS",
+        "date": "2006-09-30",
+        "stockPrice": 31.42989,
+        "numberOfShares": 2005000000,
+        "marketCapitalization": 63016929450,
+        "minusCashAndCashEquivalents": 2411000000,
+        "addTotalDebt": 13525000000,
+        "enterpriseValue": 74130929450
+    },
+    {
+        "symbol": "DIS",
+        "date": "2005-10-01",
+        "stockPrice": 19.7812,
+        "numberOfShares": 2089000000,
+        "marketCapitalization": 41322926800,
+        "minusCashAndCashEquivalents": 1723000000,
+        "addTotalDebt": 10531000000,
+        "enterpriseValue": 50130926800
+    },
+    {
+        "symbol": "DIS",
+        "date": "2005-09-30",
+        "stockPrice": 23.49843,
+        "numberOfShares": 2028000000,
+        "marketCapitalization": 47654816040,
+        "minusCashAndCashEquivalents": 1723000000,
+        "addTotalDebt": 12467000000,
+        "enterpriseValue": 58398816040
+    },
+    {
+        "symbol": "DIS",
+        "date": "2004-09-30",
+        "stockPrice": 24.87953,
+        "numberOfShares": 2049000000,
+        "marketCapitalization": 50978156970,
+        "minusCashAndCashEquivalents": 2042000000,
+        "addTotalDebt": 13488000000,
+        "enterpriseValue": 62424156970
+    },
+    {
+        "symbol": "DIS",
+        "date": "2003-09-30",
+        "stockPrice": 22.571119,
+        "numberOfShares": 2067000000,
+        "marketCapitalization": 46654502973,
+        "minusCashAndCashEquivalents": 1583000000,
+        "addTotalDebt": 13100000000,
+        "enterpriseValue": 58171502973
+    },
+    {
+        "symbol": "DIS",
+        "date": "2002-09-30",
+        "stockPrice": 16.602795,
+        "numberOfShares": 2044000000,
+        "marketCapitalization": 33936112980,
+        "minusCashAndCashEquivalents": 1239000000,
+        "addTotalDebt": 14130000000,
+        "enterpriseValue": 46827112980
+    },
+    {
+        "symbol": "DIS",
+        "date": "2001-09-30",
+        "stockPrice": 17.914841,
+        "numberOfShares": 2085000000,
+        "marketCapitalization": 37352443485,
+        "minusCashAndCashEquivalents": 618000000,
+        "addTotalDebt": 9769000000,
+        "enterpriseValue": 46503443485
+    },
+    {
+        "symbol": "DIS",
+        "date": "2000-09-30",
+        "stockPrice": 34.404186,
+        "numberOfShares": 2103000000,
+        "marketCapitalization": 72352003158,
+        "minusCashAndCashEquivalents": 842000000,
+        "addTotalDebt": 9461000000,
+        "enterpriseValue": 80971003158
+    },
+    {
+        "symbol": "DIS",
+        "date": "1999-09-30",
+        "stockPrice": 26.14225,
+        "numberOfShares": 2056000000,
+        "marketCapitalization": 53748466000,
+        "minusCashAndCashEquivalents": 414000000,
+        "addTotalDebt": 11693000000,
+        "enterpriseValue": 65027466000
+    },
+    {
+        "symbol": "DIS",
+        "date": "1998-09-30",
+        "stockPrice": 26.573843,
+        "numberOfShares": 2037000000,
+        "marketCapitalization": 54130918191,
+        "minusCashAndCashEquivalents": 127000000,
+        "addTotalDebt": 11685000000,
+        "enterpriseValue": 65688918191
+    },
+    {
+        "symbol": "DIS",
+        "date": "1997-09-30",
+        "stockPrice": 26.512188,
+        "numberOfShares": 2061000000,
+        "marketCapitalization": 54641619468,
+        "minusCashAndCashEquivalents": 317000000,
+        "addTotalDebt": 11068000000,
+        "enterpriseValue": 65392619468
+    },
+    {
+        "symbol": "DIS",
+        "date": "1996-09-30",
+        "stockPrice": 21.579687,
+        "numberOfShares": 1857000000,
+        "marketCapitalization": 40073478759,
+        "minusCashAndCashEquivalents": 278000000,
+        "addTotalDebt": 12342000000,
+        "enterpriseValue": 52137478759
+    },
+    {
+        "symbol": "DIS",
+        "date": "1995-09-30",
+        "stockPrice": 18.94902,
+        "numberOfShares": 1574775000,
+        "marketCapitalization": 29840442970.5,
+        "minusCashAndCashEquivalents": 1076500000,
+        "addTotalDebt": 2984300000,
+        "enterpriseValue": 31748242970.5
+    },
+    {
+        "symbol": "DIS",
+        "date": "1994-09-30",
+        "stockPrice": 13.153334,
+        "numberOfShares": 1573874000,
+        "marketCapitalization": 20701690395.916,
+        "minusCashAndCashEquivalents": 186900000,
+        "addTotalDebt": 2936900000,
+        "enterpriseValue": 23451690395.916
+    },
+    {
+        "symbol": "DIS",
+        "date": "1993-09-30",
+        "stockPrice": 14.139833,
+        "numberOfShares": 1608108000,
+        "marketCapitalization": 22738378565.964,
+        "minusCashAndCashEquivalents": 363000000,
+        "addTotalDebt": 2385800000,
+        "enterpriseValue": 24761178565.964
+    }
+]

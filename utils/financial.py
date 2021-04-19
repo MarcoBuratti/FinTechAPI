@@ -14,6 +14,10 @@ def getDescription(ticker):
     profile = get('https://financialmodelingprep.com/api/v3/profile/' + ticker + '?apikey=c02b588f1788d81805c7d379c213079e').json()
     return profile[0]['description']
 
+def get_exchange(ticker):
+    profile = get('https://financialmodelingprep.com/api/v3/profile/' + ticker + '?apikey=c02b588f1788d81805c7d379c213079e').json()
+    return profile[0]['exchangeShortName']
+
 def get_dataframe(ticker):
     income_statement = get('https://financialmodelingprep.com/api/v3/income-statement/' + ticker + '?limit=120&apikey=c02b588f1788d81805c7d379c213079e').json()
     balance_sheet = get('https://financialmodelingprep.com/api/v3/balance-sheet-statement/' + ticker + '?limit=120&apikey=c02b588f1788d81805c7d379c213079e').json()
@@ -104,7 +108,20 @@ def draw_bars(ticker):
                 height=400,                   # figure height in pixels
                 template='gridon', 
             ) 
-    return json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder), json.dumps(fig2, cls=plotly.utils.PlotlyJSONEncoder)
+    finHealth1 = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
+    finHealth2 = json.dumps(fig2, cls=plotly.utils.PlotlyJSONEncoder)
+    finHealth = []
+    o = {
+    'ds': 'financial1',
+    'fig': finHealth1
+    }
+    finHealth.append(o)
+    o = {
+        'ds': 'financial2',
+        'fig': finHealth2
+    }
+    finHealth.append(o)
+    return finHealth
 
 def draw_indicators(ticker):
     ratios = get_data(ticker)
@@ -139,4 +156,20 @@ def draw_indicators(ticker):
             layout=go.Layout(height=300, width=300)
         )
     fig3 = json.dumps(ind3, cls=plotly.utils.PlotlyJSONEncoder)
-    return fig1, fig2, fig3 
+    indicator = []
+    o = {
+    'ds': 'indicator1',
+    'fig': fig1
+    }
+    indicator.append(o)
+    o = {
+    'ds': 'indicator2',
+    'fig': fig2
+    }
+    indicator.append(o)
+    o = {
+    'ds': 'indicator3',
+    'fig': fig3
+    }
+    indicator.append(o)
+    return indicator

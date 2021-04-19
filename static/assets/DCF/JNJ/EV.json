@@ -1,0 +1,392 @@
+[
+    {
+        "symbol": "JNJ",
+        "date": "2021-01-03",
+        "stockPrice": 161.25,
+        "numberOfShares": 2632000000,
+        "marketCapitalization": 424410000000,
+        "minusCashAndCashEquivalents": 13985000000,
+        "addTotalDebt": 35266000000,
+        "enterpriseValue": 445691000000
+    },
+    {
+        "symbol": "JNJ",
+        "date": "2019-12-29",
+        "stockPrice": 149.5,
+        "numberOfShares": 2632512000,
+        "marketCapitalization": 393560544000,
+        "minusCashAndCashEquivalents": 5501000000,
+        "addTotalDebt": 27696000000,
+        "enterpriseValue": 415755544000
+    },
+    {
+        "symbol": "JNJ",
+        "date": "2018-12-31",
+        "stockPrice": 131.64,
+        "numberOfShares": 2681500000,
+        "marketCapitalization": 352992659999.99994,
+        "minusCashAndCashEquivalents": 18107000000,
+        "addTotalDebt": 30480000000,
+        "enterpriseValue": 365365659999.99994
+    },
+    {
+        "symbol": "JNJ",
+        "date": "2018-12-30",
+        "stockPrice": 130.330002,
+        "numberOfShares": 2632512000,
+        "marketCapitalization": 343095294225.02405,
+        "minusCashAndCashEquivalents": 6016000000,
+        "addTotalDebt": 30480000000,
+        "enterpriseValue": 367559294225.02405
+    },
+    {
+        "symbol": "JNJ",
+        "date": "2017-12-31",
+        "stockPrice": 142.429993,
+        "numberOfShares": 2632512000,
+        "marketCapitalization": 374948665732.416,
+        "minusCashAndCashEquivalents": 17824000000,
+        "addTotalDebt": 34581000000,
+        "enterpriseValue": 391705665732.416
+    },
+    {
+        "symbol": "JNJ",
+        "date": "2017-01-01",
+        "stockPrice": 113.25,
+        "numberOfShares": 2632512000,
+        "marketCapitalization": 298131984000,
+        "minusCashAndCashEquivalents": 9166000000,
+        "addTotalDebt": 27126000000,
+        "enterpriseValue": 316091984000
+    },
+    {
+        "symbol": "JNJ",
+        "date": "2016-01-03",
+        "stockPrice": 103.410004,
+        "numberOfShares": 2771000000,
+        "marketCapitalization": 286549121084,
+        "minusCashAndCashEquivalents": 5687000000,
+        "addTotalDebt": 19861000000,
+        "enterpriseValue": 300723121084
+    },
+    {
+        "symbol": "JNJ",
+        "date": "2014-12-28",
+        "stockPrice": 102.089996,
+        "numberOfShares": 2815000000,
+        "marketCapitalization": 287383338740,
+        "minusCashAndCashEquivalents": 3688000000,
+        "addTotalDebt": 18760000000,
+        "enterpriseValue": 302455338740
+    },
+    {
+        "symbol": "JNJ",
+        "date": "2013-12-29",
+        "stockPrice": 90.099998,
+        "numberOfShares": 2809000000,
+        "marketCapitalization": 253090894382,
+        "minusCashAndCashEquivalents": 4675000000,
+        "addTotalDebt": 18180000000,
+        "enterpriseValue": 266595894382
+    },
+    {
+        "symbol": "JNJ",
+        "date": "2012-12-30",
+        "stockPrice": 74.410004,
+        "numberOfShares": 2753000000,
+        "marketCapitalization": 204850741012,
+        "minusCashAndCashEquivalents": 4438000000,
+        "addTotalDebt": 16165000000,
+        "enterpriseValue": 216577741012
+    },
+    {
+        "symbol": "JNJ",
+        "date": "2012-01-01",
+        "stockPrice": 65.910004,
+        "numberOfShares": 2859000000,
+        "marketCapitalization": 188436701436,
+        "minusCashAndCashEquivalents": 4299000000,
+        "addTotalDebt": 19627000000,
+        "enterpriseValue": 203764701436
+    },
+    {
+        "symbol": "JNJ",
+        "date": "2011-01-02",
+        "stockPrice": 60.630001,
+        "numberOfShares": 2778000000,
+        "marketCapitalization": 168430142778,
+        "minusCashAndCashEquivalents": 4428000000,
+        "addTotalDebt": 16773000000,
+        "enterpriseValue": 180775142778
+    },
+    {
+        "symbol": "JNJ",
+        "date": "2010-01-03",
+        "stockPrice": 63.990002,
+        "numberOfShares": 2782000000,
+        "marketCapitalization": 178020185564,
+        "minusCashAndCashEquivalents": 4407000000,
+        "addTotalDebt": 14541000000,
+        "enterpriseValue": 188154185564
+    },
+    {
+        "symbol": "JNJ",
+        "date": "2008-12-28",
+        "stockPrice": 57.540001,
+        "numberOfShares": 2797000000,
+        "marketCapitalization": 160939382797,
+        "minusCashAndCashEquivalents": 10768000000,
+        "addTotalDebt": 11852000000,
+        "enterpriseValue": 162023382797
+    },
+    {
+        "symbol": "JNJ",
+        "date": "2007-12-30",
+        "stockPrice": 62.970001,
+        "numberOfShares": 2790000000,
+        "marketCapitalization": 175686302790,
+        "minusCashAndCashEquivalents": 7770000000,
+        "addTotalDebt": 9537000000,
+        "enterpriseValue": 177453302790
+    },
+    {
+        "symbol": "JNJ",
+        "date": "2006-12-31",
+        "stockPrice": 66.389999,
+        "numberOfShares": 2939627660,
+        "marketCapitalization": 195161877407.77234,
+        "minusCashAndCashEquivalents": 4083000000,
+        "addTotalDebt": 6593000000,
+        "enterpriseValue": 197671877407.77234
+    },
+    {
+        "symbol": "JNJ",
+        "date": "2006-01-01",
+        "stockPrice": 57.540001,
+        "numberOfShares": 3013000000,
+        "marketCapitalization": 173368023013,
+        "minusCashAndCashEquivalents": 16055000000,
+        "addTotalDebt": 2017000000,
+        "enterpriseValue": 159330023013
+    },
+    {
+        "symbol": "JNJ",
+        "date": "2005-01-02",
+        "stockPrice": 65.419998,
+        "numberOfShares": 3004000000,
+        "marketCapitalization": 196521673992.00003,
+        "minusCashAndCashEquivalents": 9203000000,
+        "addTotalDebt": 2565000000,
+        "enterpriseValue": 189883673992.00003
+    },
+    {
+        "symbol": "JNJ",
+        "date": "2003-12-28",
+        "stockPrice": 53.279999,
+        "numberOfShares": 3008000000,
+        "marketCapitalization": 160266236992,
+        "minusCashAndCashEquivalents": 5377000000,
+        "addTotalDebt": 2955000000,
+        "enterpriseValue": 157844236992
+    },
+    {
+        "symbol": "JNJ",
+        "date": "2002-12-29",
+        "stockPrice": 53.040001,
+        "numberOfShares": 3054000000,
+        "marketCapitalization": 161984163054,
+        "minusCashAndCashEquivalents": 2894000000,
+        "addTotalDebt": 2022000000,
+        "enterpriseValue": 161112163054
+    },
+    {
+        "symbol": "JNJ",
+        "date": "2001-12-31",
+        "stockPrice": 57.200001,
+        "numberOfShares": 3031016043,
+        "marketCapitalization": 173374120690.61606,
+        "minusCashAndCashEquivalents": 3758000000,
+        "addTotalDebt": 2782000000,
+        "enterpriseValue": 172398120690.61606
+    },
+    {
+        "symbol": "JNJ",
+        "date": "2000-12-31",
+        "stockPrice": 45.799999,
+        "numberOfShares": 2782608696,
+        "marketCapitalization": 127443475494.1913,
+        "minusCashAndCashEquivalents": 3411000000,
+        "addTotalDebt": 3516000000,
+        "enterpriseValue": 127548475494.1913
+    },
+    {
+        "symbol": "JNJ",
+        "date": "2000-01-02",
+        "stockPrice": 42.40625,
+        "numberOfShares": 2836000000,
+        "marketCapitalization": 120264125000,
+        "minusCashAndCashEquivalents": 2363000000,
+        "addTotalDebt": 2450000000,
+        "enterpriseValue": 120351125000
+    },
+    {
+        "symbol": "JNJ",
+        "date": "1999-01-03",
+        "stockPrice": 41.46875,
+        "numberOfShares": 2743000000,
+        "marketCapitalization": 113748781250,
+        "minusCashAndCashEquivalents": 1927000000,
+        "addTotalDebt": 1269000000,
+        "enterpriseValue": 113090781250
+    },
+    {
+        "symbol": "JNJ",
+        "date": "1997-12-28",
+        "stockPrice": 33.71875,
+        "numberOfShares": 2740000000,
+        "marketCapitalization": 92389375000,
+        "minusCashAndCashEquivalents": 2753000000,
+        "addTotalDebt": 1126000000,
+        "enterpriseValue": 90762375000
+    },
+    {
+        "symbol": "JNJ",
+        "date": "1996-12-29",
+        "stockPrice": 27.1875,
+        "numberOfShares": 2719000000,
+        "marketCapitalization": 73922812500,
+        "minusCashAndCashEquivalents": 2011000000,
+        "addTotalDebt": 1410000000,
+        "enterpriseValue": 73321812500
+    },
+    {
+        "symbol": "JNJ",
+        "date": "1995-12-31",
+        "stockPrice": 24.09375,
+        "numberOfShares": 2583870968,
+        "marketCapitalization": 62255141135.25,
+        "minusCashAndCashEquivalents": 1201000000,
+        "addTotalDebt": 2428000000,
+        "enterpriseValue": 63482141135.25
+    },
+    {
+        "symbol": "JNJ",
+        "date": "1995-01-01",
+        "stockPrice": 14.53125,
+        "numberOfShares": 2594000000,
+        "marketCapitalization": 37694062500,
+        "minusCashAndCashEquivalents": 636000000,
+        "addTotalDebt": 2199000000,
+        "enterpriseValue": 39257062500
+    },
+    {
+        "symbol": "JNJ",
+        "date": "1994-01-02",
+        "stockPrice": 4.53,
+        "numberOfShares": 2761000000,
+        "marketCapitalization": 12507330000,
+        "minusCashAndCashEquivalents": 372000000,
+        "addTotalDebt": 1493000000,
+        "enterpriseValue": 13628330000
+    },
+    {
+        "symbol": "JNJ",
+        "date": "1993-01-03",
+        "stockPrice": 4.2433,
+        "numberOfShares": 2638000000,
+        "marketCapitalization": 11193825399.999998,
+        "minusCashAndCashEquivalents": 745000000,
+        "addTotalDebt": 1365000000,
+        "enterpriseValue": 11813825399.999998
+    },
+    {
+        "symbol": "JNJ",
+        "date": "1991-12-29",
+        "stockPrice": 4.6199,
+        "numberOfShares": 2665000000,
+        "marketCapitalization": 12312033500,
+        "minusCashAndCashEquivalents": 589000000,
+        "addTotalDebt": 1301000000,
+        "enterpriseValue": 13024033500
+    },
+    {
+        "symbol": "JNJ",
+        "date": "1990-12-31",
+        "stockPrice": 2.9137,
+        "numberOfShares": 2664000000,
+        "marketCapitalization": 7762096800,
+        "minusCashAndCashEquivalents": 826000000,
+        "addTotalDebt": 1316000000,
+        "enterpriseValue": 8252096800
+    },
+    {
+        "symbol": "JNJ",
+        "date": "1989-12-31",
+        "stockPrice": 1.6717,
+        "numberOfShares": 2665000000,
+        "marketCapitalization": 4455080500,
+        "minusCashAndCashEquivalents": 452000000,
+        "addTotalDebt": 1170000000,
+        "enterpriseValue": 5173080500
+    },
+    {
+        "symbol": "JNJ",
+        "date": "1988-12-31",
+        "stockPrice": 1.1541,
+        "numberOfShares": 2725000000,
+        "marketCapitalization": 3144922499.9999995,
+        "minusCashAndCashEquivalents": 529000000,
+        "addTotalDebt": 1166000000,
+        "enterpriseValue": 3781922499.9999995
+    },
+    {
+        "symbol": "JNJ",
+        "date": "1987-12-31",
+        "stockPrice": 0.663,
+        "numberOfShares": 2762000000,
+        "marketCapitalization": 1831206000,
+        "minusCashAndCashEquivalents": 622000000,
+        "addTotalDebt": 733000000,
+        "enterpriseValue": 1942206000
+    },
+    {
+        "symbol": "JNJ",
+        "date": "1986-12-31",
+        "stockPrice": 0.4673,
+        "numberOfShares": 2854000000,
+        "marketCapitalization": 1333674200,
+        "minusCashAndCashEquivalents": 680000000,
+        "addTotalDebt": 242000000,
+        "enterpriseValue": 895674200
+    },
+    {
+        "symbol": "JNJ",
+        "date": "1985-12-31",
+        "stockPrice": 0.2275,
+        "numberOfShares": 2926000000,
+        "marketCapitalization": 665665000,
+        "minusCashAndCashEquivalents": 129000000,
+        "addTotalDebt": 185000000,
+        "enterpriseValue": 721665000
+    },
+    {
+        "symbol": "JNJ",
+        "date": "1984-12-31",
+        "stockPrice": 0.1035,
+        "numberOfShares": 2998000000,
+        "marketCapitalization": 310293000,
+        "minusCashAndCashEquivalents": 94000000,
+        "addTotalDebt": 225000000,
+        "enterpriseValue": 441293000
+    },
+    {
+        "symbol": "JNJ",
+        "date": "1983-12-31",
+        "stockPrice": 0.0561,
+        "numberOfShares": 3048000000,
+        "marketCapitalization": 170992800,
+        "minusCashAndCashEquivalents": 123000000,
+        "addTotalDebt": 196000000,
+        "enterpriseValue": 243992800
+    }
+]

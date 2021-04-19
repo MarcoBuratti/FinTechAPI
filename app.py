@@ -7,7 +7,8 @@ from functools import wraps
 import requests
 from utils.stock import *
 from utils.financial import *
-from utils.chatbot import *
+#from utils.chatbot import *
+from utils.dcfFunctions import *
 import datetime
 
 
@@ -16,7 +17,6 @@ app.secret_key='secret123'
 conn = dbConnection()
 cursor = conn.cursor()
 stock = Stock()
-chatbot = Chat()
 
 @app.route('/')
 def index():
@@ -312,28 +312,22 @@ def financials():
                }
                bigList.append(o)
         if ticker != None:
-            finHealth1, finHealth2 = draw_bars(ticker)
+            finHealth = draw_bars(ticker)
+            exchange = get_exchange(ticker)
             description = getDescription(ticker)
             revenues = draw_lines(ticker)
-            indicator1, indicator2, indicator3 = draw_indicators(ticker)
-            return render_template('financials.html', listaExchange=listaExchange, listaSector=listaSector, stockPrice=marketCapDimension, bigList=bigList, fig1=finHealth1, fig2=finHealth2, result=ticker, description=description, revenues=revenues, indicator1=indicator1, indicator2=indicator2, indicator3=indicator3)
+            indicator = draw_indicators(ticker)
+            stringa = str(exchange + ':' + ticker)
+            figDCF = dcf(ticker)
+            link = {
+                'ticker': stringa
+            }
+            return render_template('financials.html', figDCF=figDCF, link=link, listaExchange=listaExchange, listaSector=listaSector, stockPrice=marketCapDimension, bigList=bigList, finHealth=finHealth, result=ticker, description=description, revenues=revenues, indicator=indicator)
         else:
             return render_template('financials.html', listaExchange=listaExchange, listaSector=listaSector, stockPrice=marketCapDimension, bigList=bigList)
     
-    #return render_template('financials-copy.html', listaExchange=listaExchange, listaSector=listaSector, fig1=finHealth1, fig2=finHealth2, ticker=tickerResult, result=tickerResult[0], description=description, revenues=revenues, indicator1=indicator1, indicator2=indicator2, indicator3=indicator3)
     return render_template('financials.html', listaExchange=listaExchange, listaSector=listaSector, stockPrice=marketCapDimension)
 
-@app.route("/Chatbot")
-def home():
-    return render_template("chat.html")
-
-@app.route("/get")
-def get_bot_response():
-
-    userText = request.args.get('msg')
-    ciao = chatbot.get_answer(userText)
-    
-    return str(ciao)
 
 @app.errorhandler(404)
 def page_not_found(e):

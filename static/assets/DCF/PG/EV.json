@@ -1,0 +1,382 @@
+[
+    {
+        "symbol": "PG",
+        "date": "2020-06-30",
+        "stockPrice": 131.419998,
+        "numberOfShares": 2539376218,
+        "marketCapitalization": 333724817490.80756,
+        "minusCashAndCashEquivalents": 16181000000,
+        "addTotalDebt": 34720000000,
+        "enterpriseValue": 352263817490.80756
+    },
+    {
+        "symbol": "PG",
+        "date": "2019-06-30",
+        "stockPrice": 120.410004,
+        "numberOfShares": 2687586207,
+        "marketCapitalization": 323612265935.21484,
+        "minusCashAndCashEquivalents": 4239000000,
+        "addTotalDebt": 30059000000,
+        "enterpriseValue": 349432265935.21484
+    },
+    {
+        "symbol": "PG",
+        "date": "2018-06-30",
+        "stockPrice": 80.199997,
+        "numberOfShares": 2529300000,
+        "marketCapitalization": 202849852412.09998,
+        "minusCashAndCashEquivalents": 2569000000,
+        "addTotalDebt": 31179000000,
+        "enterpriseValue": 231459852412.09998
+    },
+    {
+        "symbol": "PG",
+        "date": "2017-06-30",
+        "stockPrice": 90.209999,
+        "numberOfShares": 2642413793,
+        "marketCapitalization": 238372145624.1162,
+        "minusCashAndCashEquivalents": 5569000000,
+        "addTotalDebt": 31541000000,
+        "enterpriseValue": 264344145624.1162
+    },
+    {
+        "symbol": "PG",
+        "date": "2016-06-30",
+        "stockPrice": 85.589996,
+        "numberOfShares": 2765263158,
+        "marketCapitalization": 236678862632.16736,
+        "minusCashAndCashEquivalents": 7102000000,
+        "addTotalDebt": 30553000000,
+        "enterpriseValue": 260129862632.16736
+    },
+    {
+        "symbol": "PG",
+        "date": "2015-06-30",
+        "stockPrice": 77.389999,
+        "numberOfShares": 2814400000,
+        "marketCapitalization": 217806413185.6,
+        "minusCashAndCashEquivalents": 6845000000,
+        "addTotalDebt": 30298000000,
+        "enterpriseValue": 241259413185.6
+    },
+    {
+        "symbol": "PG",
+        "date": "2014-06-30",
+        "stockPrice": 78.160004,
+        "numberOfShares": 2778758950,
+        "marketCapitalization": 217187810647.0358,
+        "minusCashAndCashEquivalents": 8558000000,
+        "addTotalDebt": 35334000000,
+        "enterpriseValue": 243963810647.0358
+    },
+    {
+        "symbol": "PG",
+        "date": "2013-06-30",
+        "stockPrice": 80.440002,
+        "numberOfShares": 2800000000,
+        "marketCapitalization": 225232005600.00003,
+        "minusCashAndCashEquivalents": 5947000000,
+        "addTotalDebt": 31512000000,
+        "enterpriseValue": 250797005600.00003
+    },
+    {
+        "symbol": "PG",
+        "date": "2012-06-30",
+        "stockPrice": 65.099998,
+        "numberOfShares": 2815706806,
+        "marketCapitalization": 183302507439.1864,
+        "minusCashAndCashEquivalents": 4436000000,
+        "addTotalDebt": 29733000000,
+        "enterpriseValue": 208599507439.1864
+    },
+    {
+        "symbol": "PG",
+        "date": "2011-06-30",
+        "stockPrice": 61.490002,
+        "numberOfShares": 2804000000,
+        "marketCapitalization": 172417965608,
+        "minusCashAndCashEquivalents": 2768000000,
+        "addTotalDebt": 32014000000,
+        "enterpriseValue": 201663965608
+    },
+    {
+        "symbol": "PG",
+        "date": "2010-06-30",
+        "stockPrice": 61.16,
+        "numberOfShares": 2948148148,
+        "marketCapitalization": 180308740731.68,
+        "minusCashAndCashEquivalents": 2879000000,
+        "addTotalDebt": 29832000000,
+        "enterpriseValue": 207261740731.68
+    },
+    {
+        "symbol": "PG",
+        "date": "2009-06-30",
+        "stockPrice": 56.23,
+        "numberOfShares": 2992427617,
+        "marketCapitalization": 168264204903.91,
+        "minusCashAndCashEquivalents": 4781000000,
+        "addTotalDebt": 36972000000,
+        "enterpriseValue": 200455204903.91
+    },
+    {
+        "symbol": "PG",
+        "date": "2008-06-30",
+        "stockPrice": 66.57,
+        "numberOfShares": 3080800000,
+        "marketCapitalization": 205088855999.99997,
+        "minusCashAndCashEquivalents": 3313000000,
+        "addTotalDebt": 36665000000,
+        "enterpriseValue": 238440855999.99997
+    },
+    {
+        "symbol": "PG",
+        "date": "2007-06-30",
+        "stockPrice": 63.27,
+        "numberOfShares": 3159000000,
+        "marketCapitalization": 199869930000,
+        "minusCashAndCashEquivalents": 5354000000,
+        "addTotalDebt": 35414000000,
+        "enterpriseValue": 229929930000
+    },
+    {
+        "symbol": "PG",
+        "date": "2006-06-30",
+        "stockPrice": 56.810001,
+        "numberOfShares": 3054900000,
+        "marketCapitalization": 173548872054.9,
+        "minusCashAndCashEquivalents": 6693000000,
+        "addTotalDebt": 38104000000,
+        "enterpriseValue": 204959872054.9
+    },
+    {
+        "symbol": "PG",
+        "date": "2005-06-30",
+        "stockPrice": 55.630001,
+        "numberOfShares": 2515600000,
+        "marketCapitalization": 139942830515.6,
+        "minusCashAndCashEquivalents": 6389000000,
+        "addTotalDebt": 24328000000,
+        "enterpriseValue": 157881830515.6
+    },
+    {
+        "symbol": "PG",
+        "date": "2004-06-30",
+        "stockPrice": 52.150002,
+        "numberOfShares": 2580100000,
+        "marketCapitalization": 134552220160.2,
+        "minusCashAndCashEquivalents": 5469000000,
+        "addTotalDebt": 20841000000,
+        "enterpriseValue": 149924220160.2
+    },
+    {
+        "symbol": "PG",
+        "date": "2003-06-30",
+        "stockPrice": 43.875,
+        "numberOfShares": 2593200000,
+        "marketCapitalization": 113776650000,
+        "minusCashAndCashEquivalents": 5912000000,
+        "addTotalDebt": 13647000000,
+        "enterpriseValue": 121511650000
+    },
+    {
+        "symbol": "PG",
+        "date": "2002-06-30",
+        "stockPrice": 43.639999,
+        "numberOfShares": 2594800000,
+        "marketCapitalization": 113237069405.20001,
+        "minusCashAndCashEquivalents": 3427000000,
+        "addTotalDebt": 14932000000,
+        "enterpriseValue": 124742069405.20001
+    },
+    {
+        "symbol": "PG",
+        "date": "2001-06-30",
+        "stockPrice": 35.549999,
+        "numberOfShares": 2600600000,
+        "marketCapitalization": 92451327399.4,
+        "minusCashAndCashEquivalents": 2306000000,
+        "addTotalDebt": 12025000000,
+        "enterpriseValue": 102170327399.4
+    },
+    {
+        "symbol": "PG",
+        "date": "2000-06-30",
+        "stockPrice": 29.59375,
+        "numberOfShares": 2626400000,
+        "marketCapitalization": 77725025000,
+        "minusCashAndCashEquivalents": 1415000000,
+        "addTotalDebt": 12126000000,
+        "enterpriseValue": 88436025000
+    },
+    {
+        "symbol": "PG",
+        "date": "1999-06-30",
+        "stockPrice": 45.28125,
+        "numberOfShares": 2657454545,
+        "marketCapitalization": 120332863615.78125,
+        "minusCashAndCashEquivalents": 2294000000,
+        "addTotalDebt": 9381000000,
+        "enterpriseValue": 127419863615.78125
+    },
+    {
+        "symbol": "PG",
+        "date": "1998-06-30",
+        "stockPrice": 41.8125,
+        "numberOfShares": 2683211679,
+        "marketCapitalization": 112191788328.1875,
+        "minusCashAndCashEquivalents": 1549000000,
+        "addTotalDebt": 8046000000,
+        "enterpriseValue": 118688788328.1875
+    },
+    {
+        "symbol": "PG",
+        "date": "1997-06-30",
+        "stockPrice": 38.28125,
+        "numberOfShares": 2720600000,
+        "marketCapitalization": 104147968750,
+        "minusCashAndCashEquivalents": 2350000000,
+        "addTotalDebt": 4992000000,
+        "enterpriseValue": 106789968750
+    },
+    {
+        "symbol": "PG",
+        "date": "1996-06-30",
+        "stockPrice": 22.0625,
+        "numberOfShares": 2745200000,
+        "marketCapitalization": 60565975000,
+        "minusCashAndCashEquivalents": 2074000000,
+        "addTotalDebt": 5786000000,
+        "enterpriseValue": 64277975000
+    },
+    {
+        "symbol": "PG",
+        "date": "1995-06-30",
+        "stockPrice": 17.4375,
+        "numberOfShares": 2744000000,
+        "marketCapitalization": 47848500000,
+        "minusCashAndCashEquivalents": 2028000000,
+        "addTotalDebt": 6131000000,
+        "enterpriseValue": 51951500000
+    },
+    {
+        "symbol": "PG",
+        "date": "1994-06-30",
+        "stockPrice": 13.9375,
+        "numberOfShares": 2732400000,
+        "marketCapitalization": 38082825000,
+        "minusCashAndCashEquivalents": 2373000000,
+        "addTotalDebt": 6355000000,
+        "enterpriseValue": 42064825000
+    },
+    {
+        "symbol": "PG",
+        "date": "1993-06-30",
+        "stockPrice": 4.3649,
+        "numberOfShares": 2722000000,
+        "marketCapitalization": 11881257799.999998,
+        "minusCashAndCashEquivalents": 2322000000,
+        "addTotalDebt": 5174000000,
+        "enterpriseValue": 14733257799.999998
+    },
+    {
+        "symbol": "PG",
+        "date": "1992-06-30",
+        "stockPrice": 4.0951,
+        "numberOfShares": 2960000000,
+        "marketCapitalization": 12121496000.000002,
+        "minusCashAndCashEquivalents": 1776000000,
+        "addTotalDebt": 5223000000,
+        "enterpriseValue": 15568496000.000002
+    },
+    {
+        "symbol": "PG",
+        "date": "1991-06-30",
+        "stockPrice": 2.8271,
+        "numberOfShares": 2981000000,
+        "marketCapitalization": 8427585100.000001,
+        "minusCashAndCashEquivalents": 1384000000,
+        "addTotalDebt": 4111000000,
+        "enterpriseValue": 11154585100
+    },
+    {
+        "symbol": "PG",
+        "date": "1990-06-30",
+        "stockPrice": 2.4695,
+        "numberOfShares": 2954000000,
+        "marketCapitalization": 7294903000,
+        "minusCashAndCashEquivalents": 1407000000,
+        "addTotalDebt": 3588000000,
+        "enterpriseValue": 9475903000
+    },
+    {
+        "symbol": "PG",
+        "date": "1989-06-30",
+        "stockPrice": 1.3002,
+        "numberOfShares": 2755000000,
+        "marketCapitalization": 3582051000,
+        "minusCashAndCashEquivalents": 1587000000,
+        "addTotalDebt": 3698000000,
+        "enterpriseValue": 5693051000
+    },
+    {
+        "symbol": "PG",
+        "date": "1988-06-30",
+        "stockPrice": 0.46,
+        "numberOfShares": 2726000000,
+        "marketCapitalization": 1253960000,
+        "minusCashAndCashEquivalents": 1065000000,
+        "addTotalDebt": 2462000000,
+        "enterpriseValue": 2650960000
+    },
+    {
+        "symbol": "PG",
+        "date": "1987-06-30",
+        "stockPrice": 0.3148,
+        "numberOfShares": 2728000000,
+        "marketCapitalization": 858774400.0000001,
+        "minusCashAndCashEquivalents": 741000000,
+        "addTotalDebt": 2524000000,
+        "enterpriseValue": 2641774400
+    },
+    {
+        "symbol": "PG",
+        "date": "1986-06-30",
+        "stockPrice": 0.15,
+        "numberOfShares": 2710000000,
+        "marketCapitalization": 406500000,
+        "minusCashAndCashEquivalents": 565000000,
+        "addTotalDebt": 2457000000,
+        "enterpriseValue": 2298500000
+    },
+    {
+        "symbol": "PG",
+        "date": "1985-06-30",
+        "stockPrice": 0.0687,
+        "numberOfShares": 2688000000,
+        "marketCapitalization": 184665600,
+        "minusCashAndCashEquivalents": 478000000,
+        "addTotalDebt": 877000000,
+        "enterpriseValue": 583665600
+    },
+    {
+        "symbol": "PG",
+        "date": "1984-06-30",
+        "stockPrice": 0.0598,
+        "numberOfShares": 2674000000,
+        "marketCapitalization": 159905200,
+        "minusCashAndCashEquivalents": 741000000,
+        "addTotalDebt": 630000000,
+        "enterpriseValue": 48905200
+    },
+    {
+        "symbol": "PG",
+        "date": "1983-06-30",
+        "stockPrice": 0.0566,
+        "numberOfShares": 2654000000,
+        "marketCapitalization": 150216400,
+        "minusCashAndCashEquivalents": 940000000,
+        "addTotalDebt": 783000000,
+        "enterpriseValue": -6783600
+    }
+]
