@@ -228,11 +228,11 @@ def offLineDCF(ticker):
 
     fig = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
     dcfImg = []
-    comment = 'Following our DCF model the target price of the Stock ' + ticker + ' is ' + str(round(final_price, 3)) + '$'
+    comment = 'According to our DCF model, the intrinsic value of the stock ' + ticker + ' is ' + str(round(final_price, 3)) + '$'    
     o = {
-    'ds': 'dcf',
-    'fig': fig,
-    'comment': comment
+        'ds': 'dcf',
+        'fig': fig,
+        'comment': comment
     }
     dcfImg.append(o)
     return dcfImg

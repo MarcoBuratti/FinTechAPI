@@ -1,0 +1,392 @@
+[
+    {
+        "symbol": "ADBE",
+        "date": "2020-11-27",
+        "stockPrice": 499.859985,
+        "numberOfShares": 481000000,
+        "marketCapitalization": 240432652785,
+        "minusCashAndCashEquivalents": 4478000000,
+        "addTotalDebt": 4117000000,
+        "enterpriseValue": 240071652785
+    },
+    {
+        "symbol": "ADBE",
+        "date": "2019-11-29",
+        "stockPrice": 330.79,
+        "numberOfShares": 486291000,
+        "marketCapitalization": 160860199890,
+        "minusCashAndCashEquivalents": 2650221000,
+        "addTotalDebt": 988924000,
+        "enterpriseValue": 159198902890
+    },
+    {
+        "symbol": "ADBE",
+        "date": "2018-11-30",
+        "stockPrice": 223.13,
+        "numberOfShares": 490564000,
+        "marketCapitalization": 109459545320,
+        "minusCashAndCashEquivalents": 1642775000,
+        "addTotalDebt": 4124800000,
+        "enterpriseValue": 111941570320
+    },
+    {
+        "symbol": "ADBE",
+        "date": "2017-12-01",
+        "stockPrice": 175.24,
+        "numberOfShares": 493632000,
+        "marketCapitalization": 86504071680,
+        "minusCashAndCashEquivalents": 2306000000,
+        "addTotalDebt": 1881000000,
+        "enterpriseValue": 86079071680
+    },
+    {
+        "symbol": "ADBE",
+        "date": "2016-12-02",
+        "stockPrice": 102.95,
+        "numberOfShares": 498345000,
+        "marketCapitalization": 51304617750,
+        "minusCashAndCashEquivalents": 1012000000,
+        "addTotalDebt": 1902000000,
+        "enterpriseValue": 52194617750
+    },
+    {
+        "symbol": "ADBE",
+        "date": "2015-11-27",
+        "stockPrice": 94.3,
+        "numberOfShares": 498764000,
+        "marketCapitalization": 47033445200,
+        "minusCashAndCashEquivalents": 876560000,
+        "addTotalDebt": 1907231000,
+        "enterpriseValue": 48064116200
+    },
+    {
+        "symbol": "ADBE",
+        "date": "2014-11-28",
+        "stockPrice": 74.67,
+        "numberOfShares": 497867000,
+        "marketCapitalization": 37175728890,
+        "minusCashAndCashEquivalents": 1117400000,
+        "addTotalDebt": 911086000,
+        "enterpriseValue": 36969414890
+    },
+    {
+        "symbol": "ADBE",
+        "date": "2013-11-29",
+        "stockPrice": 59.51,
+        "numberOfShares": 501372000,
+        "marketCapitalization": 29836647720,
+        "minusCashAndCashEquivalents": 835000000,
+        "addTotalDebt": 1499000000,
+        "enterpriseValue": 30500647720
+    },
+    {
+        "symbol": "ADBE",
+        "date": "2012-11-30",
+        "stockPrice": 36.9,
+        "numberOfShares": 494731000,
+        "marketCapitalization": 18255573900,
+        "minusCashAndCashEquivalents": 1425052000,
+        "addTotalDebt": 1495312000,
+        "enterpriseValue": 18325833900
+    },
+    {
+        "symbol": "ADBE",
+        "date": "2011-12-02",
+        "stockPrice": 28.27,
+        "numberOfShares": 497469000,
+        "marketCapitalization": 14063448630,
+        "minusCashAndCashEquivalents": 990000000,
+        "addTotalDebt": 1505000000,
+        "enterpriseValue": 14578448630
+    },
+    {
+        "symbol": "ADBE",
+        "date": "2010-12-03",
+        "stockPrice": 30.78,
+        "numberOfShares": 519045000,
+        "marketCapitalization": 15976205100,
+        "minusCashAndCashEquivalents": 750000000,
+        "addTotalDebt": 1522799000,
+        "enterpriseValue": 16749004100
+    },
+    {
+        "symbol": "ADBE",
+        "date": "2009-11-27",
+        "stockPrice": 37.17,
+        "numberOfShares": 524470000,
+        "marketCapitalization": 19494549900,
+        "minusCashAndCashEquivalents": 999000000,
+        "addTotalDebt": 1000000000,
+        "enterpriseValue": 19495549900
+    },
+    {
+        "symbol": "ADBE",
+        "date": "2008-11-28",
+        "stockPrice": 21.08,
+        "numberOfShares": 539373000,
+        "marketCapitalization": 11369982840,
+        "minusCashAndCashEquivalents": 886000000,
+        "addTotalDebt": 350000000,
+        "enterpriseValue": 10833982840
+    },
+    {
+        "symbol": "ADBE",
+        "date": "2007-11-30",
+        "stockPrice": 42.93,
+        "numberOfShares": 584203000,
+        "marketCapitalization": 25079834790,
+        "minusCashAndCashEquivalents": 946422000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 24133412790
+    },
+    {
+        "symbol": "ADBE",
+        "date": "2006-12-01",
+        "stockPrice": 41.12,
+        "numberOfShares": 593750000,
+        "marketCapitalization": 24415000000,
+        "minusCashAndCashEquivalents": 773000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 23642000000
+    },
+    {
+        "symbol": "ADBE",
+        "date": "2005-12-02",
+        "stockPrice": 36.96,
+        "numberOfShares": 489921000,
+        "marketCapitalization": 18107480160,
+        "minusCashAndCashEquivalents": 421000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 17686480160
+    },
+    {
+        "symbol": "ADBE",
+        "date": "2004-12-03",
+        "stockPrice": 31.3638,
+        "numberOfShares": 238829000,
+        "marketCapitalization": 7490584990.200001,
+        "minusCashAndCashEquivalents": 376000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 7114584990.200001
+    },
+    {
+        "symbol": "ADBE",
+        "date": "2003-11-28",
+        "stockPrice": 19.8329,
+        "numberOfShares": 234246000,
+        "marketCapitalization": 4645777493.4,
+        "minusCashAndCashEquivalents": 190000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 4455777493.4
+    },
+    {
+        "symbol": "ADBE",
+        "date": "2002-11-29",
+        "stockPrice": 12.5497,
+        "numberOfShares": 236834000,
+        "marketCapitalization": 2972195649.7999997,
+        "minusCashAndCashEquivalents": 184000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 2788195649.7999997
+    },
+    {
+        "symbol": "ADBE",
+        "date": "2001-11-30",
+        "stockPrice": 16.0434,
+        "numberOfShares": 476922000,
+        "marketCapitalization": 7651450414.799999,
+        "minusCashAndCashEquivalents": 218662000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 7432788414.799999
+    },
+    {
+        "symbol": "ADBE",
+        "date": "2000-12-01",
+        "stockPrice": 28.9057,
+        "numberOfShares": 238292000,
+        "marketCapitalization": 6887997064.4,
+        "minusCashAndCashEquivalents": 237000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 6650997064.4
+    },
+    {
+        "symbol": "ADBE",
+        "date": "1999-12-03",
+        "stockPrice": 16.6936,
+        "numberOfShares": 517000000,
+        "marketCapitalization": 8630591200,
+        "minusCashAndCashEquivalents": 171000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 8459591200
+    },
+    {
+        "symbol": "ADBE",
+        "date": "1998-11-27",
+        "stockPrice": 5.7968,
+        "numberOfShares": 544000000,
+        "marketCapitalization": 3153459200,
+        "minusCashAndCashEquivalents": 111000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 3042459200
+    },
+    {
+        "symbol": "ADBE",
+        "date": "1997-11-28",
+        "stockPrice": 4.6562,
+        "numberOfShares": 593000000,
+        "marketCapitalization": 2761126600,
+        "minusCashAndCashEquivalents": 268000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 2493126600
+    },
+    {
+        "symbol": "ADBE",
+        "date": "1996-11-29",
+        "stockPrice": 4.5507,
+        "numberOfShares": 601000000,
+        "marketCapitalization": 2734970700,
+        "minusCashAndCashEquivalents": 111000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 2623970700
+    },
+    {
+        "symbol": "ADBE",
+        "date": "1995-12-01",
+        "stockPrice": 7.5574,
+        "numberOfShares": 594000000,
+        "marketCapitalization": 4489095600,
+        "minusCashAndCashEquivalents": 58000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 4431095600
+    },
+    {
+        "symbol": "ADBE",
+        "date": "1994-11-30",
+        "stockPrice": 3.6103,
+        "numberOfShares": 499532635,
+        "marketCapitalization": 1803462672.1405,
+        "minusCashAndCashEquivalents": 190100000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 1613362672.1405
+    },
+    {
+        "symbol": "ADBE",
+        "date": "1994-11-25",
+        "stockPrice": 3.6103,
+        "numberOfShares": 49000000,
+        "marketCapitalization": 176904700,
+        "minusCashAndCashEquivalents": 190000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": -13095300
+    },
+    {
+        "symbol": "ADBE",
+        "date": "1993-11-30",
+        "stockPrice": 2.6812,
+        "numberOfShares": 367741935,
+        "marketCapitalization": 985989676.122,
+        "minusCashAndCashEquivalents": 94700000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 891289676.122
+    },
+    {
+        "symbol": "ADBE",
+        "date": "1993-11-26",
+        "stockPrice": 2.5757,
+        "numberOfShares": 481000000,
+        "marketCapitalization": 1238911700,
+        "minusCashAndCashEquivalents": 95000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 1143911700
+    },
+    {
+        "symbol": "ADBE",
+        "date": "1992-11-30",
+        "stockPrice": 1.8815,
+        "numberOfShares": 363333333,
+        "marketCapitalization": 683611666.0395,
+        "minusCashAndCashEquivalents": 47200000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 636411666.0395
+    },
+    {
+        "symbol": "ADBE",
+        "date": "1992-11-27",
+        "stockPrice": 1.8441,
+        "numberOfShares": 373000000,
+        "marketCapitalization": 687849300,
+        "minusCashAndCashEquivalents": 47000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 640849300
+    },
+    {
+        "symbol": "ADBE",
+        "date": "1991-11-30",
+        "stockPrice": 3.9141,
+        "numberOfShares": 355862069,
+        "marketCapitalization": 1392879724.2728999,
+        "minusCashAndCashEquivalents": 30300000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 1362579724.2728999
+    },
+    {
+        "symbol": "ADBE",
+        "date": "1991-11-29",
+        "stockPrice": 3.7214,
+        "numberOfShares": 367000000,
+        "marketCapitalization": 1365753800,
+        "minusCashAndCashEquivalents": 30000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 1335753800
+    },
+    {
+        "symbol": "ADBE",
+        "date": "1990-11-30",
+        "stockPrice": 1.7261,
+        "numberOfShares": 348695652,
+        "marketCapitalization": 601883564.9172,
+        "minusCashAndCashEquivalents": 19500000,
+        "addTotalDebt": 200000.0,
+        "enterpriseValue": 582583564.9172
+    },
+    {
+        "symbol": "ADBE",
+        "date": "1989-11-30",
+        "stockPrice": 1.1883,
+        "numberOfShares": 337000000,
+        "marketCapitalization": 400457100,
+        "minusCashAndCashEquivalents": 13100000,
+        "addTotalDebt": 500000.0,
+        "enterpriseValue": 387857100
+    },
+    {
+        "symbol": "ADBE",
+        "date": "1988-11-30",
+        "stockPrice": 1.2564,
+        "numberOfShares": 324615385,
+        "marketCapitalization": 407846769.714,
+        "minusCashAndCashEquivalents": 35200000,
+        "addTotalDebt": 900000.0,
+        "enterpriseValue": 373546769.714
+    },
+    {
+        "symbol": "ADBE",
+        "date": "1987-11-30",
+        "stockPrice": 0.6581,
+        "numberOfShares": 300000000,
+        "marketCapitalization": 197430000,
+        "minusCashAndCashEquivalents": 17400000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 180030000
+    },
+    {
+        "symbol": "ADBE",
+        "date": "1986-11-30",
+        "stockPrice": 0.2836,
+        "numberOfShares": 240000000,
+        "marketCapitalization": 68064000,
+        "minusCashAndCashEquivalents": 12900000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 55164000
+    }
+]

@@ -26,41 +26,53 @@
         </section>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>-->
-
+    <br>
     <div class="container py-3">
-        <div class="card">
-          <div class="row">
+        <div class="row">
             <div class="col">
-                <div class="container">
-                    <div class="articles-container">   
-                        <div class="chart" id="markovitz">
-                            <script>
-                                var graphs = {{ markovitz|safe }};
-                                Plotly.plot('markovitz',graphs,{});
-                            </script>
-                        </div>
+                <h1>
+                    Portfolio Section
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="container py-3">
+        <div class="row">
+        <div class="col">
+            <div class="container">
+                <div class="articles-container">   
+                    <div class="chart" id="markovitz">
+                        <script>
+                            var graphs = {{ markovitz|safe }};
+                            Plotly.plot('markovitz',graphs,{});
+                        </script>
                     </div>
                 </div>
-            </div> 
-          </div>
+            </div>
+            <br>
+            <p>The above plot shows the optimal asset allocation, according to the Markowitz frontier, the green dots shows the two best portfolio, according to different risk appetite.                   
+            </p>
         </div> 
-      </div>
+        </div>
+    </div>
     <div class="container py-3">
-        <div class="card">
-          <div class="row">
-            <div class="col">
-                <div class="container">
-                    <div class="articles-container">   
-                        <div class="chart" id="logRet" width="100%" height="100%">
-                            <script>
-                                var graphs = {{ logRet|safe }};
-                                Plotly.plot('logRet',graphs,{});
-                            </script>
-                        </div>
+        <div class="row">
+        <div class="col">
+            <div class="container">
+                <div class="articles-container">   
+                    <div class="chart" id="logRet" width="100%" height="100%">
+                        <script>
+                            var graphs = {{ logRet|safe }};
+                            Plotly.plot('logRet',graphs,{});
+                        </script>
                     </div>
                 </div>
-            </div> 
-          </div>
+            </div>
+        <br>
+        <p>
+        The above chart tracks the last year normalized portfolio performance, showing the outcome in percentage.
+        </p>
         </div> 
+        </div>
       </div>
 {%  endblock %}

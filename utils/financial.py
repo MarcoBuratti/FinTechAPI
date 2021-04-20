@@ -75,7 +75,15 @@ def draw_lines(ticker):
                 width=1000,                   # figure width in pixels
                 height=500, 
             )
-    return json.dumps(figure, cls=plotly.utils.PlotlyJSONEncoder) 
+    fig = json.dumps(figure, cls=plotly.utils.PlotlyJSONEncoder) 
+    bars = []
+    o = {
+    'ds': 'bars',
+    'fig': fig,
+    'comment': 'The above chart gives an overview of the company’s revenue, compared with the Net Income and the Free CashFlow to Equity'
+    }
+    bars.append(o)
+    return bars
 
 def draw_bars(ticker):
     df, assets_liab = get_dataframe(ticker)
@@ -159,17 +167,20 @@ def draw_indicators(ticker):
     indicator = []
     o = {
     'ds': 'indicator1',
-    'fig': fig1
+    'fig': fig1,
+    'comment': 'The price-to-earnings ratio (P/E ratio) is the ratio for valuing a company that measures its current share price relative to its per-share earnings'
     }
     indicator.append(o)
     o = {
     'ds': 'indicator2',
-    'fig': fig2
+    'fig': fig2,
+    'comment': 'The P/B ratio measures the market\'s valuation of a company relative to its book value.'
     }
     indicator.append(o)
     o = {
     'ds': 'indicator3',
-    'fig': fig3
+    'fig': fig3,
+    'comment': '(ROE) is a measure of the profitability of a business in relation to the equity.'
     }
     indicator.append(o)
     return indicator

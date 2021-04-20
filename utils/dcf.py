@@ -14,11 +14,8 @@ import plotly           #(version 4.5.0)
 
 def onLineDCF(ticker):
 
-    #r = get('https://financialmodelingprep.com/api/v3/' + document + '/' + ticker + '?limit=120&apikey=demo')
-
     # profile data 
     profile = get('https://financialmodelingprep.com/api/v3/profile/' + ticker + '?apikey=c02b588f1788d81805c7d379c213079e').json()
-
 
     # Annual data
     income_statement = get('https://financialmodelingprep.com/api/v3/income-statement/' + ticker + '?limit=120&apikey=c02b588f1788d81805c7d379c213079e').json()
@@ -248,7 +245,7 @@ def onLineDCF(ticker):
 
     fig = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
     dcfImg = []
-    comment = 'Following our DCF model the target price of the Stock ' + ticker + ' is ' + str(round(final_price, 3)) + '$'
+    comment = 'According to our DCF model, the intrinsic value of the stock ' + ticker + ' is ' + str(round(final_price, 3)) + '$'
     o = {
     'ds': 'dcf',
     'fig': fig,

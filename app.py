@@ -322,7 +322,8 @@ def financials():
             link = {
                 'ticker': stringa
             }
-            return render_template('financials.html', figDCF=figDCF, link=link, listaExchange=listaExchange, listaSector=listaSector, stockPrice=marketCapDimension, bigList=bigList, finHealth=finHealth, result=ticker, description=description, revenues=revenues, indicator=indicator)
+            descriptionFinancialHealth = 'The considered graph gives a snapshot about the long and short-term assets and liabilities company situation.'
+            return render_template('financials.html',  descriptionFinancialHealth=descriptionFinancialHealth, figDCF=figDCF, link=link, listaExchange=listaExchange, listaSector=listaSector, stockPrice=marketCapDimension, bigList=bigList, finHealth=finHealth, result=ticker, description=description, revenues=revenues, indicator=indicator)
         else:
             return render_template('financials.html', listaExchange=listaExchange, listaSector=listaSector, stockPrice=marketCapDimension, bigList=bigList)
     
