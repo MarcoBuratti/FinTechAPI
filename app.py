@@ -54,7 +54,7 @@ def register():
             except sqlite3.IntegrityError as e:
                 print(e) 
             flash('you are now register', 'success')
-            return render_template('login.html')
+            return redirect(url_for('login'))
 
     return render_template('register.html')
 
