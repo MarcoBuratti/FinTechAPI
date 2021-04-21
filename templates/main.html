@@ -110,8 +110,8 @@
         <img class="image" id="data-model" src="../static/img/ERD con entità colorate (notazione UML).png">
         <p>The database consists of two tables and are dedicated to manage users' data and stock in their porfolio.
             <br>
-            The other two tables (User and UserPF) are related to users management: in particular, the User table contains
-            information (names, mails, passwords) about registered users, whereas the UserPF, with the id_user as primary key, is
+            The tables (User and UserPF) are related to users management: in particular, the User table contains
+            information (names, mails, passwords), with the id_user and email as primary key about registered users, whereas the UserPF is
             made up of rows, each one representing a different stock in the user's portfolio (each row is identified by the couple (id_user, Ticker)
             and specifies the which stock they are following.
         </p>
@@ -122,8 +122,7 @@
         We have used VisualStudio Code as an IDE to develop our site and we have generated a server by using
         Flask.
         The server is entirely written in Python with the help of SQLite to generate the database and to fill
-        it
-        up.
+        it up.
         As an interface to the DB we used SQLite3. The following Python libraries have been used:
         appdirs==1.4.4, certifi==2020.12.5, click==7.1.2, distlib==0.3.1, filelock==3.0.12, Flask==1.1.2, gunicorn==20.0.4, itsdangerous==1.1.0, Jinja2==2.11.3, MarkupSafe==1.1.1, pipenv==2020.11.15, six==1.15.0, virtualenv==20.4.3, virtualenv-clone==0.5.4, Werkzeug==1.0.1, WTForms==2.3.3, requests==2.24.0, yahoofinancials==1.6, pandas-datareader==0.9.0, pandas==1.1.4, numpy==1.19.3, plotly==4.14.3, plotly-express==0.4.1, country-list==0.2.1, bs4==0.0.1, statsmodels==0.12.2
     </ul>
