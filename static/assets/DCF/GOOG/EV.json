@@ -1,0 +1,222 @@
+[
+    {
+        "symbol": "GOOG",
+        "date": "2020-12-31",
+        "stockPrice": 1835.73999,
+        "numberOfShares": 692538818,
+        "marketCapitalization": 1271321202829.932,
+        "minusCashAndCashEquivalents": 26465000000,
+        "addTotalDebt": 13932000000,
+        "enterpriseValue": 1258788202829.932
+    },
+    {
+        "symbol": "GOOG",
+        "date": "2019-12-31",
+        "stockPrice": 1455.84,
+        "numberOfShares": 692538818,
+        "marketCapitalization": 1008225712797.12,
+        "minusCashAndCashEquivalents": 18498000000,
+        "addTotalDebt": 4554000000,
+        "enterpriseValue": 994281712797.12
+    },
+    {
+        "symbol": "GOOG",
+        "date": "2018-12-31",
+        "stockPrice": 1089.0601,
+        "numberOfShares": 703285000,
+        "marketCapitalization": 765919632428.5,
+        "minusCashAndCashEquivalents": 16701000000,
+        "addTotalDebt": 4012000000,
+        "enterpriseValue": 753230632428.5
+    },
+    {
+        "symbol": "GOOG",
+        "date": "2018-12-01",
+        "stockPrice": 1035.61,
+        "numberOfShares": 0.0,
+        "marketCapitalization": 0.0,
+        "minusCashAndCashEquivalents": 16701000000,
+        "addTotalDebt": 3950000000,
+        "enterpriseValue": -12751000000
+    },
+    {
+        "symbol": "GOOG",
+        "date": "2017-12-31",
+        "stockPrice": 1163.6899,
+        "numberOfShares": 703584000,
+        "marketCapitalization": 818753594601.6001,
+        "minusCashAndCashEquivalents": 10715000000,
+        "addTotalDebt": 3969000000,
+        "enterpriseValue": 812007594601.6001
+    },
+    {
+        "symbol": "GOOG",
+        "date": "2017-12-01",
+        "stockPrice": 1046.4,
+        "numberOfShares": 0.0,
+        "marketCapitalization": 0.0,
+        "minusCashAndCashEquivalents": 10715000000,
+        "addTotalDebt": 3943000000,
+        "enterpriseValue": -6772000000
+    },
+    {
+        "symbol": "GOOG",
+        "date": "2016-12-31",
+        "stockPrice": 802.32,
+        "numberOfShares": 698706000,
+        "marketCapitalization": 560585797920,
+        "minusCashAndCashEquivalents": 12918000000,
+        "addTotalDebt": 3935000000,
+        "enterpriseValue": 551602797920
+    },
+    {
+        "symbol": "GOOG",
+        "date": "2016-12-01",
+        "stockPrice": 771.82,
+        "numberOfShares": 0.0,
+        "marketCapitalization": 0.0,
+        "minusCashAndCashEquivalents": 12918000000,
+        "addTotalDebt": 3935000000,
+        "enterpriseValue": -8983000000
+    },
+    {
+        "symbol": "GOOG",
+        "date": "2015-12-31",
+        "stockPrice": 742.95,
+        "numberOfShares": 692930000,
+        "marketCapitalization": 514812343500.00006,
+        "minusCashAndCashEquivalents": 16549000000,
+        "addTotalDebt": 4995000000,
+        "enterpriseValue": 503258343500.00006
+    },
+    {
+        "symbol": "GOOG",
+        "date": "2015-12-01",
+        "stockPrice": 758.88,
+        "numberOfShares": 0.0,
+        "marketCapitalization": 0.0,
+        "minusCashAndCashEquivalents": 16549000000,
+        "addTotalDebt": 4995000000,
+        "enterpriseValue": -11554000000
+    },
+    {
+        "symbol": "GOOG",
+        "date": "2014-12-31",
+        "stockPrice": 533.0565,
+        "numberOfShares": 675935000,
+        "marketCapitalization": 360311545327.5,
+        "minusCashAndCashEquivalents": 18347000000,
+        "addTotalDebt": 4991000000,
+        "enterpriseValue": 346955545327.5
+    },
+    {
+        "symbol": "GOOG",
+        "date": "2014-12-01",
+        "stockPrice": 524.96,
+        "numberOfShares": 0.0,
+        "marketCapitalization": 0.0,
+        "minusCashAndCashEquivalents": 18347000000,
+        "addTotalDebt": 4991000000,
+        "enterpriseValue": -13356000000
+    },
+    {
+        "symbol": "GOOG",
+        "date": "2013-12-31",
+        "stockPrice": 565.5751,
+        "numberOfShares": 665047610,
+        "marketCapitalization": 376134368530.511,
+        "minusCashAndCashEquivalents": 18898000000,
+        "addTotalDebt": 4990000000,
+        "enterpriseValue": 362226368530.511
+    },
+    {
+        "symbol": "GOOG",
+        "date": "2012-12-31",
+        "stockPrice": 375.5075,
+        "numberOfShares": 653792515,
+        "marketCapitalization": 245503992826.3625,
+        "minusCashAndCashEquivalents": 14778000000,
+        "addTotalDebt": 2988000000,
+        "enterpriseValue": 233713992826.3625
+    },
+    {
+        "symbol": "GOOG",
+        "date": "2011-12-31",
+        "stockPrice": 287.7664,
+        "numberOfShares": 644931101,
+        "marketCapitalization": 185589501182.8064,
+        "minusCashAndCashEquivalents": 9983000000,
+        "addTotalDebt": 2986000000,
+        "enterpriseValue": 178592501182.8064
+    },
+    {
+        "symbol": "GOOG",
+        "date": "2010-12-31",
+        "stockPrice": 299.3729,
+        "numberOfShares": 636786992,
+        "marketCapitalization": 190636768477.3168,
+        "minusCashAndCashEquivalents": 13630000000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 177006768477.3168
+    },
+    {
+        "symbol": "GOOG",
+        "date": "2009-12-31",
+        "stockPrice": 263.9805,
+        "numberOfShares": 631829796,
+        "marketCapitalization": 166790745462.978,
+        "minusCashAndCashEquivalents": 10197588000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 156593157462.978
+    },
+    {
+        "symbol": "GOOG",
+        "date": "2008-12-31",
+        "stockPrice": 168.6329,
+        "numberOfShares": 627310175,
+        "marketCapitalization": 105785134009.7575,
+        "minusCashAndCashEquivalents": 8656672000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 97128462009.7575
+    },
+    {
+        "symbol": "GOOG",
+        "date": "2007-12-31",
+        "stockPrice": 273.1113,
+        "numberOfShares": 621010279,
+        "marketCapitalization": 169604924611.0527,
+        "minusCashAndCashEquivalents": 6081593000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 163523331611.0527
+    },
+    {
+        "symbol": "GOOG",
+        "date": "2006-12-31",
+        "stockPrice": 246.237,
+        "numberOfShares": 602246236,
+        "marketCapitalization": 148295306413.932,
+        "minusCashAndCashEquivalents": 3544671000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 144750635413.932
+    },
+    {
+        "symbol": "GOOG",
+        "date": "2005-12-31",
+        "stockPrice": 212.6131,
+        "numberOfShares": 551153966,
+        "marketCapitalization": 117182553288.5546,
+        "minusCashAndCashEquivalents": 3877174000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 113305379288.5546
+    },
+    {
+        "symbol": "GOOG",
+        "date": "2004-12-31",
+        "stockPrice": 94.8146,
+        "numberOfShares": 385978011,
+        "marketCapitalization": 36596350721.7606,
+        "minusCashAndCashEquivalents": 426873000,
+        "addTotalDebt": 0.0,
+        "enterpriseValue": 36169477721.7606
+    }
+]

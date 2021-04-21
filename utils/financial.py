@@ -134,7 +134,7 @@ def draw_bars(ticker):
 def draw_indicators(ticker):
     ratios = get_data(ticker)
     ind1 = go.Figure(go.Indicator(
-            mode = "gauge+number+delta",
+            mode = "gauge+number",
             value = ratios[0]['priceEarningsRatio'],
             delta = {'reference': 50},
             title = {'text': "P/E Ratio"},
@@ -144,7 +144,7 @@ def draw_indicators(ticker):
         )
     fig1 = json.dumps(ind1, cls=plotly.utils.PlotlyJSONEncoder)
     ind2 = go.Figure(go.Indicator(
-            mode = "gauge+number+delta",
+            mode = "gauge+number",
             value = ratios[0]['returnOnEquity'],
             delta = {'reference': 50},
             title = {'text': "Return On Equity"},
@@ -154,7 +154,7 @@ def draw_indicators(ticker):
         )
     fig2 = json.dumps(ind2, cls=plotly.utils.PlotlyJSONEncoder)
     ind3 = go.Figure(go.Indicator(
-            mode = "gauge+number+delta",
+            mode = "gauge+number",
             value = ratios[0]['priceToBookRatio'],
             number = {'prefix': ""},
             title = {'text': "P/B Ratio"},

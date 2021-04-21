@@ -329,6 +329,9 @@ def financials():
     
     return render_template('financials.html', listaExchange=listaExchange, listaSector=listaSector, stockPrice=marketCapDimension)
 
+@app.route('/main')
+def main():
+    return render_template('main.html')
 
 @app.errorhandler(404)
 def page_not_found(e):

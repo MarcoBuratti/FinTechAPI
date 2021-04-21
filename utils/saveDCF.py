@@ -4,7 +4,6 @@ import json
 def saveDCF(ticker, profile, income_statement, income_statement_quar, balance_sheet, balance_sheet_quar, EV, cash_flow, cash_flow_quar, market_return):
     # define the name of the directory to be created
     path = "./static/assets/DCF/" + ticker
-    print(path)
     try:
         os.mkdir(path)
     except OSError:
