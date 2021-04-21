@@ -13,7 +13,7 @@ def portfolio(t, data1, data2):
     print('Downloading data....')
     mydata = pd.DataFrame()
     mydata[t]= wb.DataReader(t,data_source='yahoo', start=data1, end=data2)['Adj Close']
-    return mydata    
+    return mydata
     
 def SP500():
     yahoo_financials = YahooFinancials('^TNX')
