@@ -7,7 +7,7 @@ from functools import wraps
 import requests
 from utils.stock import *
 from utils.financial import *
-#from utils.chatbot import *
+from utils.chatbot import *
 from utils.dcfFunctions import *
 import datetime
 
@@ -17,6 +17,7 @@ app.secret_key='secret123'
 conn = dbConnection()
 cursor = conn.cursor()
 stock = Stock()
+chatbot = Chat()
 
 @app.route('/')
 def index():
@@ -336,6 +337,18 @@ def main():
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
+
+@app.route("/Chatbot")
+def home():
+    return render_template("chat.html")
+
+@app.route("/get")
+def get_bot_response():
+
+    userText = request.args.get('msg')
+    ciao = chatbot.get_answer(userText)
+    
+    return str(ciao)
 
 if __name__ == '__main__':  
     app.run()
